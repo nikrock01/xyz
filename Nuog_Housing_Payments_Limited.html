@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nuog Housing Payments Limited — Instant, Personal & Home Loans</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f7fb;--card:#fff;--ink:#0b1b3a;--mut:#5b6784;--line:#e3e8f2;--pri:#0a3d91;--pri2:#1f6bff;--acc:#ffb020;--ok:#12a36b;--soft:#eaf1ff;--sh:0 10px 30px rgba(10,61,145,.10);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1226;--card:#111c38;--ink:#eaf0ff;--mut:#9aa7c7;--line:#223153;--soft:#16264d;--sh:0 10px 30px rgba(0,0,0,.4)}}
+:root[data-theme="dark"]{--bg:#0a1226;--card:#111c38;--ink:#eaf0ff;--mut:#9aa7c7;--line:#223153;--soft:#16264d;--sh:0 10px 30px rgba(0,0,0,.4)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.w{max-width:1160px;margin:auto;padding:0 20px}
+section{padding:72px 0}
+h1,h2,h3{line-height:1.12;letter-spacing:-.02em}
+h2{font-size:clamp(26px,4vw,38px);font-weight:800}
+.eyebrow{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--pri2);background:var(--soft);padding:6px 12px;border-radius:99px;margin-bottom:14px}
+.sub{color:var(--mut);max-width:620px;margin-top:10px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:12px;border:0;cursor:pointer;font:inherit;font-weight:700;transition:.2s}
+.btn.p{background:var(--acc);color:#1a1200;box-shadow:0 8px 20px rgba(255,176,32,.35)}
+.btn.p:hover{transform:translateY(-2px)}
+.btn.g{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.28)}
+.btn.b{background:var(--pri);color:#fff}
+header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--card) 88%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;line-height:1.1}
+.logo i{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,#0a3d91,#1f6bff);display:grid;place-items:center;color:#fff;font-style:normal}
+.logo small{display:block;font-size:10px;font-weight:600;color:var(--mut);letter-spacing:.08em;margin-top:2px}
+nav ul{display:flex;gap:26px;list-style:none;padding:0;font-weight:600;font-size:14px;color:var(--mut)}
+nav a:hover{color:var(--pri2)}
+.navr{display:flex;gap:10px;align-items:center}
+.tg{background:var(--soft);border:0;width:38px;height:38px;border-radius:10px;cursor:pointer;font-size:16px}
+@media(max-width:860px){nav ul{display:none}}
+/* HERO */
+.hero{background:#050f2a;color:#fff;padding:70px 0 110px;position:relative;overflow:hidden}
+.hero .m1,.hero .m2{position:absolute;border-radius:50%;filter:blur(90px);opacity:.55}
+.hero .m1{width:460px;height:460px;background:#1f6bff;right:-100px;top:-120px}
+.hero .m2{width:360px;height:360px;background:#ffb020;opacity:.22;left:-120px;bottom:-140px}
+.hero:after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.12) 1px,transparent 1px);background-size:26px 26px;mask-image:linear-gradient(#000,transparent 85%)}
+.hg{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;position:relative;z-index:1}
+.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:7px 14px;border-radius:99px;font-size:13px;font-weight:600}
+.pill b{width:8px;height:8px;border-radius:50%;background:#3ddc97;box-shadow:0 0 0 0 #3ddc97;animation:pl 1.8s infinite}
+@keyframes pl{70%{box-shadow:0 0 0 9px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.hero h1{font-size:clamp(36px,5.6vw,64px);font-weight:800;margin:20px 0 16px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#ffb020,#ff6b6b);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.l{opacity:.82;font-size:17px;max-width:520px;margin-bottom:26px}
+.tr{display:flex;flex-wrap:wrap;gap:22px;margin-top:34px;padding-top:24px;border-top:1px solid rgba(255,255,255,.14)}
+.tr div b{display:block;font-size:22px}
+.tr div span{font-size:12px;opacity:.7}
+/* finder */
+.fw{position:relative}
+.fd{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(18px);border-radius:26px;padding:26px;box-shadow:0 30px 70px rgba(0,0,0,.4)}
+.fd h3{font-size:19px;margin-bottom:2px}
+.fd small{opacity:.7;font-size:12.5px}
+.fd label{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.7;margin:16px 0 8px}
+.opt{display:flex;gap:8px;flex-wrap:wrap}
+.opt button{flex:1;min-width:0;padding:10px 8px;border-radius:11px;border:1px solid rgba(255,255,255,.2);background:transparent;color:#fff;font:inherit;font-size:13px;font-weight:600;cursor:pointer;transition:.2s;white-space:nowrap}
+.opt button.on{background:#fff;color:#0a3d91;border-color:#fff}
+.amt{display:flex;justify-content:space-between;align-items:baseline}
+.amt b{font-size:28px}
+.fd input[type=range]{width:100%;accent-color:var(--acc);margin-top:8px}
+.out{display:flex;justify-content:space-between;align-items:center;background:#fff;color:var(--ink);border-radius:16px;padding:16px 18px;margin-top:18px}
+.out small{color:var(--mut);opacity:1;display:block;font-size:12px}
+.out b{font-size:26px;color:var(--pri)}
+.fd .btn{width:100%;justify-content:center;margin-top:14px}
+.fl{position:absolute;background:#fff;color:var(--ink);padding:10px 14px;border-radius:14px;font-size:13px;font-weight:700;box-shadow:0 14px 30px rgba(0,0,0,.3);animation:fy 5s ease-in-out infinite}
+.fl.a{left:-26px;top:-22px}.fl.b{right:-14px;bottom:-24px;animation-delay:-2.5s}
+@keyframes fy{50%{transform:translateY(-9px)}}
+@media(max-width:900px){.hg{grid-template-columns:1fr}.fl.a{left:6px}.fl.b{right:6px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+.lr{display:grid;gap:10px;margin-top:16px}
+.lr button{display:flex;align-items:center;gap:14px;text-align:left;width:100%;padding:13px 14px;border-radius:16px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.05);color:#fff;font:inherit;cursor:pointer;transition:.25s}
+.lr button:hover{background:rgba(255,255,255,.12)}
+.lr button i{font-style:normal;font-size:22px;width:46px;height:46px;border-radius:14px;background:rgba(255,255,255,.12);display:grid;place-items:center;flex:none}
+.lr button span{flex:1}.lr b{display:block;font-size:15.5px}.lr em{font-style:normal;font-size:12.5px;opacity:.72}
+.lr u{width:22px;height:22px;border-radius:50%;border:2px solid rgba(255,255,255,.4);flex:none;position:relative}
+.lr button.on{background:#fff;color:var(--ink);border-color:#fff;box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.lr button.on em{color:var(--mut);opacity:1}.lr button.on i{background:var(--soft)}
+.lr button.on u{border-color:var(--ok);background:var(--ok)}
+.lr button.on u:after{content:"✓";position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:12px;text-decoration:none}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tags span{font-size:12px;font-weight:600;padding:6px 12px;border-radius:99px;background:rgba(61,220,151,.15);color:#7ff0bb;border:1px solid rgba(61,220,151,.3)}
+/* quick strip */
+.cat{margin-top:-56px;position:relative;z-index:2}
+.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--sh);display:flex;gap:16px;align-items:center;transition:.25s}
+.cc:hover{transform:translateY(-5px);border-color:var(--pri2)}
+.cc .ic{font-size:28px;width:56px;height:56px;border-radius:16px;background:var(--soft);display:grid;place-items:center;flex:none}
+.cc b{display:block;font-size:17px}.cc span{font-size:13px;color:var(--mut)}
+@media(max-width:760px){.cg{grid-template-columns:1fr}}
+/* products */
+.tabs{display:flex;gap:8px;background:var(--soft);padding:6px;border-radius:14px;width:max-content;max-width:100%;margin:28px 0;overflow-x:auto}
+.tabs button{border:0;background:transparent;padding:11px 22px;border-radius:10px;font:inherit;font-weight:700;color:var(--mut);cursor:pointer;white-space:nowrap}
+.tabs button.on{background:var(--card);color:var(--pri2);box-shadow:var(--sh)}
+.pc{display:none;grid-template-columns:1.1fr .9fr;gap:30px;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:34px;box-shadow:var(--sh)}
+.pc.on{display:grid}
+.pc h3{font-size:28px;font-weight:800}
+.pc p{color:var(--mut);margin:10px 0 18px}
+.kv{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.kv div{background:var(--soft);border-radius:14px;padding:14px}
+.kv small{display:block;color:var(--mut);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.kv b{font-size:16px}
+ul.ck{list-style:none;padding:0;display:grid;gap:10px}
+ul.ck li{padding-left:28px;position:relative;font-weight:500;font-size:14.5px}
+ul.ck li:before{content:"✓";position:absolute;left:0;top:1px;width:20px;height:20px;border-radius:50%;background:var(--ok);color:#fff;font-size:12px;display:grid;place-items:center}
+@media(max-width:860px){.pc.on{grid-template-columns:1fr;padding:24px}.kv{grid-template-columns:1fr 1fr}}
+/* who */
+.wg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:34px}
+.wc{background:var(--bg);border:1px solid var(--line);border-radius:22px;padding:28px;transition:.25s;position:relative;overflow:hidden}
+.wc:before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--pri),var(--pri2),var(--acc))}
+.wc:hover{transform:translateY(-6px);box-shadow:var(--sh)}
+.wc .ic{width:54px;height:54px;border-radius:16px;background:var(--soft);display:grid;place-items:center;font-size:26px;margin-bottom:16px}
+.wc h3{font-size:20px;margin-bottom:8px}
+.wc p{color:var(--mut);font-size:14px;margin-bottom:14px}
+@media(max-width:860px){.wg{grid-template-columns:1fr}}
+/* calc */
+.calc{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:34px;display:grid;grid-template-columns:1.1fr .9fr;gap:36px;box-shadow:var(--sh);margin-top:30px}
+.ct{display:flex;gap:8px;margin-bottom:24px;flex-wrap:wrap}
+.ct button{padding:9px 16px;border-radius:99px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;font-weight:700;font-size:13px;cursor:pointer}
+.ct button.on{background:var(--pri);color:#fff;border-color:var(--pri)}
+.row{margin-bottom:22px}
+.row .t{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:14px;gap:10px}
+.row input[type=number]{width:140px;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--pri2);font:inherit;font-weight:800;text-align:right}
+.row .rg{font-size:11px;color:var(--mut);display:flex;justify-content:space-between;margin-top:2px}
+.row input[type=range]{width:100%;accent-color:var(--pri2);margin-top:10px}
+.res{background:linear-gradient(135deg,#061f4d,#0a3d91 60%,#1f6bff);color:#fff;border-radius:20px;padding:28px;text-align:center}
+.res small{opacity:.8}
+.res .big{font-size:42px;font-weight:800;margin:2px 0 4px}
+.res .per{font-size:12px;opacity:.7;margin-bottom:16px}
+.bar{height:10px;border-radius:99px;background:var(--acc);overflow:hidden;margin-bottom:6px}
+.bar i{display:block;height:100%;background:#fff;width:60%;transition:.3s}
+.lg{display:flex;justify-content:space-between;font-size:11px;opacity:.8;margin-bottom:16px}
+.res dl{display:grid;gap:10px;text-align:left;background:rgba(255,255,255,.1);padding:16px;border-radius:14px;margin-bottom:18px}
+.res dl div{display:flex;justify-content:space-between;font-size:14px}
+@media(max-width:860px){.calc{grid-template-columns:1fr;padding:22px}}
+/* steps */
+.st{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:34px;counter-reset:s}
+.st div{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:24px;position:relative;counter-increment:s}
+.st div:before{content:"0" counter(s);position:absolute;right:18px;top:10px;font-size:38px;font-weight:800;color:var(--soft);-webkit-text-stroke:1px var(--pri2)}
+.st h3{font-size:18px;margin:34px 0 6px}
+.st p{font-size:14px;color:var(--mut)}
+@media(max-width:860px){.st{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.st{grid-template-columns:1fr}}
+.fg{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
+.fg div{padding:24px;border-radius:18px;background:var(--soft)}
+.fg h3{font-size:17px;margin:8px 0 4px}
+.fg p{font-size:14px;color:var(--mut)}
+@media(max-width:860px){.fg{grid-template-columns:1fr}}
+/* apply */
+.ap{background:linear-gradient(135deg,#061f4d,#0a3d91 60%,#1f6bff);color:#fff;border-radius:28px;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.ap p{opacity:.85;margin-top:12px}
+.fm{background:var(--card);color:var(--ink);border-radius:20px;padding:24px}
+.fm label{display:block;font-size:12px;font-weight:700;color:var(--mut);margin:12px 0 6px;text-transform:uppercase;letter-spacing:.05em}
+.fm input,.fm select{width:100%;padding:12px 14px;border-radius:11px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
+.fm input:focus,.fm select:focus,.row input:focus{outline:2px solid var(--pri2);border-color:transparent}
+.fm .btn{width:100%;justify-content:center;margin-top:16px}
+.fine{font-size:11px;color:var(--mut);text-align:center;margin-top:10px}
+#ok{display:none;text-align:center;padding:30px;color:var(--ok);font-weight:700}
+@media(max-width:860px){.ap{grid-template-columns:1fr;padding:26px}}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-top:12px}
+summary{font-weight:700;cursor:pointer}
+details p{color:var(--mut);margin-top:10px;font-size:14.5px}
+footer{background:#061230;color:#b7c3e2;padding:56px 0 30px;font-size:14px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;margin-bottom:12px}
+footer ul{padding:0}footer li{list-style:none;margin-bottom:8px}
+.disc{border-top:1px solid #1d2c55;margin-top:34px;padding-top:20px;font-size:12px;opacity:.8}
+@media(max-width:860px){.fgrid{grid-template-columns:1fr 1fr}}
+
+.hg>*{min-width:0}
+.fw{max-width:100%}
+@media(max-width:900px){
+ .hero{padding:44px 0 96px}
+ .hg{gap:36px}
+ .fw{margin-top:14px}
+ .fl.a{left:12px;top:-18px}.fl.b{right:12px;bottom:-18px}
+}
+@media(max-width:600px){
+ .w{padding:0 16px}
+ section{padding:52px 0}
+ .nav{height:60px}
+ .logo{font-size:16px}.logo i{width:34px;height:34px}
+ .navr .btn{padding:9px 14px;font-size:13px}
+ .hero{padding:32px 0 84px}
+ .hero h1{font-size:clamp(30px,9vw,38px);margin:16px 0 12px}
+ .hero p.l{font-size:15.5px;margin-bottom:20px}
+ .hero .btn{width:100%;justify-content:center;margin-bottom:10px}
+ .pill{font-size:12px;padding:6px 12px}
+ .tr{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:26px;padding-top:20px}
+ .tr div b{font-size:18px}
+ .fd{padding:18px;border-radius:22px}
+ .fd h3{font-size:18px}
+ .lr button{padding:11px 12px;gap:11px;border-radius:14px}
+ .lr button i{width:40px;height:40px;font-size:19px}
+ .lr b{font-size:14.5px}.lr em{font-size:11.5px}
+ .opt{flex-wrap:nowrap;gap:6px}
+ .opt button{padding:10px 4px;font-size:12px}
+ .fl{font-size:11.5px;padding:7px 11px}
+ .fl.a{left:10px;top:-15px}.fl.b{display:none}
+ .tags span{font-size:11.5px;padding:5px 10px}
+ .cat{margin-top:-46px}
+ .cc{padding:16px}.cc .ic{width:48px;height:48px}
+ .pc.on{padding:20px}.pc h3{font-size:23px}
+ .kv{grid-template-columns:1fr}
+ .kv div{display:flex;justify-content:space-between;align-items:center}
+ .calc{padding:18px}
+ .row input[type=number]{width:120px}
+ .res{padding:22px}.res .big{font-size:36px}
+ .ap{padding:22px;border-radius:22px}
+ .fgrid{grid-template-columns:1fr}
+}
+
+.js .rv{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+.js .rv.in{opacity:1;transform:none}
+.pu{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.pu div{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 16px;text-align:center;font-weight:700;transition:.25s}
+.pu div span{display:grid;place-items:center;width:58px;height:58px;margin:0 auto 12px;border-radius:18px;background:var(--soft);font-size:28px;transition:.25s}
+.pu div:hover{transform:translateY(-5px);border-color:var(--pri2);box-shadow:var(--sh)}
+.pu div:hover span{background:var(--pri2);transform:rotate(-6deg) scale(1.08)}
+.pu small{display:block;font-weight:500;color:var(--mut);font-size:12.5px;margin-top:2px}
+.tw{overflow-x:auto;margin-top:30px;border:1px solid var(--line);border-radius:20px;background:var(--card);box-shadow:var(--sh)}
+.tw table{width:100%;border-collapse:collapse;min-width:820px;font-size:14.5px}
+.tw th,.tw td{padding:16px 20px;text-align:left;border-bottom:1px solid var(--line)}
+.tw tr:last-child td{border:0}
+.tw thead th{background:linear-gradient(135deg,#061f4d,#0a3d91);color:#fff;font-size:15px}
+.tw td:first-child{font-weight:700;color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.tw td:nth-child(3){background:var(--soft);font-weight:600}
+.tw .rec{display:inline-block;background:var(--acc);color:#1a1200;font-size:10px;padding:2px 8px;border-radius:99px;margin-left:6px;vertical-align:middle}
+.sbar{display:none}
+@media(max-width:760px){
+ .pu{grid-template-columns:1fr 1fr}
+ .sbar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(14px);border-top:1px solid var(--line)}
+ .sbar .btn{flex:1;justify-content:center;padding:12px}
+ footer{padding-bottom:90px}
+}
+
+nav a.act{color:var(--pri2)}
+.ph{background:#050f2a;color:#fff;padding:54px 0 64px;position:relative;overflow:hidden}
+.ph:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:#1f6bff;filter:blur(100px);opacity:.5;right:-100px;top:-160px}
+.ph .w{position:relative}
+.ph h1{font-size:clamp(30px,5vw,50px);font-weight:800;margin:16px 0 10px}
+.ph p{opacity:.8;max-width:560px}
+.cg2{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.page{animation:pf .4s ease}@keyframes pf{from{opacity:0}}
+.mb{display:none}
+@media(max-width:860px){
+ .cg2{grid-template-columns:1fr}
+ .mb{display:grid;place-items:center}
+ nav ul{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--card);padding:8px 20px 16px;border-bottom:1px solid var(--line);box-shadow:var(--sh)}
+ nav ul.open{display:flex}
+ nav li a{display:block;padding:13px 0;font-size:16px;border-bottom:1px solid var(--line)}
+}
+@media(max-width:600px){.ap[style*="auto"]{grid-template-columns:1fr!important}.ph{padding:38px 0 48px}}
+
+.cg{grid-template-columns:repeat(4,1fr)}
+.cc{padding:18px;gap:12px}.cc .ic{width:50px;height:50px;font-size:24px}.cc b{font-size:16px}
+.dr{background:linear-gradient(135deg,#04283a,#0a6c74 60%,#13a8a2);color:#fff;border-radius:28px;padding:44px;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;position:relative;overflow:hidden;box-shadow:var(--sh)}
+.dr:before{content:"🩺";position:absolute;right:-20px;bottom:-50px;font-size:230px;opacity:.07}
+.dr>*{position:relative;min-width:0}
+.dr h2{color:#fff;margin:14px 0 10px}
+.dr p{opacity:.88;margin-bottom:22px}
+.dk{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:22px}
+.dk div{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:14px;padding:12px}
+.dk small{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.06em;opacity:.75}
+.dk b{font-size:15px}
+.dg{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:22px;backdrop-filter:blur(8px)}
+.dg h3{font-size:16px;margin-bottom:12px}
+.dc{display:flex;flex-wrap:wrap;gap:8px}
+.dc span{background:#fff;color:#04283a;font-size:13px;font-weight:600;padding:7px 12px;border-radius:99px}
+.dg .ck li{font-size:13.5px}
+@media(max-width:1000px){.cg{grid-template-columns:1fr 1fr}}
+@media(max-width:860px){.dr{grid-template-columns:1fr;padding:28px}}
+@media(max-width:760px){.cg{grid-template-columns:1fr}}
+@media(max-width:600px){.dr{padding:22px;border-radius:22px}.dk{grid-template-columns:1fr}.dk div{display:flex;justify-content:space-between;align-items:center}.dr .btn{width:100%;justify-content:center}}
+
+.fl,.fl.a,.fl.b{position:static;display:inline-flex;align-items:center;gap:6px;left:auto;right:auto;top:auto;bottom:auto;margin:0 0 14px;padding:8px 14px;background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.22);box-shadow:none;animation:none;backdrop-filter:blur(8px);font-size:13px}
+.fl.b{margin:14px 0 0}
+</style>
+</head>
+<body>
+<header><div class="w nav">
+  <a class="logo" href="#/"><i>N</i><div>Nuog Housing<small>PAYMENTS LIMITED</small></div></a>
+  <nav><ul id="mn"><li><a data-r="home" href="#/">Home</a></li><li><a data-r="loans" href="#/loans">Loans</a></li><li><a data-r="calculator" href="#/calculator">EMI Calculator</a></li><li><a data-r="about" href="#/about">About</a></li><li><a data-r="contact" href="#/contact">Contact</a></li></ul></nav>
+  <div class="navr"><button class="tg mb" id="mb" aria-label="Menu">☰</button><button class="tg" id="tg" aria-label="Toggle theme">🌓</button><a class="btn b" href="#/apply">Apply Now</a></div>
+</div></header>
+
+<main class="page" data-p="home" hidden>
+<div class="hero" id="top"><div class="m1"></div><div class="m2"></div><div class="w hg">
+  <div>
+    <span class="pill"><b></b>Applications open · 100% digital</span>
+    <h1>Fund your next move with a <em>smarter loan.</em></h1>
+    <p class="l">Instant, Personal and Home Loans for salaried professionals, government employees and doctors. Pick your loan, see your EMI instantly, apply in minutes.</p>
+    <a class="btn p" href="#/apply">Apply Now — Free →</a> <a class="btn g" href="#/calculator">Explore EMI Calculator</a>
+    <div class="tr"><div><b>3</b><span>Loan products</span></div><div><b>0</b><span>Branch visits</span></div><div><b>Paperless</b><span>e-KYC onboarding</span></div><div><b>Clear</b><span>Upfront charges</span></div></div>
+  </div>
+  <div class="fw">
+    <div class="fl a">✅ Eligibility checked</div>
+    <div class="fd">
+      <h3>Choose your loan</h3><small>Pick a product and your profession to begin</small>
+      <div class="lr" id="hl">
+        <button class="on" data-v="instant"><i>⚡</i><span><b>Instant Loan</b><em>₹5K – ₹1 Lakh · 3–12 months</em></span><u></u></button>
+        <button data-v="personal"><i>💼</i><span><b>Personal Loan</b><em>Up to ₹10 Lakh · 12–60 months</em></span><u></u></button>
+        <button data-v="home"><i>🏠</i><span><b>Home Loan</b><em>Up to ₹1 Crore* · up to 20 years</em></span><u></u></button>
+      </div>
+      <label>I am a</label>
+      <div class="opt"><button class="on" onclick="pick(this)">Private Job</button><button onclick="pick(this)">Govt. Job</button><button onclick="pick(this)">Doctor</button></div>
+      <div class="tags" id="hg"></div>
+      <a class="btn p" href="#/apply">Check Eligibility →</a>
+    </div>
+    <div class="fl b">🔒 Secure & private</div>
+  </div>
+</div></div>
+
+<div class="w cat"><div class="cg">
+  <a class="cc" href="#/loans"><div class="ic">⚡</div><div><b>Instant Loan</b><span>Small amounts, fast processing</span></div></a>
+  <a class="cc" href="#/loans"><div class="ic">💼</div><div><b>Personal Loan</b><span>Weddings, medical, travel & more</span></div></a>
+  <a class="cc" href="#/loans"><div class="ic">🏠</div><div><b>Home Loan</b><span>Buy, build or renovate your home</span></div></a>
+  <a class="cc" href="#/loans"><div class="ic">🩺</div><div><b>Doctor Loan</b><span>Clinic, equipment & practice growth</span></div></a>
+</div></div>
+
+<section id="uses" style="padding-top:0"><div class="w">
+  <span class="eyebrow">Use It Your Way</span><h2>One loan, endless possibilities</h2><p class="sub">Whatever life brings, from a wedding to a medical emergency, you can fund it without hassle.</p>
+  <div class="pu">
+    <div class="rv"><span>💍</span>Wedding<small>Celebrate without stress</small></div>
+    <div class="rv"><span>🏥</span>Medical<small>Be ready for emergencies</small></div>
+    <div class="rv"><span>🎓</span>Education<small>Courses, fees & studies</small></div>
+    <div class="rv"><span>✈️</span>Travel<small>Plan the trip you deserve</small></div>
+    <div class="rv"><span>🛠️</span>Home Renovation<small>Upgrade your space</small></div>
+    <div class="rv"><span>🩺</span>Clinic Setup<small>Equipment & expansion</small></div>
+    <div class="rv"><span>🚗</span>Vehicle & Gadgets<small>Big purchases made easy</small></div>
+    <div class="rv"><span>💳</span>Debt Consolidation<small>Simplify your repayments</small></div>
+  </div>
+</div></section>
+
+<section class="drs" style="padding:48px 0"><div class="w"><div class="dr rv">
+ <div>
+  <span class="pill" style="background:rgba(255,255,255,.14)">🩺 Exclusively for Doctors</span>
+  <h2>Doctor Loan</h2>
+  <p>Grow your practice, equip your clinic or fund your next big step. A loan journey built around the career and cash flow of medical professionals.</p>
+  <div class="dk"><div><small>Amount</small><b>Up to ₹50 Lakh*</b></div><div><small>Tenure</small><b>Up to 10 years*</b></div><div><small>Process</small><b>100% digital</b></div></div>
+  <a class="btn p" href="#/apply">Apply for Doctor Loan →</a>
+ </div>
+ <div class="dg">
+  <h3>Use it for</h3>
+  <div class="dc"><span>🏥 Clinic or hospital setup</span><span>🔬 Medical equipment</span><span>🏗️ Practice expansion</span><span>🎓 PG / higher education</span><span>💼 Working capital</span><span>🏠 Personal needs</span></div>
+  <h3 style="margin-top:20px">Who can apply</h3>
+  <ul class="ck"><li>MBBS, BDS, BAMS, BHMS, MD / MS, DM / MCh and other qualified doctors</li><li>Valid registration with NMC / State Medical Council</li><li>Practising, consulting or employed doctors</li><li>Documents: registration & degree certificates, PAN, Aadhaar, ITR / salary proof, 6-month bank statement</li></ul>
+ </div>
+</div><p class="fine" style="text-align:left;margin-top:10px">*Indicative. Final amount, tenure, rate and eligibility are decided by the lender after verification.</p></div></section>
+<section id="who" style="background:var(--card)"><div class="w">
+  <span class="eyebrow">Who Can Apply</span><h2>Built for every profession</h2><p class="sub">Whether you work in a private company, a government department or run your own practice as a doctor, there is a loan journey for you.</p>
+  <div class="wg">
+    <div class="wc"><div class="ic">💼</div><h3>Private Job</h3><p>Employees of MNCs, startups and private companies.</p><ul class="ck"><li>Latest salary slips + bank statement</li><li>Minimum 6 months in current job</li><li>Faster approval with salary account</li></ul></div>
+    <div class="wc"><div class="ic">🏛️</div><h3>Government Job</h3><p>Central, state, PSU, railway, defence and teaching staff.</p><ul class="ck"><li>Service ID + salary slip</li><li>Priority processing</li><li>Longer tenure options</li></ul></div>
+    <div class="wc"><div class="ic">🩺</div><h3>Doctors & Professionals</h3><p>Doctors, dentists, CAs, lawyers and architects.</p><ul class="ck"><li>Registration certificate + ITR</li><li>Higher eligibility limits</li><li>Clinic setup & equipment needs</li></ul></div>
+  </div>
+</div></section>
+
+<div class="w" style="padding-bottom:72px"><div class="ap rv" style="grid-template-columns:1fr auto"><div><h2>Ready to get started?</h2><p>Apply in minutes. Checking eligibility does not affect your credit score.</p></div><a class="btn p" href="#/apply">Apply Now →</a></div></div>
+</main>
+<main class="page" data-p="loans" hidden>
+<div class="ph"><div class="w"><span class="pill"><b></b>Our Loans</span><h1>Loans for every goal</h1><p>Instant, Personal and Home Loans, designed for private, government and professional careers.</p></div></div>
+<section id="loans"><div class="w">
+  <span class="eyebrow">Our Loans</span><h2>A loan for every need</h2><p class="sub">Three loan categories designed around real-life situations, from urgent expenses to long-term goals.</p>
+  <div class="tabs" id="tabs"><button class="on" data-t="0">⚡ Instant Loan</button><button data-t="1">💼 Personal Loan</button><button data-t="2">🏠 Home Loan</button></div>
+  <div class="pc on"><div><h3>Instant Loan</h3><p>For emergencies and sudden expenses — a smaller amount, with a quick and simple process.</p>
+    <div class="kv"><div><small>Amount</small><b>₹5K – ₹1 Lakh</b></div><div><small>Tenure</small><b>3 – 12 Months</b></div><div><small>Process</small><b>Fast & digital</b></div></div>
+    <a class="btn b" href="#/apply">Apply for Instant Loan</a></div>
+    <ul class="ck"><li>Fully online application</li><li>e-KYC with Aadhaar & PAN</li><li>Direct transfer to your bank account</li><li>Ideal for short-term cash needs</li><li>Early repayment available</li></ul></div>
+  <div class="pc"><div><h3>Personal Loan</h3><p>Weddings, medical bills, education or travel — use it for what matters, with no collateral.</p>
+    <div class="kv"><div><small>Amount</small><b>Up to ₹10 Lakh</b></div><div><small>Tenure</small><b>12 – 60 Months</b></div><div><small>Collateral</small><b>None</b></div></div>
+    <a class="btn b" href="#/apply">Apply for Personal Loan</a></div>
+    <ul class="ck"><li>Flexible EMIs that fit your budget</li><li>Transparent fees, shown upfront</li><li>Minimal documentation</li><li>Multi-purpose use</li><li>Pre-closure options</li></ul></div>
+  <div class="pc"><div><h3>Home Loan</h3><p>Buy, build or renovate your home with long tenures and comfortable monthly EMIs.</p>
+    <div class="kv"><div><small>Amount</small><b>Up to ₹1 Crore*</b></div><div><small>Tenure</small><b>Up to 20 Years</b></div><div><small>Purpose</small><b>Buy / Build</b></div></div>
+    <a class="btn b" href="#/apply">Apply for Home Loan</a></div>
+    <ul class="ck"><li>For flats, plots or ready-to-move homes</li><li>Longer tenure means a lower EMI</li><li>Dedicated relationship manager</li><li>Guided property documentation</li><li>Balance transfer & top-up options</li></ul></div>
+  <p class="fine" style="text-align:left;margin-top:12px">*Indicative limits. Final amount, tenure and rate are decided by the lender after approval.</p>
+</div></section>
+
+<section class="drs" style="padding:48px 0"><div class="w"><div class="dr rv">
+ <div>
+  <span class="pill" style="background:rgba(255,255,255,.14)">🩺 Exclusively for Doctors</span>
+  <h2>Doctor Loan</h2>
+  <p>Grow your practice, equip your clinic or fund your next big step. A loan journey built around the career and cash flow of medical professionals.</p>
+  <div class="dk"><div><small>Amount</small><b>Up to ₹50 Lakh*</b></div><div><small>Tenure</small><b>Up to 10 years*</b></div><div><small>Process</small><b>100% digital</b></div></div>
+  <a class="btn p" href="#/apply">Apply for Doctor Loan →</a>
+ </div>
+ <div class="dg">
+  <h3>Use it for</h3>
+  <div class="dc"><span>🏥 Clinic or hospital setup</span><span>🔬 Medical equipment</span><span>🏗️ Practice expansion</span><span>🎓 PG / higher education</span><span>💼 Working capital</span><span>🏠 Personal needs</span></div>
+  <h3 style="margin-top:20px">Who can apply</h3>
+  <ul class="ck"><li>MBBS, BDS, BAMS, BHMS, MD / MS, DM / MCh and other qualified doctors</li><li>Valid registration with NMC / State Medical Council</li><li>Practising, consulting or employed doctors</li><li>Documents: registration & degree certificates, PAN, Aadhaar, ITR / salary proof, 6-month bank statement</li></ul>
+ </div>
+</div><p class="fine" style="text-align:left;margin-top:10px">*Indicative. Final amount, tenure, rate and eligibility are decided by the lender after verification.</p></div></section>
+<section id="compare" style="background:var(--card)"><div class="w">
+  <span class="eyebrow">Compare</span><h2>Find the loan that fits you</h2><p class="sub">A quick side-by-side view of our three loan categories.</p>
+  <div class="tw rv"><table>
+    <thead><tr><th></th><th>⚡ Instant Loan</th><th>💼 Personal Loan <span class="rec">POPULAR</span></th><th>🏠 Home Loan</th><th>🩺 Doctor Loan</th></tr></thead>
+    <tbody>
+      <tr><td>Amount</td><td>₹5K – ₹1 Lakh</td><td>Up to ₹10 Lakh</td><td>Up to ₹1 Crore*</td><td>Up to ₹50 Lakh*</td></tr>
+      <tr><td>Tenure</td><td>3 – 12 months</td><td>12 – 60 months</td><td>Up to 20 years</td><td>Up to 10 years*</td></tr>
+      <tr><td>Collateral</td><td>None</td><td>None</td><td>Property</td><td>Policy-based</td></tr>
+      <tr><td>Best for</td><td>Urgent, short-term needs</td><td>Weddings, medical, travel</td><td>Buying or building a home</td><td>Clinic, equipment, practice growth</td></tr>
+      <tr><td>Speed</td><td>Fastest</td><td>Fast</td><td>Detailed verification</td><td>Fast</td></tr>
+      <tr><td>Open to</td><td>Private, Govt., Doctors</td><td>Private, Govt., Doctors</td><td>Private, Govt., Doctors</td><td>Doctors & medical professionals</td></tr>
+    </tbody></table></div>
+  <p class="fine" style="text-align:left;margin-top:12px">*Indicative. Final terms are decided by the lender after approval.</p>
+</div></section>
+
+<div class="w" style="padding-bottom:72px"><div class="ap rv" style="grid-template-columns:1fr auto"><div><h2>Ready to get started?</h2><p>Apply in minutes. Checking eligibility does not affect your credit score.</p></div><a class="btn p" href="#/apply">Apply Now →</a></div></div>
+</main>
+<main class="page" data-p="calculator" hidden>
+<div class="ph"><div class="w"><span class="pill"><b></b>EMI Calculator</span><h1>Plan your repayment</h1><p>See exactly what your monthly EMI will be before you apply.</p></div></div>
+<section id="calculator"><div class="w">
+  <span class="eyebrow">EMI Calculator</span><h2>Know your EMI before you apply</h2><p class="sub">Choose a loan type, then adjust the amount, rate and tenure. You can also type exact values.</p>
+  <div class="calc"><div>
+    <div class="ct" id="ct"><button class="on" data-v="instant">⚡ Instant</button><button data-v="personal">💼 Personal</button><button data-v="home">🏠 Home</button></div>
+    <div class="row"><div class="t"><span>Loan amount (₹)</span><input type="number" id="na"></div><input type="range" id="a"><div class="rg"><span id="amin"></span><span id="amax"></span></div></div>
+    <div class="row"><div class="t"><span>Interest rate (% p.a.)</span><input type="number" id="nr" step="0.25"></div><input type="range" id="r"><div class="rg"><span id="rmin"></span><span id="rmax"></span></div></div>
+    <div class="row"><div class="t"><span>Tenure (months)</span><input type="number" id="nt"></div><input type="range" id="t"><div class="rg"><span id="tmin"></span><span id="tmax"></span></div></div>
+    <p class="fine" style="text-align:left">Illustration only. Your actual rate depends on your profile and lender approval.</p></div>
+    <div class="res"><small>Your monthly EMI</small><div class="big" id="emi"></div><div class="per" id="per"></div>
+      <div class="bar"><i id="bp"></i></div><div class="lg"><span>● Principal</span><span>● Interest</span></div>
+      <dl><div><span>Principal amount</span><b id="p1"></b></div><div><span>Total interest</span><b id="p2"></b></div><div><span>Total payable</span><b id="p3"></b></div></dl>
+      <a class="btn p" href="#/apply" style="width:100%;justify-content:center">Apply Now</a></div></div>
+</div></section>
+
+</main>
+<main class="page" data-p="about" hidden>
+<div class="ph"><div class="w"><span class="pill"><b></b>About Us</span><h1>About Nuog Housing Payments</h1><p>A digital-first lender focused on clarity and care.</p></div></div>
+<section><div class="w"><div class="cg2">
+<div><span class="eyebrow">Who We Are</span><h2>Making loans simple, fast and transparent</h2></div>
+<div><p class="sub" style="margin:0">Nuog Housing Payments Limited helps salaried professionals, government employees and doctors access Instant, Personal and Home Loans through a fully digital journey.</p><p class="sub" style="margin-top:14px">We believe borrowing should be clear and stress-free: no confusing paperwork, no surprise fees, and a team that supports you from application to final repayment.</p></div></div>
+<div class="pu"><div class="rv"><span>3</span>Loan categories</div><div class="rv"><span>3</span>Profession segments</div><div class="rv"><span>100%</span>Digital application</div><div class="rv"><span>0</span>Branch visits needed</div></div>
+<div class="fg"><div class="rv"><span style="font-size:26px">🎯</span><h3>Our mission</h3><p>Give every working professional fair, quick access to credit for life's biggest moments.</p></div><div class="rv"><span style="font-size:26px">🔍</span><h3>Transparency first</h3><p>Fees, interest and terms are shown clearly before you accept any offer.</p></div><div class="rv"><span style="font-size:26px">🔐</span><h3>Your data, protected</h3><p>We handle your information with strict security and privacy practices.</p></div></div>
+</div></section>
+<section id="how" style="background:var(--card)"><div class="w">
+  <span class="eyebrow">How It Works</span><h2>Your loan in 4 simple steps</h2>
+  <div class="st"><div><h3>Apply online</h3><p>Fill in a short form from your phone or laptop.</p></div><div><h3>Complete e-KYC</h3><p>Upload Aadhaar, PAN and income proof digitally.</p></div><div><h3>Get your offer</h3><p>We review your profile and share a loan offer.</p></div><div><h3>Receive funds</h3><p>The amount is transferred to your bank account.</p></div></div>
+  <div class="fg">
+    <div><span style="font-size:26px">🔐</span><h3>Bank-grade security</h3><p>Your data is encrypted and handled under strict privacy standards.</p></div>
+    <div><span style="font-size:26px">🧾</span><h3>Transparent charges</h3><p>Fees and interest are shown before you accept any offer.</p></div>
+    <div><span style="font-size:26px">🤝</span><h3>Dedicated support</h3><p>Our team supports you from application to final repayment.</p></div>
+  </div>
+</div></section>
+
+<div class="w" style="padding-bottom:72px"><div class="ap rv" style="grid-template-columns:1fr auto"><div><h2>Ready to get started?</h2><p>Apply in minutes. Checking eligibility does not affect your credit score.</p></div><a class="btn p" href="#/apply">Apply Now →</a></div></div>
+</main>
+<main class="page" data-p="contact" hidden>
+<div class="ph"><div class="w"><span class="pill"><b></b>Contact</span><h1>Talk to our team</h1><p>Quick answers, friendly support.</p></div></div>
+<section><div class="w"><span class="eyebrow">Get In Touch</span><h2>We're here to help</h2>
+<div class="pu"><div class="rv"><span>📞</span>Call Us<small>+91-XXXXXXXXXX</small></div><div class="rv"><span>✉️</span>Email<small>contact@yourdomain.com</small></div><div class="rv"><span>📍</span>Visit<small>Your office address, India</small></div><div class="rv"><span>🕘</span>Hours<small>Mon–Sat · 9 AM – 7 PM</small></div></div>
+<div class="ap rv" style="margin-top:36px"><div><h2>Send us a message</h2><p>Questions about a loan, your application or repayment? Write to us and we'll respond shortly.</p></div>
+<div class="fm" id="cf"><label style="margin-top:0">Name</label><input type="text" id="cn" placeholder="Your name"><label>Mobile number</label><input type="tel" id="cm" maxlength="10" placeholder="10-digit mobile number"><label>Message</label><input type="text" id="cg" placeholder="How can we help?"><button class="btn p" id="cs">Send Message</button></div>
+<div id="cok" class="fm" style="display:none;text-align:center;padding:30px;color:var(--ok);font-weight:700">✅ Thanks! We'll get back to you shortly.</div></div></div></section>
+<section id="faq" style="padding-top:0"><div class="w">
+  <span class="eyebrow">FAQ</span><h2>Frequently asked questions</h2>
+  <details><summary>Who can apply for a loan?</summary><p>Salaried employees in private or government jobs, and doctors or other professionals with a valid ID, bank account and income proof.</p></details>
+  <details><summary>What documents do I need?</summary><p>Aadhaar, PAN, last 3 months' bank statement and income proof (salary slips or ITR). Home loans also need property documents.</p></details>
+  <details><summary>How fast will I get the loan?</summary><p>Disbursal happens after approval and KYC. Timelines vary by loan type and profile; Instant Loan is the fastest.</p></details>
+  <details><summary>Can I repay early?</summary><p>Yes, pre-closure is available. Any applicable charges are shown clearly in your offer.</p></details>
+</div></section>
+
+</main>
+<main class="page" data-p="apply" hidden>
+<div class="ph"><div class="w"><span class="pill"><b></b>Apply Now</span><h1>Start your application</h1><p>It takes just a few minutes — no branch visit needed.</p></div></div>
+<section id="apply"><div class="w"><div class="ap">
+  <div><span class="eyebrow" style="background:rgba(255,255,255,.14);color:#fff">Get Started</span><h2>Apply today</h2><p>Share a few details and our team will get in touch shortly. Checking eligibility does not affect your credit score.</p></div>
+  <div class="fm" id="fm">
+    <label style="margin-top:0">Full name</label><input type="text" id="n" placeholder="Your full name">
+    <label>Mobile number</label><input type="tel" id="m" placeholder="10-digit mobile number" maxlength="10">
+    <label>Loan type</label><select id="lt"><option>Instant Loan</option><option>Personal Loan</option><option>Home Loan</option><option>Doctor Loan</option></select>
+    <label>Profession</label><select><option>Private Job</option><option>Government Job</option><option>Doctor / Professional</option></select>
+    <button class="btn p" id="sb">Submit Application</button>
+    <div class="fine">By submitting, you agree to our Terms & Privacy Policy.</div>
+  </div>
+  <div id="ok" class="fm">✅ Thank you! Our team will contact you shortly.</div>
+</div></div></section>
+
+</main>
+<div class="sbar"><a class="btn p" href="#/apply">Apply Now</a><a class="btn b" href="tel:+910000000000">📞 Call Us</a></div>
+
+<footer><div class="w">
+  <div class="fgrid">
+    <div><div class="logo" style="color:#fff"><i>N</i><div>Nuog Housing<small>PAYMENTS LIMITED</small></div></div><p style="margin-top:14px">Instant, Personal and Home Loans — simple, transparent and digital.</p></div>
+    <div><h4>Loans</h4><ul><li><a href="#/loans">Instant Loan</a></li><li><a href="#/loans">Personal Loan</a></li><li><a href="#/loans">Home Loan</a></li><li><a href="#/loans">Doctor Loan</a></li></ul></div>
+    <div><h4>Company</h4><ul><li><a href="#/about">About Us</a></li><li><a href="#/contact">Contact Us</a></li><li><a href="#/contact">Grievance Officer</a></li></ul></div>
+    <div><h4>Contact</h4><ul><li>+91-XXXXXXXXXX</li><li>contact@yourdomain.com</li><li>Your office address, India</li></ul></div>
+  </div>
+  <div class="disc"><b>Disclaimer:</b> Loan approval, amount, interest rate and tenure depend on creditworthiness, income verification and lender policy. Rates and limits shown are indicative. [Add your CIN, RBI registration / lending partner details here.] © 2026 Nuog Housing Payments Limited. All rights reserved.</div>
+</div></footer>
+
+<script>
+const $=id=>document.getElementById(id),inr=n=>'₹'+Math.round(n).toLocaleString('en-IN');
+const cfg={instant:{a:[5000,100000,5000,25000],r:[14,30,.25,18],t:[3,12,1,6]},personal:{a:[50000,1000000,10000,300000],r:[10.5,24,.25,14],t:[12,60,1,36]},home:{a:[500000,10000000,100000,2500000],r:[8,13,.25,9],t:[60,240,12,180]}};
+let cur='instant';
+function emi(P,r,N){const i=r/1200;return i?P*i*Math.pow(1+i,N)/(Math.pow(1+i,N)-1):P/N}
+const tl=m=>m>=12?(m/12).toFixed(m%12?1:0)+' yrs':m+' mo';
+const tg={instant:['Fast approval','Paperless','Short tenure'],personal:['No collateral','Flexible EMI','Minimal documents'],home:['Long tenure','Lower EMI','Dedicated manager']};
+function heroSet(){$('hg').innerHTML=tg[cur].map(x=>'<span>✓ '+x+'</span>').join('')}
+function pick(b){[...b.parentNode.children].forEach(x=>x.classList.remove('on'));b.classList.add('on')}
+function setType(v){cur=v;
+  document.querySelectorAll('#hl button,#ct button').forEach(b=>b.classList.toggle('on',b.dataset.v==v));
+  $('lt').selectedIndex=['instant','personal','home'].indexOf(v);heroSet();calcSet()}
+document.querySelectorAll('#hl button,#ct button').forEach(b=>b.onclick=()=>setType(b.dataset.v));
+// calculator
+function calcSet(){const c=cfg[cur];
+  [['a','na',c.a],['r','nr',c.r],['t','nt',c.t]].forEach(([s,n,x])=>{
+    [$(s),$(n)].forEach(e=>{e.min=x[0];e.max=x[1];e.step=x[2]});$(s).value=$(n).value=x[3]});
+  $('amin').textContent=inr(c.a[0]);$('amax').textContent=inr(c.a[1]);
+  $('rmin').textContent=c.r[0]+'%';$('rmax').textContent=c.r[1]+'%';
+  $('tmin').textContent=c.t[0]+' mo';$('tmax').textContent=c.t[1]+' mo';calc()}
+function calc(){const P=+$('na').value,R=+$('nr').value,N=+$('nt').value;
+  if(!P||!R||!N)return;
+  const e=emi(P,R,N),T=e*N;
+  $('emi').textContent=inr(e);$('per').textContent='for '+N+' months ('+tl(N)+') at '+R+'% p.a.';
+  $('p1').textContent=inr(P);$('p2').textContent=inr(T-P);$('p3').textContent=inr(T);$('bp').style.width=(P/T*100)+'%'}
+[['a','na'],['r','nr'],['t','nt']].forEach(([s,n])=>{
+  $(s).oninput=()=>{$(n).value=$(s).value;calc()};
+  $(n).oninput=()=>{$(s).value=$(n).value;calc()}});
+// tabs
+document.querySelectorAll('#tabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('#tabs button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  document.querySelectorAll('.pc').forEach((p,i)=>p.classList.toggle('on',i==b.dataset.t))});
+$('sb').onclick=()=>{
+  if(!$('n').value.trim()||!/^[6-9]\d{9}$/.test($('m').value)){alert('Please enter your name and a valid 10-digit mobile number.');return}
+  $('fm').style.display='none';$('ok').style.display='block'};
+$('tg').onclick=()=>{const r=document.documentElement,d=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme:dark)').matches);r.dataset.theme=d?'light':'dark'};
+setType('instant');
+document.documentElement.classList.add('js');
+document.querySelectorAll('.cc,.wc,.st>div,.fg>div,details,.pc,.calc,.ap').forEach(e=>e.classList.add('rv'));
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach((e,i)=>{e.style.transitionDelay=(i%4)*70+'ms';io.observe(e)});
+
+
+const PG=['home','loans','calculator','about','contact','apply'],TT={home:'Home',loans:'Loans',calculator:'EMI Calculator',about:'About Us',contact:'Contact',apply:'Apply Now'};
+function route(){let h=(location.hash.replace(/^#\/?/,'')||'home').split('/')[0];if(!PG.includes(h))h='home';
+ document.querySelectorAll('.page').forEach(p=>p.hidden=p.dataset.p!==h);
+ document.querySelectorAll('nav a[data-r]').forEach(a=>a.classList.toggle('act',a.dataset.r===h));
+ $('mn').classList.remove('open');document.title=TT[h]+' — Nuog Housing Payments Limited';window.scrollTo(0,0)}
+addEventListener('hashchange',route);route();
+$('mb').onclick=()=>$('mn').classList.toggle('open');
+$('cs').onclick=()=>{if(!$('cn').value.trim()||!/^[6-9]\d{9}$/.test($('cm').value)){alert('Please enter your name and a valid 10-digit mobile number.');return}$('cf').style.display='none';$('cok').style.display='block'};
+</script>
+</body>
+</html>
