@@ -867,7 +867,35 @@ const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.
 document.querySelectorAll('section,.card,.lc,.ph').forEach(el => { el.classList.add('reveal'); io.observe(el); });
 
 /* ===== CAREERS FILTERS ===== */
-const CAREER = [['BRANCH SALES','COLLECTIONS','FIELD-SALES','OFFICIAL WORK','OPERATIONAL'],[],[],[]];
+const CAREER = [
+  // 1. Department
+  ['BRANCH SALES','COLLECTIONS','FIELD-SALES','OFFICIAL WORK','OPERATIONAL'],
+
+  // 2. Designation
+  [
+    'Area Sales Manager',
+    'Branch Relationship Manager',
+    'Business Development Executive',
+    'Gold Loan Officer',
+    'HAUS NUO-Pay Offer- Liability',
+    'Regional Sales Manager'
+  ],
+
+  // 3. State
+  [
+    'ANDHRA PRADESH','ASSAM','BIHAR','CHANDIGARH','CHHATTISGARH','DELHI',
+    'GOA','GUJARAT','HARYANA','HIMACHAL PRADESH','JAMMU & KASHMIR','JHARKHAND',
+    'KARNATAKA','KERALA','MADHYA PRADESH','MAHARASHTRA','ODISHA','PUNJAB',
+    'RAJASTHAN','TAMIL NADU','TELANGANA','UTTAR PRADESH','UTTARAKHAND','WEST BENGAL'
+  ],
+
+  // 4. District
+  [
+    'Chandigarh',
+    'Mohali (Chandigarh Region)',
+    'Panchkula (Chandigarh Region)'
+  ]
+];
 (function(){
   const h = document.getElementById('cfl');
   const T = ['Department','Designation','State','District'];
