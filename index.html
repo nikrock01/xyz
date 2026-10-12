@@ -1,268 +1,384 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Nuog Housing Payments Limited — Instant, Personal & Doctor Loans</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<title>Nuog Housing Payments Limited</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f5f7fb;--card:#fff;--ink:#0b1b3a;--mut:#5b6784;--line:#e3e8f2;--pri:#0a3d91;--pri2:#1f6bff;--acc:#ffb020;--ok:#12a36b;--soft:#eaf1ff;--sh:0 10px 30px rgba(10,61,145,.1);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1226;--card:#111c38;--ink:#eaf0ff;--mut:#9aa7c7;--line:#223153;--soft:#16264d;--sh:0 10px 30px rgba(0,0,0,.4)}}
-:root[data-theme="dark"]{--bg:#0a1226;--card:#111c38;--ink:#eaf0ff;--mut:#9aa7c7;--line:#223153;--soft:#16264d;--sh:0 10px 30px rgba(0,0,0,.4)}
-*{box-sizing:border-box;margin:0}html{scroll-padding-top:80px}
-body{background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
-a{color:inherit;text-decoration:none}.w{max-width:1160px;margin:auto;padding:0 20px}
-section{padding:64px 0}h1,h2,h3{line-height:1.15;letter-spacing:-.02em}h2{font-size:clamp(24px,4vw,36px);font-weight:800}
-.eb{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--pri2);background:var(--soft);padding:5px 12px;border-radius:99px;margin-bottom:12px}
-.sub{color:var(--mut);max-width:620px;margin-top:8px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:12px;border:0;cursor:pointer;font:inherit;font-weight:700;transition:.2s}
-.p{background:var(--acc);color:#1a1200}.b{background:var(--pri);color:#fff}.g{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.3)}
+:root{
+  --bg:#eef0f1;--panel:#fff;--ink:#0b1a10;--deep:#06130a;--mut:#4d5f53;
+  --green:#0a6a1f;--bright:#14e000;--lime:#d4f200;--line:#d8dde0;
+  --metal:linear-gradient(135deg,#fff 0%,#aab1b5 45%,#f3f4f5 70%,#9aa1a6 100%);
+  --grad:linear-gradient(135deg,#d4f200 0%,#14e000 50%,#0a6a1f 100%);
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-padding-top:84px}
+body{background:var(--bg);color:var(--ink);font-family:'Public Sans',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:'Archivo',system-ui,sans-serif;line-height:1.08;letter-spacing:-.025em;text-wrap:balance}
+h1{font-size:clamp(38px,6.2vw,74px);font-weight:800}
+h2{font-size:clamp(26px,3.6vw,38px);font-weight:800}
+h3{font-size:24px;font-weight:700}
+p{text-wrap:pretty}a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--bright);outline-offset:3px;border-radius:6px}
+.w{max-width:1160px;margin:auto;padding:0 20px}
+
+header{position:sticky;top:0;z-index:20;background:rgba(6,19,10,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);padding-top:env(safe-area-inset-top,0px)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:70px;gap:12px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:'Archivo',sans-serif;font-weight:800;line-height:1.05;flex:none}
+.brand img{height:44px;width:auto;display:block;background:linear-gradient(160deg,#fff,#d9dcde);border-radius:10px;padding:3px 8px}
+.brand small{display:block;font-family:'Public Sans',sans-serif;font-weight:500;font-size:11px;color:#9db5a4}
+nav ul{display:flex;gap:2px;list-style:none;padding:0}
+nav a{display:block;padding:9px 11px;border-radius:99px;font-weight:600;font-size:14px;color:#b9cdbf;white-space:nowrap;transition:background .2s,color .2s}
+nav a:hover{background:rgba(255,255,255,.1);color:#fff}
+nav a.act{background:var(--lime);color:var(--ink)}
+.menu{display:none;background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.2);border-radius:10px;width:42px;height:42px;font-size:20px;cursor:pointer}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 26px;border:0;border-radius:14px;font:inherit;font-weight:700;cursor:pointer;transition:transform .15s,box-shadow .2s}
 .btn:hover{transform:translateY(-2px)}
-header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--card) 90%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
-.logo{display:flex;align-items:center;gap:10px;font-weight:800;line-height:1.1}
-.logo i{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,#0a3d91,#1f6bff);display:grid;place-items:center;color:#fff;font-style:normal}
-.logo small{display:block;font-size:10px;font-weight:600;color:var(--mut);letter-spacing:.08em}
-nav ul{display:flex;gap:24px;list-style:none;padding:0;font-weight:600;font-size:14px;color:var(--mut)}
-nav a:hover,nav a.act{color:var(--pri2)}
-.navr{display:flex;gap:10px;align-items:center}.tg{background:var(--soft);border:0;width:38px;height:38px;border-radius:10px;cursor:pointer;font-size:16px}
-.hero{background:#050f2a;color:#fff;padding:80px 0 110px;position:relative;overflow:hidden}
-.hero:before{content:"";position:absolute;width:480px;height:480px;border-radius:50%;background:#1f6bff;filter:blur(100px);opacity:.5;right:-100px;top:-140px}
-.hg{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;position:relative}.hg>*{min-width:0}
-.pill{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:7px 14px;border-radius:99px;font-size:13px;font-weight:600}
-.hero h1{font-size:clamp(34px,5.4vw,62px);font-weight:800;margin:18px 0 14px}
-.hero h1 em{font-style:normal;background:linear-gradient(90deg,#ffb020,#ff6b6b);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero .l{opacity:.85;font-size:17px;max-width:520px;margin-bottom:24px}
-.tr{display:flex;gap:26px;margin-top:32px;padding-top:22px;border-top:1px solid rgba(255,255,255,.15)}.tr b{display:block;font-size:20px}.tr span{font-size:12px;opacity:.7}
-.fd{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(18px);border-radius:24px;padding:24px}
-.fd h3{font-size:19px}.fd small{opacity:.7;font-size:13px}
-.lr{display:grid;gap:10px;margin:16px 0}
-.lr button{display:flex;align-items:center;gap:12px;text-align:left;width:100%;padding:12px 14px;border-radius:16px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.05);color:#fff;font:inherit;cursor:pointer}
-.lr i{font-style:normal;font-size:22px;width:44px;height:44px;border-radius:13px;background:rgba(255,255,255,.12);display:grid;place-items:center;flex:none}
-.lr b{display:block}.lr em{font-style:normal;font-size:12.5px;opacity:.75}
-.lr button.on{background:#fff;color:var(--ink)}.lr button.on em{color:var(--mut);opacity:1}
-.fd .btn{width:100%}
-.cat{margin-top:-52px;position:relative;z-index:2}.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:var(--sh)}
-.cc{display:flex;gap:14px;align-items:center;transition:.25s}.cc:hover{transform:translateY(-5px);border-color:var(--pri2)}
-.ic{font-size:26px;width:54px;height:54px;border-radius:16px;background:var(--soft);display:grid;place-items:center;flex:none}
-.cc span{font-size:13px;color:var(--mut)}.cc b{display:block}
-.pu{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.pu .card{text-align:center;font-weight:700;padding:20px 12px}
-.pu .ic{margin:0 auto 10px}.pu small{display:block;font-weight:500;color:var(--mut);font-size:12.5px}
-.lg3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
-.lc{position:relative;overflow:hidden;display:flex;flex-direction:column;gap:12px}
-.lc:before{content:"";position:absolute;left:0;top:0;height:4px;width:100%;background:linear-gradient(90deg,var(--pri),var(--pri2),var(--acc))}
-.lc.dr{background:linear-gradient(135deg,#04283a,#0a6c74 60%,#13a8a2);color:#fff;border:0}.lc.dr p,.lc.dr small{color:rgba(255,255,255,.85)}.lc.dr .kv div{background:rgba(255,255,255,.14)}
-.lc h3{font-size:24px}.lc p{color:var(--mut);font-size:14.5px}
-.kv{display:grid;grid-template-columns:1fr 1fr;gap:10px}.kv div{background:var(--soft);border-radius:12px;padding:10px 12px}
-.kv small{display:block;font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--mut)}.kv b{font-size:15px}
-ul.ck{list-style:none;padding:0;display:grid;gap:8px;flex:1}
-ul.ck li{padding-left:26px;position:relative;font-size:14px}
-ul.ck li:before{content:"✓";position:absolute;left:0;top:1px;width:19px;height:19px;border-radius:50%;background:var(--ok);color:#fff;font-size:11px;display:grid;place-items:center}
-.ph{background:#050f2a;color:#fff;padding:54px 0 60px}.ph h1{font-size:clamp(28px,5vw,48px);font-weight:800;margin:14px 0 8px}.ph p{opacity:.8;max-width:560px}
-.tw{overflow-x:auto;margin-top:28px;border:1px solid var(--line);border-radius:20px;background:var(--card)}
-table{width:100%;border-collapse:collapse;min-width:640px;font-size:14.5px}th,td{padding:15px 18px;text-align:left;border-bottom:1px solid var(--line)}tr:last-child td{border:0}
-thead th{background:linear-gradient(135deg,#061f4d,#0a3d91);color:#fff}td:first-child{font-weight:700;color:var(--mut);font-size:12px;text-transform:uppercase}
-.calc{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;margin-top:28px;padding:32px}
-.ct{display:flex;gap:8px;margin-bottom:22px;flex-wrap:wrap}
-.ct button{padding:9px 16px;border-radius:99px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;font-weight:700;font-size:13px;cursor:pointer}
-.ct button.on{background:var(--pri);color:#fff;border-color:var(--pri)}
-.row{margin-bottom:20px}.row .t{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:14px;gap:10px}
-.row input[type=number]{width:140px;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--pri2);font:inherit;font-weight:800;text-align:right}
-.row input[type=range]{width:100%;accent-color:var(--pri2);margin-top:10px}.rg{font-size:11px;color:var(--mut);display:flex;justify-content:space-between}
-.res{background:linear-gradient(135deg,#061f4d,#0a3d91 60%,#1f6bff);color:#fff;border-radius:20px;padding:26px;text-align:center}
-.res .big{font-size:40px;font-weight:800}.res .per{font-size:12px;opacity:.75;margin-bottom:14px}
-.bar{height:10px;border-radius:99px;background:var(--acc);overflow:hidden;margin-bottom:14px}.bar i{display:block;height:100%;background:#fff}
-.res dl{display:grid;gap:8px;text-align:left;background:rgba(255,255,255,.1);padding:14px;border-radius:14px;margin-bottom:16px;font-size:14px}.res dl div{display:flex;justify-content:space-between}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
-.fm label{display:block;font-size:12px;font-weight:700;color:var(--mut);margin:12px 0 6px;text-transform:uppercase}
-.fm input,.fm select,.fm textarea{width:100%;padding:12px 14px;border-radius:11px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit}
-.fm .btn{width:100%;margin-top:16px}.fine{font-size:11.5px;color:var(--mut);margin-top:10px}.done{display:none;text-align:center;padding:30px;color:var(--ok);font-weight:700}
-details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-top:10px}summary{font-weight:700;cursor:pointer}details p{color:var(--mut);margin-top:8px;font-size:14.5px}
-.job{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:12px}.job small{color:var(--mut)}
-.cta{background:linear-gradient(135deg,#061f4d,#0a3d91 60%,#1f6bff);color:#fff;border-radius:26px;padding:40px;display:flex;justify-content:space-between;align-items:center;gap:20px}
-footer{background:#061230;color:#b7c3e2;padding:52px 0 28px;font-size:14px}.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px}
-footer h4{color:#fff;margin-bottom:10px}footer ul{padding:0}footer li{list-style:none;margin-bottom:7px}.disc{border-top:1px solid #1d2c55;margin-top:30px;padding-top:18px;font-size:12px;opacity:.8}
-.tabbar,.sheet{display:none}
-/* ===== DESKTOP-ONLY (≥861px) ===== */
-@media(min-width:861px){.mobonly{display:none!important}}
-/* ===== MOBILE DESIGN (≤860px): app-style layout ===== */
+.b1{background:var(--green);color:#fff;box-shadow:0 8px 20px rgba(10,106,31,.3)}
+.b2{background:var(--lime);color:var(--ink);box-shadow:0 8px 24px rgba(212,242,0,.35)}
+.b3{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+
+.hero,.ph{background:radial-gradient(900px 480px at 88% 0%,rgba(20,224,0,.38),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(212,242,0,.16),transparent 60%),var(--deep);color:#fff;position:relative;overflow:hidden}
+.hero:after,.ph:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:46px 46px;-webkit-mask-image:radial-gradient(70% 80% at 60% 0,#000,transparent);mask-image:radial-gradient(70% 80% at 60% 0,#000,transparent);pointer-events:none}
+.hero .w,.ph .w{position:relative;z-index:1}
+.hero{padding:76px 0 140px}
+.hg{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center}
+.hg>*{min-width:0}
+.hero p.lead{font-size:18px;color:#b9cdbf;max-width:520px;margin:20px 0 28px}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap}
+.hero .b3{color:#fff;border-color:rgba(255,255,255,.35)}
+.trust{display:flex;gap:10px 24px;flex-wrap:wrap;margin-top:32px;font-size:14px;color:#9db5a4}
+.trust span:before{content:"✓";color:var(--lime);font-weight:800;margin-right:8px}
+
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:-84px;position:relative;z-index:2;padding-bottom:80px}
+.tile{position:relative;display:flex;flex-direction:column;gap:10px;min-height:250px;padding:30px;border-radius:26px;background:linear-gradient(var(--panel),var(--panel)) padding-box,var(--metal) border-box;border:2px solid transparent;box-shadow:0 14px 36px rgba(11,26,16,.1);transition:transform .2s,box-shadow .2s;overflow:hidden}
+.tile:hover{transform:translateY(-6px);box-shadow:0 0 0 3px rgba(20,224,0,.3),0 24px 50px rgba(10,106,31,.25)}
+.tile:before{content:"";position:absolute;right:-70px;top:-70px;width:200px;height:200px;border-radius:50%;background:var(--grad);opacity:.16;transition:opacity .25s,transform .35s}
+.tile:hover:before{opacity:.45;transform:scale(1.3)}
+.ti{width:64px;height:64px;border-radius:20px;background:var(--grad);display:grid;place-items:center;font-size:30px;position:relative;box-shadow:inset 0 2px 0 rgba(255,255,255,.5),0 8px 18px rgba(20,224,0,.3)}
+.tile:nth-child(2) .ti{background:linear-gradient(135deg,#14e000,#0a6a1f)}
+.tile:nth-child(3) .ti{background:linear-gradient(135deg,#f6ff4d,#d4f200 55%,#8bc400)}
+.tile:nth-child(4) .ti{background:linear-gradient(135deg,#fff,#aab1b5)}
+.tile p{color:var(--mut);max-width:400px;flex:1}
+.go{font-weight:700;color:var(--green)}
+.tile:hover .go{text-decoration:underline}
+.tag{position:absolute;right:20px;top:20px;font-size:12px;font-weight:600;background:var(--ink);color:var(--lime);padding:4px 11px;border-radius:99px}
+
+.ph{padding:64px 0 72px}
+.ph p{max-width:560px;color:#b9cdbf;margin:16px 0 26px;font-size:17px}
+.back{display:inline-block;color:var(--lime);font-weight:600;margin-bottom:20px}
+.sec{padding:56px 0 20px}.sec .sub{color:var(--mut);max-width:600px;margin-top:8px}
+.g3,.g4{display:grid;gap:18px;margin-top:30px}
+.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:26px;transition:transform .2s,box-shadow .2s,border-color .2s}
+.card:hover{transform:translateY(-4px);border-color:var(--bright);box-shadow:0 16px 36px rgba(10,106,31,.15)}
+.card .ic{width:54px;height:54px;border-radius:16px;background:var(--grad);display:grid;place-items:center;font-size:25px;margin-bottom:14px}
+.card h3{font-size:20px}.card p{color:var(--mut);font-size:15px;margin-top:6px}
+.card a{color:var(--green);font-weight:600}
+.stat b{display:block;font-family:'Archivo',sans-serif;font-size:28px;color:var(--green)}
+.stat span{color:var(--mut);font-size:14px}
+.txt{max-width:720px;margin-top:14px;color:var(--mut)}
+.txt p+p{margin-top:12px}
+.jobs{margin-top:24px;display:grid;gap:12px}
+.job{display:flex;justify-content:space-between;align-items:center;gap:14px;background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--bright);border-radius:16px;padding:18px 22px}
+.job small{color:var(--mut);display:block}
+details{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-top:10px}
+details[open]{border-color:var(--bright)}
+summary{font-weight:700;cursor:pointer}
+details p{color:var(--mut);margin-top:8px;font-size:15px}
+.cta{background:var(--grad);border-radius:28px;padding:40px;display:flex;justify-content:space-between;align-items:center;gap:20px;color:var(--ink);margin:40px 0 68px;box-shadow:0 20px 50px rgba(20,224,0,.25)}
+.cta .b1{background:var(--ink)}
+
+dialog{border:0;border-radius:24px;padding:30px;width:min(440px,92vw);background:var(--panel);color:var(--ink);box-shadow:0 30px 80px rgba(0,0,0,.4)}
+dialog::backdrop{background:rgba(6,19,10,.7);backdrop-filter:blur(3px)}
+dialog h3{margin-bottom:4px}
+dialog label{display:block;font-size:13px;font-weight:600;margin:14px 0 6px;color:var(--mut)}
+dialog input,dialog textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;font:inherit;background:var(--bg)}
+dialog .err{color:#b3261e;font-size:13px;min-height:18px;margin-top:8px}
+dialog .row{display:flex;gap:10px;margin-top:14px}dialog .row .btn{flex:1}
+.ok{text-align:center;padding:20px 0;font-weight:700;color:var(--green)}
+
+footer{background:var(--deep);color:#9db5a4;padding:40px 0 28px;font-size:14px;border-top:3px solid var(--bright)}
+footer .fl{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+footer .fl>div{max-width:340px}
+footer a:hover{color:#fff}
+footer small{display:block;margin-top:20px;opacity:.7;font-size:12px}
+
+.slider{position:relative;border-radius:30px;overflow:hidden;border:3px solid transparent;background:linear-gradient(var(--deep),var(--deep)) padding-box,var(--metal) border-box;box-shadow:0 30px 80px rgba(20,224,0,.28)}
+.track{display:flex;transition:transform .6s cubic-bezier(.65,0,.35,1)}
+.slide{flex:0 0 100%;min-height:320px;padding:38px 36px 64px;position:relative;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:12px;color:var(--ink)}
+.slide h2{font-size:clamp(26px,3.4vw,38px);max-width:340px}
+.slide p{max-width:340px;font-size:16px}
+.slide .big{position:absolute;right:22px;top:18px;font-size:96px;opacity:.28;line-height:1}
+.slide .sb{background:var(--ink);color:#fff;margin-top:6px}
+.s1{background:var(--grad)}
+.s2{background:linear-gradient(135deg,#0a6a1f,#06130a);color:#fff}
+.s2 .sb{background:var(--lime);color:var(--ink)}
+.s3{background:linear-gradient(135deg,#f6ff4d,#d4f200 50%,#7fd100)}
+.s4{background:var(--metal)}
+.sn{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.9);color:var(--ink);font-size:24px;line-height:1;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.pv{left:12px}.nx{right:12px}
+.dots{position:absolute;left:0;right:0;bottom:20px;display:flex;justify-content:center;gap:8px}
+.dots button{width:10px;height:10px;border-radius:99px;border:1px solid rgba(11,26,16,.45);background:rgba(255,255,255,.55);cursor:pointer;padding:0;transition:width .25s,background .25s}
+.dots button.on{width:28px;background:#fff}
+
+@media(max-width:1020px){
+  .menu{display:block}
+  nav{position:absolute;left:0;right:0;top:100%;background:var(--deep);border-bottom:1px solid rgba(255,255,255,.1);padding:10px 20px 16px;display:none}
+  nav.open{display:block}nav ul{flex-direction:column}
+  nav a{font-size:15px;padding:11px 15px}
+}
 @media(max-width:860px){
- .deskonly,nav{display:none!important}
- section{padding:36px 0}.w{padding:0 16px}.nav{height:56px}.navr .btn{display:none}
- body{padding-bottom:calc(74px + env(safe-area-inset-bottom,0px));background:var(--card)}
- .hero{padding:26px 0 70px;border-radius:0 0 28px 28px}.hg{grid-template-columns:1fr;gap:22px}
- .hero h1{font-size:32px}.hero .l{font-size:15px}.hero .btn{width:100%;margin-bottom:10px}.tr{display:none}
- .fd{padding:16px}
- .lr{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:14px -4px;padding:0 4px 4px}
- .lr button{flex:0 0 78%;scroll-snap-align:start;flex-direction:column;align-items:flex-start}
- .cat{margin-top:-40px}.cg{display:flex;overflow-x:auto;gap:12px;padding:0 16px 8px;margin:0 -16px;scroll-snap-type:x mandatory}.cg .card{flex:0 0 74%;scroll-snap-align:start}
- .pu{grid-template-columns:1fr 1fr;gap:10px}
- .lg3{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x mandatory;margin:24px -16px 0;padding:0 16px 10px}.lg3 .lc{flex:0 0 86%;scroll-snap-align:center}
- .calc,.two{grid-template-columns:1fr}.calc{padding:18px}
- .cta{flex-direction:column;align-items:stretch;text-align:center;padding:26px}
- .job{flex-direction:column;align-items:flex-start}.job .btn{width:100%}
- .fgrid{grid-template-columns:1fr 1fr}.fgrid>div:first-child{grid-column:1/-1}
- .ph{padding:30px 0 34px}
- .tabbar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--card);border-top:1px solid var(--line);padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px))}
- .tabbar a,.tabbar button{display:flex;flex-direction:column;align-items:center;gap:1px;font:inherit;font-size:11px;font-weight:600;color:var(--mut);background:none;border:0;padding:6px 0;cursor:pointer}
- .tabbar span{font-size:20px}.tabbar .act{color:var(--pri2)}
- .tabbar .mid span{background:var(--acc);width:46px;height:46px;border-radius:50%;display:grid;place-items:center;margin-top:-22px;box-shadow:0 6px 16px rgba(255,176,32,.5)}
- .sheet{position:fixed;left:0;right:0;bottom:calc(70px + env(safe-area-inset-bottom,0px));z-index:59;background:var(--card);border:1px solid var(--line);border-radius:22px 22px 0 0;padding:16px;box-shadow:var(--sh);display:none;grid-template-columns:1fr 1fr;gap:10px}
- .sheet .tg{width:auto;height:auto;padding:14px;border-radius:14px;background:var(--soft);color:var(--ink);font:inherit;font-weight:700;text-align:center;line-height:1.6}.sheet.open{display:grid}.sheet a{padding:14px;border-radius:14px;background:var(--soft);font-weight:700;text-align:center}
+  .brand small{display:none}
+  .hg,.tiles,.g3{grid-template-columns:1fr}
+  .g4{grid-template-columns:1fr 1fr}
+  .hero{padding:40px 0 110px}
+  .slide{min-height:290px;padding:30px 24px 60px}.slide .big{font-size:72px}.sn{display:none}
+  .cta{flex-direction:column;align-items:stretch;text-align:center;padding:28px}
+  .job{flex-direction:column;align-items:flex-start}.job .btn{width:100%}
 }
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
-.cp3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:26px}.cp3 .card b{display:block;font-size:17px}.cp3 .card p{color:var(--mut);font-size:14px;margin-top:4px}.cp3 .ic{margin-bottom:12px}
-.flt{margin-top:26px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;overflow:visible}.flt h3{grid-column:1/-1;font-size:17px}.flt .cnt{grid-column:1/-1;font-size:12px;font-weight:700;color:var(--mut)}.flt .msg{grid-column:1/-1;background:var(--soft);border-radius:14px;padding:22px;text-align:center;color:var(--mut);font-size:14px}
-.ms{position:relative}.msb{width:100%;display:flex;justify-content:space-between;align-items:center;gap:8px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;font-weight:600;cursor:pointer;text-align:left}.msb span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.msb.has{border-color:var(--pri2);color:var(--pri2)}.msb:after{content:"▾";color:var(--mut);flex:none}.ms.open .msb{border-color:var(--pri2)}
-.msp{display:none;position:absolute;left:0;right:0;top:calc(100% + 8px);z-index:30;min-width:240px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px;box-shadow:0 20px 50px rgba(10,27,58,.22)}.ms.open .msp{display:block}
-.msp .sr{width:100%;padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:inherit;margin-bottom:10px}
-.msp .hd{display:flex;justify-content:space-between;align-items:center;padding:4px 6px 8px;color:#e5334b;font-weight:700;font-size:14px}.msp .hd button{border:0;background:rgba(229,51,75,.12);color:#e5334b;font:inherit;font-size:11px;font-weight:700;padding:4px 10px;border-radius:7px;cursor:pointer}
-.msp ul{list-style:none;padding:0;max-height:230px;overflow-y:auto}.msp li label{display:flex;align-items:center;gap:12px;padding:11px 10px;border-radius:12px;font-weight:700;font-size:14px;text-transform:uppercase;cursor:pointer}.msp li label:hover,.msp li.on label{background:var(--soft)}.msp li input{width:18px;height:18px;accent-color:var(--pri2);flex:none}.msp .none{padding:14px;color:var(--mut);font-size:13px;text-align:center}
-@media(max-width:860px){.cp3{grid-template-columns:1fr}.flt{grid-template-columns:1fr}.msp{min-width:0}}
-</style></head><body>
-<header><div class="w nav">
- <a class="logo" href="#/"><i>N</i><div>Nuog Housing<small>PAYMENTS LIMITED</small></div></a>
- <nav><ul id="mn"><li><a data-r="home" href="#/">Home</a></li><li><a data-r="loans" href="#/loans">Loans</a></li><li><a data-r="calculator" href="#/calculator">EMI Calculator</a></li><li><a data-r="careers" href="#/careers">Careers</a></li><li><a data-r="support" href="#/support">Help & Support</a></li><li><a data-r="about" href="#/about">About</a></li></ul></nav>
- <div class="navr"><button class="tg" id="tg" aria-label="Toggle theme">🌓</button><a class="btn b" href="#/apply">Apply Now</a></div>
-</div></header>
+</style>
+</head>
+<body>
 
-<main data-p="home" hidden>
-<div class="hero"><div class="w hg"><div>
- <span class="pill">● Applications open · 100% digital</span>
- <h1>Fund your next move with a <em>smarter loan.</em></h1>
- <p class="l">Instant, Personal and Doctor Loans for salaried professionals, government employees and doctors. See your EMI instantly, apply in minutes.</p>
- <a class="btn p" href="#/apply">Apply Now — Free →</a> <a class="btn g" href="#/calculator">EMI Calculator</a>
- <div class="tr"><div><b>3</b><span>Loan products</span></div><div><b>0</b><span>Branch visits</span></div><div><b>Paperless</b><span>e-KYC</span></div></div>
-</div>
-<div class="fd"><h3>Choose your loan</h3><small>Tap a product to preview</small>
- <div class="lr" id="hl">
-  <button class="on" data-v="instant"><i>⚡</i><span><b>Instant Loan</b><em>₹5K – ₹1 Lakh · 3–12 months</em></span></button>
-  <button data-v="personal"><i>💼</i><span><b>Personal Loan</b><em>Up to ₹10 Lakh · 12–60 months</em></span></button>
-  <button data-v="doctor"><i>🩺</i><span><b>Doctor Loan</b><em>Up to ₹50 Lakh* · up to 10 years</em></span></button>
- </div><a class="btn p" href="#/apply">Check Eligibility →</a></div>
-</div></div>
-<div class="w cat"><div class="cg">
- <a class="card cc" href="#/loans"><div class="ic">⚡</div><div><b>Instant Loan</b><span>Small amounts, fast processing</span></div></a>
- <a class="card cc" href="#/loans"><div class="ic">💼</div><div><b>Personal Loan</b><span>Wedding, medical, travel & more</span></div></a>
- <a class="card cc" href="#/loans"><div class="ic">🩺</div><div><b>Doctor Loan</b><span>Clinic, equipment & growth</span></div></a>
-</div></div>
-<section><div class="w"><span class="eb">Use It Your Way</span><h2>One loan, endless possibilities</h2>
- <div class="pu"><div class="card"><div class="ic">💍</div>Wedding<small>Celebrate stress-free</small></div><div class="card"><div class="ic">🏥</div>Medical<small>Emergency ready</small></div><div class="card"><div class="ic">🎓</div>Education<small>Courses & fees</small></div><div class="card"><div class="ic">✈️</div>Travel<small>Plan your trip</small></div><div class="card"><div class="ic">🔬</div>Equipment<small>Clinic upgrades</small></div><div class="card"><div class="ic">🏗️</div>Expansion<small>Grow your practice</small></div><div class="card"><div class="ic">🚗</div>Big Purchases<small>Made easy</small></div><div class="card"><div class="ic">💳</div>Consolidation<small>Simplify repayments</small></div></div>
-</div></section>
-<div class="w" style="padding-bottom:48px"><div class="cta"><div><h2>Ready to get started?</h2><p style="opacity:.85">Checking eligibility does not affect your credit score.</p></div><a class="btn p" href="#/apply">Apply Now →</a></div></div>
-</main>
+<header>
+  <div class="w bar">
+    <a class="brand" href="#/" aria-label="Nuog Housing Payments home">
+      <img src="https://www.hausnuo.com/loanlogo.png" alt="" onerror="this.style.display='none'">
+      <span>Nuog Housing<small>Payments Limited</small></span>
+    </a>
+    <button class="menu" id="mb" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="nv">
+      <ul>
+        <li><a data-r="home" href="#/">Home</a></li>
+        <li><a data-r="property" href="#/property">Property Management</a></li>
+        <li><a class="finlink" target="_blank" rel="noopener">Financial ↗</a></li>
+        <li><a data-r="growth" href="#/growth">Startup Growth</a></li>
+        <li><a data-r="careers" href="#/careers">Career Job</a></li>
+        <li><a data-r="support" href="#/support">Help &amp; Support</a></li>
+        <li><a data-r="about" href="#/about">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<main data-p="loans" hidden>
-<div class="ph"><div class="w"><span class="pill">Our Loans</span><h1>Three loans. Every goal.</h1><p>Instant, Personal and Doctor Loans built around real careers.</p></div></div>
-<section><div class="w"><div class="lg3">
- <div class="card lc"><h3>⚡ Instant Loan</h3><p>Emergencies and sudden expenses — small amount, quick process.</p><div class="kv"><div><small>Amount</small><b>₹5K – ₹1L</b></div><div><small>Tenure</small><b>3–12 months</b></div></div><ul class="ck"><li>Fully online application</li><li>e-KYC with Aadhaar & PAN</li><li>Direct bank transfer</li><li>Early repayment allowed</li></ul><a class="btn b" href="#/apply">Apply for Instant Loan</a></div>
- <div class="card lc"><h3>💼 Personal Loan</h3><p>Weddings, medical, education or travel — no collateral.</p><div class="kv"><div><small>Amount</small><b>Up to ₹10L</b></div><div><small>Tenure</small><b>12–60 months</b></div></div><ul class="ck"><li>Flexible EMIs</li><li>Transparent fees upfront</li><li>Minimal documents</li><li>Pre-closure options</li></ul><a class="btn b" href="#/apply">Apply for Personal Loan</a></div>
- <div class="card lc dr"><h3>🩺 Doctor Loan</h3><p>Exclusively for doctors — clinic setup, equipment and practice growth.</p><div class="kv"><div><small>Amount</small><b>Up to ₹50L*</b></div><div><small>Tenure</small><b>Up to 10 yrs*</b></div></div><ul class="ck"><li>MBBS, BDS, BAMS, BHMS, MD/MS, DM/MCh</li><li>NMC / State Council registration</li><li>Docs: registration, degree, PAN, Aadhaar, ITR, 6-mo statement</li></ul><a class="btn p" href="#/apply">Apply for Doctor Loan</a></div>
-</div>
-<div class="tw deskonly"><table><thead><tr><th></th><th>⚡ Instant</th><th>💼 Personal</th><th>🩺 Doctor</th></tr></thead><tbody>
-<tr><td>Amount</td><td>₹5K – ₹1 Lakh</td><td>Up to ₹10 Lakh</td><td>Up to ₹50 Lakh*</td></tr>
-<tr><td>Tenure</td><td>3–12 months</td><td>12–60 months</td><td>Up to 10 years*</td></tr>
-<tr><td>Best for</td><td>Urgent needs</td><td>Wedding, medical, travel</td><td>Clinic, equipment, growth</td></tr>
-<tr><td>Open to</td><td>Private, Govt., Doctors</td><td>Private, Govt., Doctors</td><td>Doctors only</td></tr></tbody></table></div>
-<p class="fine">*Indicative. Final amount, tenure and rate are decided by the lender after verification.</p></div></section>
-</main>
+<main id="app"></main>
 
-<main data-p="calculator" hidden>
-<div class="ph"><div class="w"><span class="pill">EMI Calculator</span><h1>Plan your repayment</h1><p>See your monthly EMI before you apply.</p></div></div>
-<section><div class="w"><div class="card calc"><div>
- <div class="ct" id="ct"><button class="on" data-v="instant">⚡ Instant</button><button data-v="personal">💼 Personal</button><button data-v="doctor">🩺 Doctor</button></div>
- <div class="row"><div class="t"><span>Loan amount (₹)</span><input type="number" id="na"></div><input type="range" id="a"><div class="rg"><span id="amin"></span><span id="amax"></span></div></div>
- <div class="row"><div class="t"><span>Interest (% p.a.)</span><input type="number" id="nr" step="0.25"></div><input type="range" id="r"><div class="rg"><span id="rmin"></span><span id="rmax"></span></div></div>
- <div class="row"><div class="t"><span>Tenure (months)</span><input type="number" id="nt"></div><input type="range" id="t"><div class="rg"><span id="tmin"></span><span id="tmax"></span></div></div>
- <p class="fine">Illustration only. Actual rate depends on your profile and lender approval.</p></div>
- <div class="res"><small>Your monthly EMI</small><div class="big" id="emi"></div><div class="per" id="per"></div><div class="bar"><i id="bp"></i></div>
- <dl><div><span>Principal</span><b id="p1"></b></div><div><span>Total interest</span><b id="p2"></b></div><div><span>Total payable</span><b id="p3"></b></div></dl><a class="btn p" href="#/apply" style="width:100%">Apply Now</a></div></div></div></section>
-</main>
+<footer>
+  <div class="w">
+    <div class="fl">
+      <div><b style="color:#fff">Nuog Housing Payments Limited</b><br>Property, finance, growth and careers in one place.</div>
+      <div><a href="tel:+919755766018">+91 9755 766 018</a><br><a href="mailto:haustouch@hausnuo.com">haustouch@hausnuo.com</a></div>
+      <div>Srinivas Nagar, Kapra, Dr. AS Rao Nagar, Secunderabad, Hyderabad – 500 062, TG<br>Jayanagar 4th Block, Bengaluru – 42, KA</div>
+    </div>
+    <small>Loan approval, amount, rate and tenure depend on lender policy and verification. [Add your CIN and RBI registration details here.] © 2026 Nuog Housing Payments Limited.</small>
+  </div>
+</footer>
 
-<main data-p="careers" hidden>
-<div class="ph"><div class="w"><span class="pill">Careers at Nuo-Pay</span><h1>Unleash Your Potential</h1><p>Come build a new-age financial experience with a passionate team. Explore open opportunities today.</p><a class="btn p" style="margin-top:22px" href="javascript:void(0)" onclick="document.getElementById('open-positions').scrollIntoView({behavior:'smooth'})">See Open Positions</a></div></div>
-<section><div class="w"><span class="eb">Our mission</span><h2>We go big. We go beyond.</h2><p class="sub">We aim to build an ecosystem for the youth that solves all their financial needs and make their lives epic!</p>
-<div class="pu"><div class="card"><b style="font-size:24px;color:var(--pri2)">14.79 Lakh+</b><small>registered customers</small></div><div class="card"><b style="font-size:24px;color:var(--pri2)">21 branches</b><small>across India &amp; expanding</small></div><div class="card"><b style="font-size:24px;color:var(--pri2)">374+ workforce</b><small>and many more to join</small></div><div class="card"><b style="font-size:24px;color:var(--pri2)">₹0.74 Lakh Cr+</b><small>Assets Under Management</small></div></div></div></section>
-<section style="background:var(--card)"><div class="w"><span class="eb">We take care of you</span><h2>Why work with us</h2>
-<div class="cp3"><div class="card"><div class="ic">🩺</div><b>Health comes first</b><p>Extensive medical insurance for you &amp; your family</p></div><div class="card"><div class="ic">🕒</div><b>Flexible working hours</b><p>Define your own schedule to maximise productivity</p></div><div class="card"><div class="ic">🌴</div><b>Take time off</b><p>Tailored leave policies for all your important moments</p></div><div class="card"><div class="ic">🏆</div><b>Rewards</b><p>A reward system to celebrate your hard work &amp; impact</p></div><div class="card"><div class="ic">📚</div><b>Learn and grow</b><p>Fuelling your growth with impactful learning opportunities</p></div></div></div></section>
-<section id="open-positions"><div class="w"><span class="eb">Explore Career Opportunities</span><h2>Find Your Dream Job at HAUS NUO-Pay</h2><p class="sub">Select your preferred department, designation, state, and district to find the perfect opening for you.</p>
-<div class="card flt" id="cfl"></div></div></section>
-</main>
-
-<main data-p="support" hidden>
-<div class="ph"><div class="w"><span class="pill">Help & Support</span><h1>How can we help?</h1><p>Quick answers, friendly support.</p></div></div>
-<section><div class="w"><div class="pu" style="margin-top:0"><div class="card"><div class="ic">📞</div>Call Us<small>+91-XXXXXXXXXX</small></div><div class="card"><div class="ic">✉️</div>Email<small>contact@yourdomain.com</small></div><div class="card"><div class="ic">🕘</div>Hours<small>Mon–Sat · 9 AM–7 PM</small></div><div class="card"><div class="ic">⚖️</div>Grievance<small>grievance@yourdomain.com</small></div></div>
-<div class="two" style="margin-top:36px"><div><span class="eb">FAQ</span><h2>Common questions</h2>
-<details><summary>Who can apply?</summary><p>Salaried employees (private or government) and doctors with valid ID, bank account and income proof. Doctor Loan is for registered medical professionals.</p></details>
-<details><summary>What documents do I need?</summary><p>Aadhaar, PAN, bank statement and income proof (salary slips or ITR). Doctors also need registration and degree certificates.</p></details>
-<details><summary>How fast is disbursal?</summary><p>After approval and KYC. Timelines vary; Instant Loan is the fastest.</p></details>
-<details><summary>Can I repay early?</summary><p>Yes. Any applicable charges are shown in your offer.</p></details>
-<details><summary>How do I track my application?</summary><p>Call or email us with your registered mobile number and we'll share the status.</p></details></div>
-<div class="card fm" id="cf"><h3>Send us a message</h3><label>Name</label><input id="cn" placeholder="Your name"><label>Mobile number</label><input id="cm" type="tel" maxlength="10" placeholder="10-digit mobile"><label>Topic</label><select><option>Application status</option><option>Repayment / EMI</option><option>Documents</option><option>Other</option></select><label>Message</label><textarea rows="3" placeholder="How can we help?"></textarea><button class="btn p" id="cs">Send Message</button></div>
-<div class="card done" id="cok">✅ Thanks! We'll get back to you shortly.</div></div></div></section>
-</main>
-
-<main data-p="about" hidden>
-<div class="ph"><div class="w"><span class="pill">About Us</span><h1>About Nuog Housing Payments</h1><p>A digital-first lender focused on clarity and care.</p></div></div>
-<section><div class="w"><div class="two"><div><span class="eb">Who We Are</span><h2>Making loans simple, fast and transparent</h2></div><div><p class="sub" style="margin:0">Nuog Housing Payments Limited helps salaried professionals, government employees and doctors access Instant, Personal and Doctor Loans through a fully digital journey.</p><p class="sub" style="margin-top:12px">No confusing paperwork, no surprise fees, and a team that supports you from application to final repayment.</p></div></div>
-<div class="pu"><div class="card"><div class="ic">🎯</div>Our mission<small>Fair, quick credit for every professional</small></div><div class="card"><div class="ic">🔍</div>Transparency<small>Fees shown before you accept</small></div><div class="card"><div class="ic">🔐</div>Data protected<small>Strict security & privacy</small></div><div class="card"><div class="ic">🤝</div>Support<small>From apply to final EMI</small></div></div></div></section>
-</main>
-
-<main data-p="apply" hidden>
-<div class="ph"><div class="w"><span class="pill">Apply Now</span><h1>Start your application</h1><p>Just a few minutes — no branch visit needed.</p></div></div>
-<section><div class="w" style="max-width:560px"><div class="card fm" id="fm"><label style="margin-top:0">Full name</label><input id="n" placeholder="Your full name"><label>Mobile number</label><input id="m" type="tel" maxlength="10" placeholder="10-digit mobile number"><label>Loan type</label><select id="lt"><option>Instant Loan</option><option>Personal Loan</option><option>Doctor Loan</option></select><label>Profession</label><select><option>Private Job</option><option>Government Job</option><option>Doctor / Professional</option></select><button class="btn p" id="sb">Submit Application</button><div class="fine" style="text-align:center">By submitting, you agree to our Terms & Privacy Policy.</div></div>
-<div class="card done" id="ok">✅ Thank you! Our team will contact you shortly.</div></div></section>
-</main>
-
-<footer><div class="w"><div class="fgrid">
- <div><div class="logo" style="color:#fff"><i>N</i><div>Nuog Housing<small>PAYMENTS LIMITED</small></div></div><p style="margin-top:12px">Instant, Personal and Doctor Loans — simple, transparent and digital.</p></div>
- <div><h4>Loans</h4><ul><li><a href="#/loans">Instant Loan</a></li><li><a href="#/loans">Personal Loan</a></li><li><a href="#/loans">Doctor Loan</a></li></ul></div>
- <div><h4>Company</h4><ul><li><a href="#/about">About Us</a></li><li><a href="#/careers">Careers</a></li><li><a href="#/support">Help & Support</a></li></ul></div>
- <div><h4>Contact</h4><ul><li>+91-XXXXXXXXXX</li><li>contact@yourdomain.com</li><li>Your office address, India</li></ul></div></div>
- <div class="disc"><b>Disclaimer:</b> Approval, amount, rate and tenure depend on creditworthiness, income verification and lender policy. Limits shown are indicative. [Add your CIN, RBI registration / lending partner details here.] © 2026 Nuog Housing Payments Limited.</div></div></footer>
-
-<div class="sheet" id="sh"><a href="#/careers">💼 Careers</a><a href="#/about">ℹ️ About Us</a><a href="#/apply">📝 Apply</a><button class="tg" id="tg2">🌓 Theme</button></div>
-<div class="tabbar"><a data-r="home" href="#/"><span>🏠</span>Home</a><a data-r="loans" href="#/loans"><span>💰</span>Loans</a><a class="mid" data-r="calculator" href="#/calculator"><span>🧮</span>EMI</a><a data-r="support" href="#/support"><span>🎧</span>Support</a><button id="mo"><span>☰</span>More</button></div>
+<dialog id="dlg">
+  <div id="df">
+    <h3 id="dt">Enquire</h3>
+    <p style="color:var(--mut);font-size:14px">Share your details and our team will call you.</p>
+    <label for="dn">Full name</label><input id="dn" autocomplete="name">
+    <label for="dm">Mobile number</label><input id="dm" type="tel" maxlength="10" inputmode="numeric" autocomplete="tel">
+    <label for="dg">Message (optional)</label><textarea id="dg" rows="2"></textarea>
+    <div class="err" id="de" role="alert"></div>
+    <div class="row"><button class="btn b3" id="dx" type="button">Cancel</button><button class="btn b1" id="ds" type="button">Send details</button></div>
+  </div>
+  <div id="dk" class="ok" hidden>Thank you! Our team will contact you shortly.<div class="row"><button class="btn b1" id="dc" type="button">Close</button></div></div>
+</dialog>
 
 <script>
-const $=id=>document.getElementById(id),inr=n=>'₹'+Math.round(n).toLocaleString('en-IN');
-const cfg={instant:{a:[5000,100000,5000,25000],r:[14,30,.25,18],t:[3,12,1,6]},personal:{a:[50000,1000000,10000,300000],r:[10.5,24,.25,14],t:[12,60,1,36]},doctor:{a:[200000,5000000,100000,1500000],r:[10,18,.25,12],t:[12,120,6,60]}};
-let cur='instant';const names=['instant','personal','doctor'];
-const emi=(P,r,N)=>{const i=r/1200;return i?P*i*Math.pow(1+i,N)/(Math.pow(1+i,N)-1):P/N};
-function setType(v){cur=v;document.querySelectorAll('#hl button,#ct button').forEach(b=>b.classList.toggle('on',b.dataset.v==v));$('lt').selectedIndex=names.indexOf(v);calcSet()}
-document.querySelectorAll('#hl button,#ct button').forEach(b=>b.onclick=()=>setType(b.dataset.v));
-function calcSet(){const c=cfg[cur];[['a','na',c.a],['r','nr',c.r],['t','nt',c.t]].forEach(([s,n,x])=>{[$(s),$(n)].forEach(e=>{e.min=x[0];e.max=x[1];e.step=x[2]});$(s).value=$(n).value=x[3]});
- $('amin').textContent=inr(c.a[0]);$('amax').textContent=inr(c.a[1]);$('rmin').textContent=c.r[0]+'%';$('rmax').textContent=c.r[1]+'%';$('tmin').textContent=c.t[0]+' mo';$('tmax').textContent=c.t[1]+' mo';calc()}
-function calc(){const P=+$('na').value,R=+$('nr').value,N=+$('nt').value;if(!P||!R||!N)return;const e=emi(P,R,N),T=e*N;
- $('emi').textContent=inr(e);$('per').textContent='for '+N+' months at '+R+'% p.a.';$('p1').textContent=inr(P);$('p2').textContent=inr(T-P);$('p3').textContent=inr(T);$('bp').style.width=(P/T*100)+'%'}
-[['a','na'],['r','nr'],['t','nt']].forEach(([s,n])=>{$(s).oninput=()=>{$(n).value=$(s).value;calc()};$(n).oninput=()=>{$(s).value=$(n).value;calc()}});
-const okm=(a,b)=>!$(a).value.trim()||!/^[6-9]\d{9}$/.test($(b).value);
-$('sb').onclick=()=>{if(okm('n','m')){alert('Please enter your name and a valid 10-digit mobile number.');return}$('fm').style.display='none';$('ok').style.display='block'};
-$('cs').onclick=()=>{if(okm('cn','cm')){alert('Please enter your name and a valid 10-digit mobile number.');return}$('cf').style.display='none';$('cok').style.display='block'};
-const th=()=>{const r=document.documentElement,d=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme:dark)').matches);r.dataset.theme=d?'light':'dark'};
-$('tg').onclick=th;$('tg2').onclick=()=>{th();$('sh').classList.remove('open')};document.querySelectorAll('#sh a').forEach(a=>a.onclick=()=>$('sh').classList.remove('open'));$('mo').onclick=()=>$('sh').classList.toggle('open');
-const PG=['home','loans','calculator','careers','support','about','apply'],TT={home:'Home',loans:'Loans',calculator:'EMI Calculator',careers:'Careers',support:'Help & Support',about:'About Us',apply:'Apply Now'};
-function route(){let h=(location.hash.replace(/^#\/?/,'')||'home').split('/')[0];if(!PG.includes(h))h='home';
- document.querySelectorAll('main').forEach(p=>p.hidden=p.dataset.p!==h);
- document.querySelectorAll('[data-r]').forEach(a=>a.classList.toggle('act',a.dataset.r===h));
- $('sh').classList.remove('open');document.title=TT[h]+' — Nuog Housing Payments Limited';scrollTo(0,0)}
-addEventListener('hashchange',route);route();setType('instant');
-// Careers filters (multi-select). Order: [departments, designations, states, districts]
-const CAREER=[['BRANCH SALES','COLLECTIONS','FIELD-SALES','OFFICIAL WORK','OPERATIONAL'],[],[],[]];
-(function(){const h=document.getElementById('cfl'),T=['Department','Designation','State','District'],sel=T.map(()=>new Set());
-h.innerHTML='<h3>Filter Positions <small style="font-weight:500;color:var(--mut)">(Complete all 4 steps to view jobs)</small></h3>'+T.map((t,i)=>`<div class="ms" data-i="${i}"><button type="button" class="msb"><span>${t}</span></button><div class="msp"><input class="sr" placeholder="Search..."><div class="hd"><span>Clear Selection</span><button type="button">Reset</button></div><ul></ul></div></div>`).join('')+'<div class="cnt"></div><div class="msg"></div>';
-const msg=h.querySelector('.msg'),cnt=h.querySelector('.cnt');
-function status(){const n=sel.filter(x=>x.size).length;cnt.textContent=n+' of 4 Selected';msg.innerHTML=n<4?'<b>Select all 4 filters to view matching job openings</b><br>Please choose Department, Designation, State, and District from above to view available vacancies.':'No openings match your selection right now.'}
-h.querySelectorAll('.ms').forEach(m=>{const i=+m.dataset.i,b=m.querySelector('.msb'),ul=m.querySelector('ul'),q=m.querySelector('.sr');
- function label(){const n=sel[i].size;b.firstElementChild.textContent=n==0?T[i]:n==1?[...sel[i]][0]:n+' selected';b.classList.toggle('has',n>0)}
- function list(){const k=q.value.trim().toLowerCase(),o=CAREER[i].filter(x=>x.toLowerCase().includes(k));
-  ul.innerHTML=o.length?o.map(x=>`<li class="${sel[i].has(x)?'on':''}"><label><input type="checkbox" ${sel[i].has(x)?'checked':''} value="${x}"> ${x}</label></li>`).join(''):'<div class="none">No options available</div>'}
- b.onclick=e=>{e.stopPropagation();const was=m.classList.contains('open');h.querySelectorAll('.ms').forEach(x=>x.classList.remove('open'));if(!was){m.classList.add('open');list()}};
- m.querySelector('.msp').onclick=e=>e.stopPropagation();
- q.oninput=list;
- ul.onchange=e=>{const c=e.target;c.checked?sel[i].add(c.value):sel[i].delete(c.value);c.closest('li').classList.toggle('on',c.checked);label();status()};
- m.querySelector('.hd button').onclick=()=>{sel[i].clear();q.value='';list();label();status()};
- label()});
-document.addEventListener('click',()=>h.querySelectorAll('.ms').forEach(x=>x.classList.remove('open')));
-status()})();
-</script></body></html>
+/* ===== Settings: change these ===== */
+const FIN_URL = 'https://nikrock01.github.io/xyz/Nuog_Housing_Payments_Limited.html#/'; /* put your Financial page link here */
+
+const TILES = [
+  { r:'property', ic:'🏢', t:'Property Management', d:'Rent collection, tenant care and upkeep for your homes and rentals.' },
+  { ext:FIN_URL, ic:'💰', t:'Financial', d:'Instant, Personal and Doctor Loans with a fully online process.' },
+  { r:'growth',   ic:'🚀', t:'Startup Growth', d:'Launch or scale your business with funding guidance and the right partners.' },
+  { r:'careers',  ic:'💼', t:'Career Job', d:'Join our team. Browse open roles and apply in minutes.' }
+];
+
+const SLIDES = [
+  { c:'s1', ic:'💰', t:'Loans that move at your speed', d:'Instant, Personal and Doctor Loans. Apply online in minutes.', b:'Apply for a loan', h:FIN_URL, ext:1 },
+  { c:'s2', ic:'🏢', t:'Your property, looked after', d:'Rent collection, tenant care and maintenance from one team.', b:'Explore property care', h:'#/property' },
+  { c:'s3', ic:'🚀', t:'Ready to start your growth?', d:'Funding guidance and partners to launch or scale your business.', b:'Plan your growth', h:'#/growth' },
+  { c:'s4', ic:'💼', t:'We are hiring', d:'Join a passionate team and build a modern financial experience.', b:'See open roles', h:'#/careers' }
+];
+
+const PAGES = {
+  property: {
+    t:'Property Management', d:'We look after your property so you can focus on everything else.', cta:'Talk to our property team',
+    h:'What we handle', s:'One team for the day-to-day work of owning property.',
+    f:[['📋','Tenant management','Screening, agreements and move-in or move-out support.'],
+       ['💳','Rent collection','On-time rent tracking with clear monthly statements.'],
+       ['🛠️','Maintenance','Repairs and regular upkeep, coordinated by one point of contact.']]
+  },
+  growth: {
+    t:'Startup Growth', d:'Turn your idea into a business, or take your business to the next level.', cta:'Plan your growth with us',
+    h:'How we help you grow', s:'From first plan to first expansion.',
+    f:[['🧭','Business guidance','Sit down with our team to shape your plan and goals.'],
+       ['🏦','Funding support','Find the right loan or funding option for your stage.'],
+       ['🤝','Partner network','Get connected to vendors, advisors and service partners.']]
+  },
+  careers: {
+    t:'Career Job', d:'Help us build a modern financial experience with a passionate team.', cta:'Send us your profile',
+    st:[['14.79 Lakh+','registered customers'],['21 branches','across India and expanding'],['374+','workforce, and many more to join'],['₹0.74 Lakh Cr+','Assets Under Management']],
+    h:'Why work with us', s:'We take care of you while you take care of customers.',
+    f:[['🩺','Health comes first','Comprehensive medical insurance for you and your family.'],
+       ['🕒','Flexible working hours','Set a schedule that works best for you.'],
+       ['🌴','Time off','Leave policies designed for life\'s important moments.'],
+       ['🏆','Rewards','Recognition for your hard work and impact.'],
+       ['📚','Learn and grow','Learning opportunities that accelerate your career.']],
+    jobs:[['Branch Sales Executive','Branch Sales'],['Collections Officer','Collections'],['Field Sales Executive','Field Sales'],['Operations Executive','Operations']]
+  },
+  support: {
+    t:'Help & Support', d:'Quick answers and friendly support from our team.', cta:'Send us a message',
+    h:'Get in touch', s:'Mon–Sat, 10 AM – 7 PM.',
+    f:[['📞','Call us','<a href="tel:+919755766018">+91 9755 766 018</a>'],
+       ['✉️','Email','<a href="mailto:haustouch@hausnuo.com">haustouch@hausnuo.com</a>'],
+       ['⚖️','Grievance','<a href="mailto:haustouch@hausnuo.com">haustouch@hausnuo.com</a>']],
+    faq:[['Who can apply for a loan?','Salaried employees (private or government) and doctors with a valid ID, bank account and income proof. The Doctor Loan is only for registered medical professionals.'],
+         ['What documents do I need?','Aadhaar, PAN, bank statement and income proof (salary slips or ITR). Doctors also need their registration and degree certificates.'],
+         ['How fast is disbursal?','Funds are disbursed after approval and KYC. Timelines vary, and the Instant Loan is the fastest.'],
+         ['Can I repay early?','Yes. Any applicable charges will be shown in your loan offer.'],
+         ['How do I track my application?','Call or email us with your registered mobile number and we will share the status.']]
+  },
+  about: {
+    t:'About Us', d:'A digital-first company focused on clarity and care.', cta:'Contact our team',
+    x:['Nuog Housing Payments Limited brings property management, financial services, business growth and careers together in one place.','No confusing paperwork, no hidden fees, and a team that supports you from first enquiry to final repayment.'],
+    h:'What we stand for', s:'Simple, fast and transparent, every time.',
+    f:[['🎯','Our mission','Fair, fast credit and care for every professional.'],
+       ['🔍','Transparency','Fees shown before you accept.'],
+       ['🔐','Data protected','Strict security and privacy.']]
+  }
+};
+
+/* ===== Rendering ===== */
+const app = document.getElementById('app');
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+document.querySelectorAll('.finlink').forEach(a => a.href = FIN_URL);
+
+function home(){
+  return `
+  <section class="hero"><div class="w hg">
+    <div>
+      <h1>Build on solid ground.</h1>
+      <p class="lead">Nuog Housing Payments brings property management, financial services, business growth and careers together in one place. Pick where you want to start.</p>
+      <div class="acts"><a class="btn b1" href="${FIN_URL}" target="_blank" rel="noopener">Explore loans</a><a class="btn b3" href="#/careers">See open roles</a></div>
+      <div class="trust"><span>100% digital</span><span>Paperless e-KYC</span><span>No branch visits</span></div>
+    </div>
+    <div class="slider" id="sl" role="region" aria-roledescription="carousel" aria-label="Highlights">
+      <div class="track">${SLIDES.map((x,i) => `
+        <div class="slide ${x.c}" role="group" aria-label="${i+1} of ${SLIDES.length}">
+          <div class="big">${x.ic}</div>
+          <h2>${x.t}</h2><p>${x.d}</p>
+          <a class="btn sb" href="${x.h}" ${x.ext ? 'target="_blank" rel="noopener"' : ''}>${x.b}</a>
+        </div>`).join('')}
+      </div>
+      <button class="sn pv" aria-label="Previous slide">‹</button>
+      <button class="sn nx" aria-label="Next slide">›</button>
+      <div class="dots">${SLIDES.map((x,i) => `<button aria-label="Go to slide ${i+1}"></button>`).join('')}</div>
+    </div>
+  </div></section>
+  <div class="w tiles">${TILES.map(t => `
+    <a class="tile" href="${t.ext || '#/' + t.r}" ${t.ext ? 'target="_blank" rel="noopener"' : ''}>
+      ${t.ext ? '<span class="tag">Opens loan site</span>' : ''}
+      <div class="ti">${t.ic}</div><h3>${t.t}</h3><p>${t.d}</p>
+      <span class="go">${t.ext ? 'Open Financial ↗' : 'Open ' + t.t + ' →'}</span>
+    </a>`).join('')}
+  </div>`;
+}
+
+function inner(k){
+  const p = PAGES[k];
+  const stats = p.st ? `<div class="g4">${p.st.map(s => `<div class="card stat"><b>${s[0]}</b><span>${s[1]}</span></div>`).join('')}</div>` : '';
+  const text = p.x ? `<div class="txt">${p.x.map(t => `<p>${t}</p>`).join('')}</div>` : '';
+  const jobs = p.jobs ? `<h2 style="margin-top:56px" id="open-roles">Open positions</h2><div class="jobs">${p.jobs.map(j => `
+    <div class="job"><div><b>${esc(j[0])}</b><small>${esc(j[1])} · India</small></div>
+    <button class="btn b1" data-ask="Apply: ${esc(j[0])}">Apply now</button></div>`).join('')}</div>` : '';
+  const faq = p.faq ? `<h2 style="margin-top:56px">Common questions</h2>${p.faq.map(q => `<details><summary>${q[0]}</summary><p>${q[1]}</p></details>`).join('')}` : '';
+  return `
+  <div class="ph"><div class="w">
+    <a class="back" href="#/">← Back to home</a>
+    <h1 tabindex="-1">${p.t}</h1><p>${p.d}</p>
+    <button class="btn b2" data-ask="${esc(p.cta)}">${p.cta}</button>
+  </div></div>
+  <section class="sec"><div class="w">
+    ${stats}${text}
+    <h2 style="margin-top:${p.st || p.x ? 48 : 0}px">${p.h}</h2><p class="sub">${p.s}</p>
+    <div class="g3">${p.f.map(f => `<div class="card"><div class="ic">${f[0]}</div><h3>${f[1]}</h3><p>${f[2]}</p></div>`).join('')}</div>
+    ${jobs}${faq}
+  </div></section>
+  <div class="w"><div class="cta">
+    <div><h2>Ready to talk?</h2><p>Leave your number and we will call you back.</p></div>
+    <button class="btn b1" data-ask="${esc(p.cta)}">Get a call back</button>
+  </div></div>`;
+}
+
+const NAMES = { home:'Home', property:'Property Management', growth:'Startup Growth', careers:'Career Job', support:'Help & Support', about:'About Us' };
+const nv = document.getElementById('nv'), mb = document.getElementById('mb');
+function route(){
+  let h = (location.hash.replace(/^#\/?/, '') || 'home').split('/')[0];
+  if (!NAMES[h]) h = 'home';
+  app.innerHTML = h === 'home' ? home() : inner(h);
+  initSlider();
+  document.querySelectorAll('nav a[data-r]').forEach(a => a.classList.toggle('act', a.dataset.r === h));
+  document.title = (h === 'home' ? '' : NAMES[h] + ' — ') + 'Nuog Housing Payments Limited';
+  nv.classList.remove('open'); mb.setAttribute('aria-expanded','false');
+  scrollTo(0,0);
+}
+addEventListener('hashchange', route);
+mb.onclick = () => mb.setAttribute('aria-expanded', nv.classList.toggle('open'));
+
+/* ===== Enquiry dialog ===== */
+const dlg = document.getElementById('dlg'), $ = id => document.getElementById(id);
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-ask]');
+  if (!b) return;
+  $('dt').textContent = b.dataset.ask;
+  $('df').hidden = false; $('dk').hidden = true; $('de').textContent = '';
+  ['dn','dm','dg'].forEach(i => $(i).value = '');
+  dlg.showModal(); $('dn').focus();
+});
+$('dx').onclick = $('dc').onclick = () => dlg.close();
+$('ds').onclick = () => {
+  if (!$('dn').value.trim()) { $('de').textContent = 'Enter your full name.'; return; }
+  if (!/^[6-9]\d{9}$/.test($('dm').value.trim())) { $('de').textContent = 'Enter a valid 10-digit mobile number.'; return; }
+  /* Connect your backend or email service here to receive these details */
+  $('df').hidden = true; $('dk').hidden = false;
+};
+
+/* ===== Banner slider ===== */
+let slTimer;
+function initSlider(){
+  clearInterval(slTimer);
+  const sl = document.getElementById('sl'); if (!sl) return;
+  const tr = sl.querySelector('.track'), ds = sl.querySelectorAll('.dots button'), n = ds.length;
+  let i = 0, x0 = null;
+  const go = k => {
+    i = (k + n) % n;
+    tr.style.transform = 'translateX(-' + i * 100 + '%)';
+    ds.forEach((d,j) => d.classList.toggle('on', j === i));
+  };
+  const play = () => { clearInterval(slTimer); if (!matchMedia('(prefers-reduced-motion:reduce)').matches) slTimer = setInterval(() => go(i + 1), 4500); };
+  sl.querySelector('.pv').onclick = () => { go(i - 1); play(); };
+  sl.querySelector('.nx').onclick = () => { go(i + 1); play(); };
+  ds.forEach((d,j) => d.onclick = () => { go(j); play(); });
+  sl.onmouseenter = sl.onfocusin = () => clearInterval(slTimer);
+  sl.onmouseleave = sl.onfocusout = play;
+  sl.ontouchstart = e => x0 = e.touches[0].clientX;
+  sl.ontouchend = e => { if (x0 === null) return; const d = e.changedTouches[0].clientX - x0; if (Math.abs(d) > 40) { go(i + (d < 0 ? 1 : -1)); play(); } x0 = null; };
+  go(0); play();
+}
+
+route();
+</script>
+</body>
+</html>
