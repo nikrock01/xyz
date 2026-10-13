@@ -82,6 +82,20 @@ footer .fl{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}fo
 .dots button{width:10px;height:10px;border-radius:99px;border:1px solid rgba(11,26,16,.45);background:rgba(255,255,255,.55);cursor:pointer;padding:0;transition:width .25s,background .25s}.dots button.on{width:28px;background:#fff}
 
 /* careers */
+.flt{overflow:visible}
+.ms{position:relative}
+.ms-b{width:100%;text-align:left;padding:11px 13px;border:1px solid var(--line);border-radius:12px;font:inherit;font-size:14px;background:#fafbfc;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:8px;color:var(--ink)}
+.ms-b span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ms-b:after{content:"▾";flex:none;color:var(--mut)}
+.ms-b:disabled{opacity:.5;cursor:not-allowed}
+.ms-p{position:absolute;z-index:15;left:0;right:0;top:calc(100% + 4px);max-height:260px;overflow:auto;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px rgba(11,26,16,.18);padding:6px}
+.ms-p[hidden]{display:none}
+.ms-p label{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:8px;font-size:14px;cursor:pointer}
+.ms-p label:hover{background:#eef8ee}
+.ms-p label input{width:16px!important;height:16px;padding:0!important;margin:0;accent-color:var(--green);flex:none}
+.ms-s{position:sticky;top:0;width:100%;margin-bottom:6px;padding:9px 12px;border:1px solid var(--line);border-radius:10px;font:inherit;font-size:14px;background:#fff}
+.ms-n{padding:10px;font-size:13px;color:var(--mut)}
+.ms-e{padding:10px;font-size:13px;color:var(--mut)}
 .flt{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:22px;margin-top:20px}
 .flt input,.flt select,.fm input,.fm select,.fm textarea{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:12px;font:inherit;font-size:14px;background:#fafbfc}
 .fr{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:12px}
@@ -185,13 +199,22 @@ const SLIDES=[
 
 /* ===== Jobs (yahan naye jobs add/edit karein) ===== */
 const JOBS=[
-{id:'re-patna',dept:'FIELD-SALES',title:'Relationship Executive',state:'BIHAR',city:'Patna',type:'Full Time',n:10,
- skills:'Communication, Empathy, Sales & Negotiation, CRM, Interpersonal Management',
- about:'Acquire and manage customer relationships, drive financial acquisition and achieve assigned monthly business targets.',
- do:['Build and manage a portfolio of retail customers for secured and unsecured loan products','Drive financial acquisition and achieve monthly business targets','Maintain strong relationships with customers and be the first point of contact for queries','Ensure compliance with regulatory guidelines and operational standards','Prepare reports and MIS on portfolio, customer engagement and target achievement'],
- need:['Bachelor\'s degree in any discipline','2-5 years of experience in retail banking, finance or sales','Strong communication and customer engagement skills','Good communication in Hindi and English','Basic knowledge of Excel']},
 {id:'bse-hyd',dept:'BRANCH SALES',title:'Branch Sales Executive',state:'TELANGANA',city:'Hyderabad',type:'Full Time',n:5,skills:'Sales, Communication',about:'Drive branch sales and serve walk-in customers.',do:['Convert leads into loan applications','Support branch customers'],need:['Graduate in any stream','Good communication']},
 {id:'col-blr',dept:'COLLECTIONS',title:'Collections Officer',state:'KARNATAKA',city:'Bengaluru',type:'Full Time',n:4,skills:'Collections, Negotiation',about:'Manage collections and customer follow-ups.',do:['Follow up on due accounts','Maintain collection records'],need:['Graduate in any stream','Field collection experience preferred']},
+{id:'re-patna',dept:'FIELD-SALES',title:'Relationship Executive',state:'BIHAR',city:'Patna',type:'Full Time',n:10,
+ skills:'PERSONAL & A DESIRE TO – ESSENTIAL HARD & SOFT BUSINESS SKILLS Communication ! Empathy ! Emotional Intelligence ! Problem-Solving ! Sales & Negotiation ! CRM Proficiency ! Product Knowledge ! Interpersonal Management',
+ about:'As a HAUS-PAY Offer – Liability, You will be Responsible for Acquiring and Managing Customer Relationships, Driving Financial Growth, and Ensuring High-quality Service Delivery. You will Work Closely with Branch Teams, Customers, and Internal Stakeholders to Meet Business Targets and Enhance Customer Satisfaction.',
+ do:['Build and Manage a Portfolio of Retail Customers for Secured & Un-Secured Loans Products','Drive Financial Acquisition and Achieve Assigned Monthly Growth Business Achievement.','Provide Personalized Financial Solutions Based on Customer Needs','Maintain Strong Relationships with Customers and Act as the First Point of Contact for Queries','Collaborate with Nearest Branch and Product Teams to Ensure Smooth Onboarding and Service'],
+ 
+ need:['Bachelor’s Degree in any Discipline; Relevant Certifications in Banking/Finance are a Plus','2–5 Years of Experience in Retail Banking and Financial, Liability Sales, or Relationship'],
+ delivery:['Ensure Compliance with Regulatory Guidelines, Internal Policies, and Operational Standards','Prepare Reports and MIS on Portfolio Growth, Customer Engagement, and Target Achievement'],
+ management:['Strong Interpersonal, Communication, and Customer Engagement Skills','Knowledge of Deposit Products, Financial Operations, and Regulatory Guidelines','Target-Oriented Mindset with Ability to Drive Results Independently','Ability to Multitask, Solve Problems, and Work in a Fast-Paced Environment','Proficiency in MS Office and Financial Systems'],
+ additional_responsibility:['Good Communication in Hindi, English Purely sales guy in finance sector','Understand the entire Loan process journey Field Visit Mandatory','Good Negotiation skills Basic knowledge of Excel','Primary & Key Responsibility is to Negotiate the Terms & Conditions of the Loan Details Shared with the Customers (ROI, Charges etc)','Outbound Calling of About 200 -250 Calls Per Day to the Interested Customers','To Ensure Conversion of the Loan Applications at the Highest Rates Possible.','Ensure Loans are Processed as Per Established Company Procedures and Policies','Process, Close, Present, Service and Record Loan Related Notes and Disbursements etc.','Explaining Product Benefits to Customer and Informed Him in Detail All Benefits and Convince for Loan Processing.'],
+ life_hous:['Competitive Salaries. Period.','An Extensive Medical Insurance that Looks Out for Our Employees & Their Dependents. We’ll Love You and Take Care of You, Our Promise.','Flexible Working Hours. Just Don’t Call Us at 03:00 AM, We Like Our Sleep Schedule.','Tailored Vacation & Leave Policies So that You Enjoy Every Important Moment in Your Life.','A Reward System that Celebrates Hard Work and Milestones Throughout the Year. Expect a Gift Coming Your Way Anytime You Kill it Here.','Learning and Upskilling Opportunities. Seriously, Not Kidding.','Good Food, Games, and a Cool Office to Make You Feel Like Home. An Environment So Good, You’ll Forget the Term “Colleagues Can’t be Your Friends”','We Believe in Equality. Period.'],
+ additional_about:'At HAUS-PAY, We are Committed to Building a Diverse and Talented Workforce. We Never Discriminate on the Basis of Race, Sex, Religion, Colour, National Origin, Gender, Gender Identity, Sexual Orientation, Age, Marital Status, Veteran Status, Medical Condition, Disability, or Any Other Class or Characteristic Protected by the Applicable law.<br> We Consider All Qualified Job-Seekers with Criminal Histories in a Manner Consistent with the Applicable Law. Additionally, We are Committed to Providing Reasonable Accommodations to Qualified Individuals with Physical or Mental Disabilities in Order to Participate in the Job Application or Interview Process, Perform Essential Job Functions, and Receive other Benefits and Privileges of Employment.<br>Come Join Our Crew! About HAUS-PAY: https://hausnuo.com/<br>HAUS-PAY - A New Financial for a New India<br>HAUS-PAY’s Purpose is to Make the World Better at Using Money and Time, with a Major Focus on Building the Best Consumer Experience for Your Money. We’ve All Felt How Slow, Confusing, and Complicated Financial Services Can be. So, We’re Reimagining it. We’re Building Every Product from Scratch to be Fast, Transparent, and Feel Good, Because We Believe that the Best Products Transcend Demographics, Like How Great Music Touches Most of Us.<br>Our Cornerstone Products and Services: HAUS-PAY Loans and Grow Your Business are Designed to be Simple, Rewarding, and Completely in Your Control. At HAUS-PAY, You’ll get to Build things You’d Use Yourself and Shape the Future of Financial Services in India. We Tailor Our Working Experience with the Belief that the Present Moment is the Only Real thing in Life. And We have Harmony in the Present the Most when We feel Happy and Successful Together.<br>We’re Backed by Some of the World’s Leading Investors, Including Tiger Global and Insight Partners.'
+},
+{id:'off-work',dept:'OFFICIALS WORK ',title:'Operations Executive',state:'TELANGANA',city:'Hyderabad',type:'Full Time',n:3,skills:'Excel, Documentation',about:'Process and verify loan applications and documents.',do:['Verify documents','Coordinate disbursals'],need:['Graduate in any stream','Basic Excel']},
+
 {id:'ops-hyd',dept:'OPERATIONS',title:'Operations Executive',state:'TELANGANA',city:'Hyderabad',type:'Full Time',n:3,skills:'Excel, Documentation',about:'Process and verify loan applications and documents.',do:['Verify documents','Coordinate disbursals'],need:['Graduate in any stream','Basic Excel']}];
 
 const PAGES={
@@ -239,7 +262,7 @@ const stats=p.st?`<div class="g4">${p.st.map(s=>`<div class="card stat"><b>${s[0
 const text=p.x?`<div class="txt">${p.x.map(t=>`<p>${t}</p>`).join('')}</div>`:'';
 const jobs=p.jobs?`<h2 style="margin-top:56px" id="open-roles">Explore Career Opportunities</h2><h3 style="font-size:22px;color:var(--green);margin-top:10px">Find Your Dream Job at HAUS NUO-Pay</h3><p class="sub" style="margin-bottom:6px">Select your preferred department, designation, state, and district to find the perfect opening for you.</p>
 <div class="flt"><h3 style="font-size:18px">Filter Positions <small style="font-weight:500;color:var(--mut);font-size:13px">(Complete all 4 steps to view jobs)</small></h3>
-<div class="fr"><select id="f-dept"></select><select id="f-title"></select><select id="f-state"></select><select id="f-city"></select></div>
+<div class="fr"><div class="ms" id="f-dept"></div><div class="ms" id="f-title"></div><div class="ms" id="f-state"></div><div class="ms" id="f-city"></div></div>
 <div style="text-align:center;margin-top:14px"><button class="btn b3" id="frs" type="button" style="padding:9px 20px">↺ Reset filters</button></div><input id="fq" placeholder="Search within filtered opportunities..." aria-label="Search jobs" hidden style="margin-top:12px"></div>
 <div class="cnt" id="jcnt"></div><div class="jg" id="jg"></div>`:'';
 const faq=p.faq?`<h2 style="margin-top:56px">Common questions</h2>${p.faq.map(q=>`<details><summary>${q[0]}</summary><p>${q[1]}</p></details>`).join('')}`:'';
@@ -253,41 +276,104 @@ return `<div class="ph"><div class="w"><a class="back" href="#/">← Back to hom
 
 /* ===== Careers: filters ===== */
 const CITIES=Object.fromEntries(Object.entries({'Andaman and Nicobar Islands':'Port Blair','Andhra Pradesh':'Visakhapatnam,Vijayawada,Guntur,Tirupati,Nellore','Arunachal Pradesh':'Itanagar,Naharlagun','Assam':'Guwahati,Silchar,Dibrugarh,Jorhat','Bihar':'Patna,Gaya,Muzaffarpur,Bhagalpur,Darbhanga,Purnia','Chandigarh':'Chandigarh','Chhattisgarh':'Raipur,Bhilai,Bilaspur,Korba','Dadra and Nagar Haveli and Daman and Diu':'Daman,Silvassa,Diu','Delhi':'New Delhi,Dwarka,Rohini,Saket','Goa':'Panaji,Margao,Vasco da Gama','Gujarat':'Ahmedabad,Surat,Vadodara,Rajkot,Gandhinagar','Haryana':'Gurugram,Faridabad,Panipat,Ambala,Karnal','Himachal Pradesh':'Shimla,Dharamshala,Solan,Mandi','Jammu and Kashmir':'Srinagar,Jammu,Anantnag','Jharkhand':'Ranchi,Jamshedpur,Dhanbad,Bokaro','Karnataka':'Bengaluru,Mysuru,Mangaluru,Hubballi,Belagavi','Kerala':'Thiruvananthapuram,Kochi,Kozhikode,Thrissur','Ladakh':'Leh,Kargil','Lakshadweep':'Kavaratti','Madhya Pradesh':'Bhopal,Indore,Gwalior,Jabalpur,Ujjain','Maharashtra':'Mumbai,Pune,Nagpur,Nashik,Thane,Aurangabad','Manipur':'Imphal,Thoubal','Meghalaya':'Shillong,Tura','Mizoram':'Aizawl,Lunglei','Nagaland':'Kohima,Dimapur','Odisha':'Bhubaneswar,Cuttack,Rourkela,Puri','Puducherry':'Puducherry,Karaikal','Punjab':'Ludhiana,Amritsar,Jalandhar,Patiala,Mohali','Rajasthan':'Jaipur,Jodhpur,Udaipur,Kota,Ajmer','Sikkim':'Gangtok,Namchi','Tamil Nadu':'Chennai,Coimbatore,Madurai,Tiruchirappalli,Salem','Telangana':'Hyderabad,Warangal,Karimnagar,Nizamabad,Khammam','Tripura':'Agartala,Udaipur','Uttar Pradesh':'Lucknow,Kanpur,Varanasi,Agra,Noida,Prayagraj,Ghaziabad','Uttarakhand':'Dehradun,Haridwar,Haldwani,Roorkee','West Bengal':'Kolkata,Howrah,Durgapur,Siliguri,Asansol'}).map(([k,v])=>[k,v.split(',')]));
+// function careersInit(){
+// const dept=$('f-dept'),title=$('f-title'),state=$('f-state'),city=$('f-city'),all=[dept,title,state,city];
+// const uniq=a=>[...new Set(a)];
+// const opt=(a,ph)=>`<option value="">${ph}</option>`+a.map(v=>`<option>${esc(v)}</option>`).join('');
+// dept.innerHTML=opt(uniq(JOBS.map(j=>j.dept)),'1. Select Department');
+// state.innerHTML=opt(Object.keys(CITIES),'3. Select State');
+// function cascade(i){
+// if(i<=0)title.innerHTML=opt(uniq(JOBS.filter(j=>j.dept===dept.value).map(j=>j.title)),'2. Select Position');
+// if(i<=1)state.value='';
+// if(i<=2)city.innerHTML=opt(CITIES[state.value]||[],'4. Select City');
+// all.forEach((s,k)=>s.disabled=k>0&&!all[k-1].value);list()}
+// function list(){const done=all.every(s=>s.value);$('fq').hidden=!done;
+// if(!done){$('jcnt').innerHTML='Filter Positions: complete all 4 steps ('+all.filter(s=>s.value).length+'/4 done) to view jobs';$('jg').innerHTML='';return}
+// const q=$('fq').value.toLowerCase();
+// const r=JOBS.filter(j=>j.dept===dept.value&&j.title===title.value&&j.state.toLowerCase()===state.value.toLowerCase()&&j.city.toLowerCase()===city.value.toLowerCase()&&(!q||(j.title+j.dept+j.city+j.state).toLowerCase().includes(q)));
+// $('jcnt').innerHTML=`Filtered Opportunities: <b>${r.length}</b> position${r.length==1?'':'s'} found`;
+// $('jg').innerHTML=r.map(j=>`<div class="jc"><div><span class="pill">${esc(j.dept)}</span><span class="pill g">${j.n} OPENINGS</span></div>
+// <h3 style="font-size:20px;margin-top:6px">${esc(j.title)}</h3><small>📍 ${esc(j.city)}, ${esc(j.state)}</small><small>🕒 ${esc(j.type)}</small>
+// <a class="btn b1" href="#/careers/job/${j.id}">Apply Now →</a></div>`).join('')||'<p>No openings for this location right now. Try another city or position.</p>'}
+// all.forEach((s,k)=>s.onchange=()=>cascade(k));$('fq').oninput=list;
+// $('frs').onclick=()=>{$('fq').value='';all.forEach(s=>s.value='');cascade(0)};
+// cascade(0);
+// }
+let msOutside=null;
 function careersInit(){
-const dept=$('f-dept'),title=$('f-title'),state=$('f-state'),city=$('f-city'),all=[dept,title,state,city];
+const PH=['1. Select Department','2. Select Position','3. Select State','4. Select City'];
+const els=['f-dept','f-title','f-state','f-city'].map($);
+const sel=[new Set(),new Set(),new Set(),new Set()];
+let opts=[[],[],[],[]];
 const uniq=a=>[...new Set(a)];
-const opt=(a,ph)=>`<option value="">${ph}</option>`+a.map(v=>`<option>${esc(v)}</option>`).join('');
-dept.innerHTML=opt(uniq(JOBS.map(j=>j.dept)),'1. Select Department');
-state.innerHTML=opt(Object.keys(CITIES),'3. Select State');
-function cascade(i){
-if(i<=0)title.innerHTML=opt(uniq(JOBS.filter(j=>j.dept===dept.value).map(j=>j.title)),'2. Select Position');
-if(i<=1)state.value='';
-if(i<=2)city.innerHTML=opt(CITIES[state.value]||[],'4. Select City');
-all.forEach((s,k)=>s.disabled=k>0&&!all[k-1].value);list()}
-function list(){const done=all.every(s=>s.value);$('fq').hidden=!done;
-if(!done){$('jcnt').innerHTML='Filter Positions: complete all 4 steps ('+all.filter(s=>s.value).length+'/4 done) to view jobs';$('jg').innerHTML='';return}
-const q=$('fq').value.toLowerCase();
-const r=JOBS.filter(j=>j.dept===dept.value&&j.title===title.value&&j.state.toLowerCase()===state.value.toLowerCase()&&j.city.toLowerCase()===city.value.toLowerCase()&&(!q||(j.title+j.dept+j.city+j.state).toLowerCase().includes(q)));
-$('jcnt').innerHTML=`Filtered Opportunities: <b>${r.length}</b> position${r.length==1?'':'s'} found`;
-$('jg').innerHTML=r.map(j=>`<div class="jc"><div><span class="pill">${esc(j.dept)}</span><span class="pill g">${j.n} OPENINGS</span></div>
-<h3 style="font-size:20px;margin-top:6px">${esc(j.title)}</h3><small>📍 ${esc(j.city)}, ${esc(j.state)}</small><small>🕒 ${esc(j.type)}</small>
-<a class="btn b1" href="#/careers/job/${j.id}">Apply Now →</a></div>`).join('')||'<p>No openings for this location right now. Try another city or position.</p>'}
-all.forEach((s,k)=>s.onchange=()=>cascade(k));$('fq').oninput=list;
-$('frs').onclick=()=>{$('fq').value='';all.forEach(s=>s.value='');cascade(0)};
-cascade(0);
+const low=s=>[...s].map(v=>v.toLowerCase());
+const closeAll=()=>els.forEach(x=>{const p=x.querySelector('.ms-p');if(p)p.hidden=true});
+
+function applyFilter(k){
+ const p=els[k].querySelector('.ms-p'),q=p.querySelector('.ms-s').value.trim().toLowerCase();
+ let shown=0;
+ p.querySelectorAll('.ms-l label').forEach(l=>{const ok=!q||l.textContent.toLowerCase().includes(q);l.style.display=ok?'':'none';if(ok)shown++});
+ p.querySelector('.ms-n').hidden=!(opts[k].length&&!shown);
 }
 
+els.forEach((el,k)=>{
+ el.innerHTML='<button type="button" class="ms-b"><span></span></button><div class="ms-p" hidden><input class="ms-s" type="search" placeholder="Search..." aria-label="Search options" autocomplete="off"><div class="ms-l"></div><div class="ms-n" hidden>No match found</div></div>';
+ const b=el.querySelector('.ms-b'),p=el.querySelector('.ms-p'),s=el.querySelector('.ms-s');
+ b.onclick=e=>{e.stopPropagation();const open=p.hidden;closeAll();p.hidden=!open;if(open){s.value='';applyFilter(k);s.focus()}};
+ p.onclick=e=>e.stopPropagation();
+ s.oninput=()=>applyFilter(k);
+ p.onchange=e=>{if(e.target.type!=='checkbox')return;const v=e.target.value;e.target.checked?sel[k].add(v):sel[k].delete(v);refresh();list()};
+});
+if(msOutside)document.removeEventListener('click',msOutside);
+msOutside=closeAll;
+document.addEventListener('click',msOutside);
+
+function refresh(){
+ opts[0]=uniq(JOBS.map(j=>j.dept));
+ opts[1]=uniq(JOBS.filter(j=>sel[0].has(j.dept)).map(j=>j.title));
+ opts[2]=Object.keys(CITIES);
+ opts[3]=uniq([...sel[2]].flatMap(s=>CITIES[s]||[]));
+ for(let k=0;k<4;k++){
+  if(k>0&&!sel[k-1].size)sel[k].clear();
+  [...sel[k]].forEach(v=>{if(!opts[k].includes(v))sel[k].delete(v)});
+  const b=els[k].querySelector('.ms-b'),l=els[k].querySelector('.ms-l');
+  b.querySelector('span').textContent=sel[k].size?(sel[k].size===1?[...sel[k]][0]:sel[k].size+' selected'):PH[k];
+  b.disabled=k>0&&!sel[k-1].size;
+  l.innerHTML=opts[k].length?opts[k].map(v=>`<label><input type="checkbox" value="${esc(v)}" ${sel[k].has(v)?'checked':''}>${esc(v)}</label>`).join(''):'<div class="ms-e">Select previous step first</div>';
+  applyFilter(k);
+ }
+}
+function list(){
+ const done=sel.every(s=>s.size);$('fq').hidden=!done;
+ if(!done){$('jcnt').innerHTML='Filter Positions: complete all 4 steps ('+sel.filter(s=>s.size).length+'/4 done) to view jobs';$('jg').innerHTML='';return}
+ const q=$('fq').value.toLowerCase(),st=low(sel[2]),ct=low(sel[3]);
+ const r=JOBS.filter(j=>sel[0].has(j.dept)&&sel[1].has(j.title)&&st.includes(j.state.toLowerCase())&&ct.includes(j.city.toLowerCase())&&(!q||(j.title+j.dept+j.city+j.state).toLowerCase().includes(q)));
+ $('jcnt').innerHTML=`Filtered Opportunities: <b>${r.length}</b> position${r.length==1?'':'s'} found`;
+ $('jg').innerHTML=r.map(j=>`<div class="jc"><div><span class="pill">${esc(j.dept)}</span><span class="pill g">${j.n} OPENINGS</span></div>
+<h3 style="font-size:20px;margin-top:6px">${esc(j.title)}</h3><small>📍 ${esc(j.city)}, ${esc(j.state)}</small><small>🕒 ${esc(j.type)}</small>
+<a class="btn b1" href="#/careers/job/${j.id}">Apply Now →</a></div>`).join('')||'<p>No openings for this location right now. Try other cities or positions.</p>'}
+$('fq').oninput=list;
+$('frs').onclick=()=>{$('fq').value='';sel.forEach(s=>s.clear());refresh();list()};
+refresh();list();
+}
 /* ===== Job details ===== */
 function jobPage(id){
 const j=JOBS.find(x=>x.id===id);if(!j){location.hash='#/careers';return ''}
+const list=(t,a)=>a&&a.length?`<h4>${t}</h4><ul>${a.map(x=>`<li>${x}</li>`).join('')}</ul>`:'';
+const para=(t,s)=>s?`<h4>${t}</h4><p style="color:var(--mut)">${s}</p>`:'';
 return `<div class="w"><div style="padding-top:24px"><a href="#/careers" style="color:var(--green);font-weight:600">← Back to all positions</a></div>
-<div class="jd"><h1 style="font-size:34px">${esc(j.title)}</h1>
-<p style="color:var(--mut);margin-top:6px"><span class="pill">${esc(j.dept)}</span> &nbsp;${esc(j.type)} · 📍 ${esc(j.city)}, ${esc(j.state)} · ${j.n} openings</p>
-<h4>Required Knowledge &amp; Skills</h4><p style="color:var(--mut)">${esc(j.skills)}</p>
-<h4>About the Role</h4><p style="color:var(--mut)">${esc(j.about)}</p>
-<h4>What you will do</h4><ul>${j.do.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
-<h4>What you need</h4><ul>${j.need.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>
-<div style="text-align:center;margin-top:28px"><a class="btn b1" href="#/careers/apply/${j.id}">Apply for this position →</a></div></div></div>`}
+<div class="jd"><h1 style="font-size:34px">${j.title}</h1>
+<p style="color:var(--mut);margin-top:6px"><span class="pill">${j.dept}</span> &nbsp;${j.type} · 📍 ${j.city}, ${j.state} · ${j.n} openings</p>
+${para('Required Knowledge &amp; Skills',j.skills)}
+${para('About the Role',j.about)}
+${list('What you will do',j.do)}
+${list('Delivery',j.delivery)}
+${list('What you need',j.need)}
+${list('Management',j.management)}
+${list('Additional Role Responsibilities',j.additional_responsibility)}
+${j.life_hous&&j.life_hous.length?`<h4>Life at HAUS-PAY:</h4><h5 style="margin:6px 0 8px;font-size:15px">Life So Good, you’d think We’re Kidding:</h5><ul>${j.life_hous.map(x=>`<li>${x}</li>`).join('')}</ul>`:''}
+${j.additional_about?`<p style="color:var(--mut);margin-top:18px">${j.additional_about}</p>`:''}
+<div style="text-align:center;margin-top:28px"><a class="btn b1" href="#/careers/apply/${esc(j.id)}">Apply for this position →</a></div></div></div>`}
 
 /* ===== Application form ===== */
 const I=(l,n,o={})=>`<label>${l}${o.r?' <span>*</span>':''}<input name="${n}" ${o.r?'required':''} ${o.t?`type="${o.t}"`:''} ${o.p?`placeholder="${o.p}"`:''} ${o.m?`maxlength="${o.m}"`:''} ${o.i?`inputmode="${o.i}"`:''}></label>`;
