@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Nuog Housing Payments Limited</title>
+<title></title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -67,8 +67,65 @@ dialog label{display:block;font-size:13px;font-weight:600;margin:14px 0 6px;colo
 dialog input,dialog textarea{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;font:inherit;background:var(--bg)}
 dialog .err{color:#b3261e;font-size:13px;min-height:18px;margin-top:8px}dialog .row{display:flex;gap:10px;margin-top:14px}dialog .row .btn{flex:1}
 .ok{text-align:center;padding:20px 0;font-weight:700;color:var(--green)}
-footer{background:var(--deep);color:#9db5a4;padding:40px 0 28px;font-size:14px;border-top:3px solid var(--bright)}
-footer .fl{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}footer .fl>div{max-width:340px}footer a:hover{color:#fff}footer small{display:block;margin-top:20px;opacity:.7;font-size:12px}
+
+/* ===== NEW FOOTER ===== */
+footer.nf{background:#fcfbf9;color:#1b2a3a;padding:0;border-top:0;font-size:14px}
+footer.nf a{color:inherit}
+footer.nf a:hover{color:#0a8fd0}
+.nf .nw{max-width:1700px;margin:auto;padding:0 40px}
+.nf .top{display:grid;grid-template-columns:1.1fr 1.2fr 1.1fr;gap:0;padding:56px 0 48px}
+.nf .top>div{padding:0 40px;min-width:0}
+.nf .top>div:first-child{padding-left:0}
+.nf .top>div+div{border-left:1px solid #e6e8ea}
+.nf .top>div:last-child{border-left:0;padding-right:0}
+.nf .logo{height:64px;width:auto;display:block;margin-bottom:22px}
+.nf .tag{color:#4a5a6a;font-size:15px;line-height:1.6;max-width:480px}
+.nf .soc{display:flex;gap:12px;margin:28px 0 34px}
+.nf .soc a,.nf .apps a{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:#fff;border:1px solid #dfe6ee;color:#1b2a3a;transition:transform .15s,border-color .2s}
+.nf .soc a:hover,.nf .apps a:hover{transform:translateY(-2px);border-color:#0a8fd0}
+.nf .soc svg{width:17px;height:17px;fill:currentColor}
+.nf h4{font-family:'Archivo',system-ui,sans-serif;font-size:19px;font-weight:700;margin:0 0 22px;color:#0b1a2a}
+.nf h5{font-family:'Public Sans',sans-serif;font-size:15px;font-weight:600;margin:0 0 16px;color:#0b1a2a}
+.nf .apps{display:flex;gap:12px}
+.nf .apps a{width:38px;height:38px;border-radius:10px;background:#dff2fd;border-color:#cbe8fa}
+.nf .apps svg{width:20px;height:20px}
+.nf ul{list-style:none;padding:0;margin:0}
+.nf .ql li{margin-bottom:17px;font-size:15px;color:#2b3a4a}
+.nf .ql li:last-child{margin-bottom:0}
+.nf .ct{display:flex;gap:12px;align-items:center;margin-bottom:18px;font-size:15px;color:#2b3a4a}
+.nf .ct.top2{align-items:flex-start;margin-bottom:12px}
+.nf .ci{flex:none;width:40px;height:40px;border-radius:50%;background:#79cdfa;display:grid;place-items:center}
+.nf .ci svg{width:19px;height:19px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.nf .ct small{display:block;font-size:12px;font-weight:700;letter-spacing:.02em;color:#0a8fd0;text-transform:uppercase;margin-bottom:2px}
+.nf .ct p{margin:0;line-height:1.55}
+.nf .mid{border-top:1px solid #e6e8ea;border-bottom:1px solid #e6e8ea;padding:22px 0;font-size:12.5px;line-height:1.75;color:#3a4a5a}
+.nf .mid .bl{color:#0a8fd0;font-weight:700}
+.nf .mid b{color:#0b1a2a}
+.nf .mid a{color:#0a8fd0}
+.nf .cin{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:22px 0;font-size:12.5px}
+.nf .cin .l{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.nf .cin .l b{color:#0b1a2a;text-transform:uppercase}
+.nf .cin .l i{width:2px;height:15px;background:#e0a030;display:block}
+.nf .cin .l em{font-style:normal;color:#3a4a5a}.nf .cin .l em span{color:#0a8fd0;font-weight:700}
+.nf .cin .r{color:#5a6a7a;display:flex;align-items:center;gap:5px}
+.nf .cin .r a{color:#0a8fd0;font-weight:700}
+.nf .cin .r svg{width:14px;height:14px;fill:#e5234b}
+.nf .copy{background:#eef5fc}
+.nf .copy .nw{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding-top:18px;padding-bottom:18px;font-size:15px;color:#1b2a3a}
+.nf .copy .lk{display:flex;align-items:center;gap:0}
+.nf .copy .lk a{padding:0 15px;font-weight:500}
+.nf .copy .lk a+a{border-left:2px solid #e0a030}
+.nf .copy .lk a:last-child{padding-right:0}
+@media(max-width:1020px){
+ .nf .nw{padding:0 20px}
+ .nf .top{grid-template-columns:1fr;padding:40px 0 30px}
+ .nf .top>div{padding:0 0 30px!important;border-left:0!important}
+ .nf .top>div+div{border-top:1px solid #e6e8ea;padding-top:30px!important}
+ .nf .cin,.nf .copy .nw{flex-direction:column;align-items:flex-start}
+ .nf .copy .lk a:first-child{padding-left:0}
+}
+/* ===== /NEW FOOTER ===== */
+
 .slider{position:relative;border-radius:30px;overflow:hidden;border:3px solid transparent;background:linear-gradient(var(--deep),var(--deep)) padding-box,var(--metal) border-box;box-shadow:0 30px 80px rgba(20,224,0,.28)}
 .track{display:flex;transition:transform .6s cubic-bezier(.65,0,.35,1)}
 .slide{flex:0 0 100%;min-height:320px;padding:38px 36px 64px;position:relative;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:12px;color:var(--ink)}
@@ -149,6 +206,91 @@ footer .fl{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}fo
 @media(max-width:860px){.fg{grid-template-columns:minmax(0,1fr)}.sp{grid-column:auto}.fm{margin:18px auto 40px;gap:14px}.fs{padding:16px;border-radius:18px}.rec{padding:12px}.jd{padding:20px;margin:18px auto}.fm input,.fm select,.fm textarea,.flt input,.flt select{font-size:16px}.mode{grid-template-columns:minmax(0,1fr)}#asb{position:sticky;bottom:12px;z-index:5}}
 @media(max-width:520px){.fr,.mode{grid-template-columns:1fr}.w{padding:0 14px}h1{font-size:34px}.rec h4{font-size:13px}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+/* ===== Legal pages (Terms style) ===== */
+.lh{background:#fafaf9;padding:56px 0 0}
+.lh .w,.lw .w{max-width:1700px;padding:0 40px}
+.lh .pillx{display:inline-flex;align-items:center;gap:8px;background:#dff2fd;color:#0a6fa8;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:8px 16px;border-radius:99px}
+.lh .pillx svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.lh h1{font-size:clamp(34px,4vw,52px);color:#0b1a2a;margin:18px 0 10px}
+.lh p{color:#5a6a7a;font-size:17px}
+.lh hr{border:0;border-top:1px solid #e6e8ea;margin:34px 0 0}
+.lw{background:#fafaf9;padding:40px 0 70px}
+.lgrid{display:grid;grid-template-columns:minmax(280px,.8fr) 2.2fr;gap:40px;align-items:start}
+.lgrid.one{grid-template-columns:minmax(0,1000px)}
+.lgrid>*{min-width:0}
+
+/* left quick navigation */
+.lnav{position:sticky;top:92px;background:#fff;border:1px solid #e6e8ea;border-radius:22px;padding:26px 10px 22px 24px}
+.lnav h4{font-family:'Archivo',sans-serif;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#0b1a2a;margin:0 0 18px}
+.lnav ol{list-style:none;margin:0;padding:0 14px 0 0;max-height:calc(100vh - 230px);overflow:auto;display:grid;gap:2px}
+.lnav ol::-webkit-scrollbar{width:8px}
+.lnav ol::-webkit-scrollbar-thumb{background:#9a9a9a;border-radius:99px}
+.lnav button{display:flex;gap:12px;align-items:center;width:100%;text-align:left;border:0;background:none;padding:9px 12px;border-radius:10px;font:inherit;font-size:13.5px;font-weight:500;color:#2b3a4a;cursor:pointer;transition:background .2s,color .2s}
+.lnav button b{flex:none;color:#0a8fd0;font-weight:700;font-size:13px}
+.lnav button:hover{background:#eef8fd}
+.lnav button.on{background:#dff2fd;color:#0b1a2a}
+
+/* right content card */
+.lg{background:#fff;border:1px solid #e6e8ea;border-radius:26px;padding:44px 48px;color:#1b2a3a}
+.lg .intro{font-size:15.5px;line-height:1.55;color:#0b1a2a;margin:0;background:none;border:0;padding:0;letter-spacing:0}
+.lg .intro.b1x{font-weight:700}
+.lg .alert{margin:24px 0 8px;background:#fdecec;border:1px solid #f5c6c6;border-radius:12px;padding:16px 18px;color:#d4141c;font-weight:700;font-size:15.5px;line-height:1.55}
+.lg h2{font-family:'Archivo',sans-serif;font-size:26px;text-transform:uppercase;color:#0b1a2a;border-left:4px solid #0a8fd0;padding-left:16px;margin:46px 0 18px;scroll-margin-top:96px}
+.lg p,.lg li{color:#1b2a3a;font-size:15.5px;line-height:1.6}
+.lg p+p{margin-top:12px}
+.lg ul,.lg ol{padding-left:26px;margin-top:10px;display:grid;gap:6px}
+.lg a{color:#0a8fd0;font-weight:700}
+.lg b{color:#0b1a2a}
+
+@media(max-width:1020px){
+ .lh .w,.lw .w{padding:0 20px}
+ .lgrid{grid-template-columns:minmax(0,1fr)}
+ .lnav{position:static}
+ .lnav ol{max-height:240px}
+ .lg{padding:24px 20px}
+ .lg h2{font-size:21px}
+}
+
+
+.lg h3{font-family:'Archivo',sans-serif;font-size:18px;color:#0b1a2a;margin:26px 0 8px}
+.lg ol{list-style:decimal}
+.lg ul{list-style:disc}
+.lg .pre p{margin-top:0}.lg .pre p+p,.lg .pre p+ol{margin-top:14px}
+
+.lgrid.one{grid-template-columns:minmax(0,1fr)}
+.lg.plain h2{text-transform:none;font-size:21px;margin:34px 0 14px}
+.lg.plain p{margin:0}
+.lg.plain p+p{margin-top:0}
+.lg.plain .pre{margin-bottom:6px}
+.lg .notice{display:flex;gap:16px;align-items:flex-start;background:#fef0f0;border:1px solid #f8d3d3;border-radius:12px;padding:22px 24px;margin-bottom:30px}
+.lg .notice svg{flex:none;width:24px;height:24px;stroke:#d4141c;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.lg .notice strong{display:block;font-family:'Archivo',sans-serif;font-size:19px;font-weight:700;color:#9b1c1c;margin-bottom:6px}
+.lg .notice span{display:block;font-size:14px;color:#c0171f;line-height:1.5}
+
+/* Terminated vendors (centered header + table) */
+.lh.ctr{text-align:center;padding:64px 0 10px;background:#fcfcfc}
+.lh.ctr .pillx{display:none}
+.lh.ctr h1{font-size:clamp(34px,4.4vw,56px);margin:0 0 14px}
+.lh.ctr p{font-size:18px}
+.lh.ctr hr{display:none}
+.lw.tbl{background:#fcfcfc;padding:34px 0 80px}
+.lw.tbl .w{max-width:1060px}
+.tcard{background:#fff;border:1px solid #e6e8ea;border-radius:20px;box-shadow:0 2px 8px rgba(11,26,42,.06);overflow:hidden}
+.tscroll{overflow-x:auto}
+.tcard table{width:100%;border-collapse:collapse;min-width:640px;font-size:15px}
+.tcard th{background:#fdfbf8;text-align:left;font-weight:700;color:#0b1a2a;padding:22px 24px;border-bottom:1px solid #1b2a3a;white-space:nowrap}
+.tcard td{padding:20px 24px;border-bottom:1px solid #f0f1f2;color:#4a5a6a;vertical-align:middle}
+.tcard td:first-child{color:#1b2a3a;font-weight:600}
+.tcard td.rs{color:#e0101a}
+.tcard tr:last-child td{border-bottom:0;background:#f8fafc}
+.tcard tbody tr:hover td{background:#f4f9fd}
+@media(max-width:1020px){.lw.tbl .w{padding:0 14px}.tcard th,.tcard td{padding:16px 16px}}
+
+.lg h2.ico{border-left:0;padding-left:0;display:flex;align-items:center;gap:10px}
+.lg h2.ico svg{flex:none;width:24px;height:24px;stroke:#0a8fd0;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.lg ol li::marker{color:#0a8fd0;font-weight:700}
+.lg li>ol{margin-top:8px}
 </style>
 </head>
 <body>
@@ -161,11 +303,69 @@ footer .fl{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}fo
 <li><a data-r="careers" href="#/careers">Career Job</a></li><li><a data-r="support" href="#/support">Help &amp; Support</a></li><li><a data-r="about" href="#/about">About</a></li>
 </ul></nav></div></header>
 <main id="app"></main>
-<footer><div class="w"><div class="fl">
-<div><b style="color:#fff">Nuog Housing Payments Limited</b><br>Property, finance, growth and careers in one place.</div>
-<div><a href="tel:+919755766018">+91 9755 766 018</a><br><a href="mailto:haustouch@hausnuo.com">haustouch@hausnuo.com</a></div>
-<div>Srinivas Nagar, Kapra, Dr. AS Rao Nagar, Secunderabad, Hyderabad – 500 062, TG<br>Jayanagar 4th Block, Bengaluru – 42, KA</div></div>
-<small>Loan approval, amount, rate and tenure depend on lender policy and verification. [Add your CIN and RBI registration details here.] © 2026 Nuog Housing Payments Limited.</small></div></footer>
+
+<!-- ===== NEW FOOTER ===== -->
+<footer class="nf">
+ <div class="nw">
+  <div class="top">
+
+   <!-- Column 1 -->
+   <div>
+    <img class="logo" src="https://www.hausnuo.com/loanlogo.png" alt="Nuog Housing Payment's Limited">
+    <p class="tag"></p>
+    <div class="soc">
+     <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8S15.6 3.5 14.3 3.5c-2.7 0-4.4 1.6-4.4 4.5v2.5H7v3.3h2.9V22h3.6z"/></svg></a>
+     <a href="#" aria-label="X"><svg viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.7L22 21h-6.2l-4.9-6.3L5.3 21H2.2l7.3-8.3L2 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5z"/></svg></a>
+     <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6zm9.7 1.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg></a>
+     <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.5 8.5h3.8V21H4.5V8.5zM6.4 2.6a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4zM10.6 8.5h3.6v1.7h.1c.5-.9 1.7-2 3.6-2 3.8 0 4.5 2.5 4.5 5.7V21h-3.8v-6.2c0-1.5 0-3.4-2.1-3.4s-2.4 1.6-2.4 3.3V21h-3.8V8.5z"/></svg></a>
+     <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2C2 8.8 2 12 2 12s0 3.2.4 4.8a2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8c.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg></a>
+    </div>
+    <h5>Download Our App</h5>
+    <div class="apps">
+     <a href="#" aria-label="App Store"><svg viewBox="0 0 24 24" fill="#111"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.3 1.3-2.5 1.3-2.6 0 0-2.5-1-2.5-3.9zM14.1 5.7c.6-.8 1.1-1.9.9-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.8-1.3z"/></svg></a>
+     <a href="#" aria-label="Google Play"><svg viewBox="0 0 24 24"><path fill="#00d2ff" d="M3.6 2.3 13 12 3.6 21.7a1.6 1.6 0 0 1-.6-1.3V3.6c0-.5.2-1 .6-1.3z"/><path fill="#ffd400" d="m16.2 8.8-3.2 3.2 3.2 3.2 3.8-2.2c1-.6 1-1.6 0-2.2l-3.8-2z"/><path fill="#ff3a44" d="M13 12 3.6 21.7c.4.3 1 .3 1.7-.1l10.9-6.4L13 12z"/><path fill="#00f076" d="M13 12 16.2 8.8 5.3 2.4c-.7-.4-1.3-.4-1.7-.1L13 12z"/></svg></a>
+    </div>
+   </div>
+
+   <!-- Column 2 -->
+   <div>
+    <h4>Quick Links</h4>
+    <ul class="ql">
+     <li><a href="#/about">About Us</a></li>
+     <li><a href="#/careers">Careers</a></li>
+     <li><a href="#/support">Contact Us</a></li>
+     <li><a href="#/terms">Terms &amp; Conditions</a></li>
+<li><a href="#/privacy">Privacy Policy</a></li>
+<li><a href="#/disclaimer">Disclaimer</a></li>
+<li><a href="#/terminated-vendors">Terminated Vendors</a></li>
+<li><a href="#/nach-cancellation">NACH/eNACH Cancellation</a></li>
+    </ul>
+   </div>
+
+   <!-- Column 3 -->
+   <div>
+    <h4>Help &amp; Support</h4>
+    <div class="ct"><span class="ci"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><a href="tel:+919755766018">+91 9755 766 018</a></div>
+    <div class="ct"><span class="ci"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg></span><a href="mailto:haustouch@hausnuo.com">haustouch@hausnuo.com</a></div>
+    <div class="ct top2"><span class="ci"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><small>Registered Office</small><p>Srinivas Nagar, Kapra, Dr. AS Rao Nagar, Medchal-Malkajgiri, Secunderabad, Hyderabad – 500 062, TG, India</p></div></div>
+    <div class="ct top2"><span class="ci"><svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><small>Head Office</small><p>2nd Floor, Main Road, South End, Ragigudda Circle, Jayanagara, 4th Block, Jayanagar, Bangalore - 42, KR, India</p></div></div>
+   </div>
+  </div>
+
+  <div class="mid"><span class="bl">HAUS NUO-Pay</span> — Use of the Technologies Digital Partner Platform Journey Built By, Operated &amp; Managed Under the Trade Name &amp; Brand Owned by <b>NuoG Housing Payment's Limited &amp; NuoG Softech Limited.</b> We Partner with Multiple Private Banks &amp; NBFCs Including Our NBFC Subsidiary <b>Aadi Fincash Private Limited,</b> to Help Fulfill the Loan Requirements of Our Customers. Please Visit <a href="https://hausnuo.com" target="_blank" rel="noopener">https://hausnuo.com</a> for Details.</div>
+
+  <div class="cin">
+   <div class="l"><b>NuoG Housing Payments Limited</b><i></i><em><span>CIN:</span> U70200TS2025PLC202763</em></div>
+   <div class="r">Crafted with <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.5-9.2C1.1 8.5 3 5 6.5 5c2 0 3.700 1.100 5.500 3 1.800-1.900 3.500-3 5.500-3C21 5 22.900 8.500 21.500 11.800 19.500 16.400 12 21 12 21z"/></svg> by <a href="#">Team Digicoders</a></div>
+  </div>
+ </div>
+
+ <div class="copy"><div class="nw">
+  <span>Copyright © 2026 NuoG Housing Payment's Limited.</span>
+  <div class="lk"><a href="#">Privacy Policy</a><a href="#">Disclaimer</a><a href="#">Sitemap</a></div>
+ </div></div>
+</footer>
+<!-- ===== /NEW FOOTER ===== -->
 
 <dialog id="dlg"><div id="df"><h3 id="dt">Enquire</h3>
 <p style="color:var(--mut);font-size:14px">Share your details and our team will call you.</p>
@@ -181,7 +381,7 @@ footer .fl{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}fo
 
 <script>
 /* ===== Settings ===== */
-const FIN_URL='https://nikrock01.github.io/xyz/Nuog_Housing_Payments_Limited.html#/';
+const FIN_URL='https://demo.brightcoreinfotech.com/hausnuo/Nuog_Loans_Page.html';
 /* Yahan apna backend/form link daalein jahan application (files ke saath) HR ko jaaye.
    Example: Formspree 'https://formspree.io/f/xxxx' ya apna server API. Khali = sirf test (data kahin nahi jayega). */
 const HR_ENDPOINT='';
@@ -276,29 +476,6 @@ return `<div class="ph"><div class="w"><a class="back" href="#/">← Back to hom
 
 /* ===== Careers: filters ===== */
 const CITIES=Object.fromEntries(Object.entries({'Andaman and Nicobar Islands':'Port Blair','Andhra Pradesh':'Visakhapatnam,Vijayawada,Guntur,Tirupati,Nellore','Arunachal Pradesh':'Itanagar,Naharlagun','Assam':'Guwahati,Silchar,Dibrugarh,Jorhat','Bihar':'Patna,Gaya,Muzaffarpur,Bhagalpur,Darbhanga,Purnia','Chandigarh':'Chandigarh','Chhattisgarh':'Raipur,Bhilai,Bilaspur,Korba','Dadra and Nagar Haveli and Daman and Diu':'Daman,Silvassa,Diu','Delhi':'New Delhi,Dwarka,Rohini,Saket','Goa':'Panaji,Margao,Vasco da Gama','Gujarat':'Ahmedabad,Surat,Vadodara,Rajkot,Gandhinagar','Haryana':'Gurugram,Faridabad,Panipat,Ambala,Karnal','Himachal Pradesh':'Shimla,Dharamshala,Solan,Mandi','Jammu and Kashmir':'Srinagar,Jammu,Anantnag','Jharkhand':'Ranchi,Jamshedpur,Dhanbad,Bokaro','Karnataka':'Bengaluru,Mysuru,Mangaluru,Hubballi,Belagavi','Kerala':'Thiruvananthapuram,Kochi,Kozhikode,Thrissur','Ladakh':'Leh,Kargil','Lakshadweep':'Kavaratti','Madhya Pradesh':'Bhopal,Indore,Gwalior,Jabalpur,Ujjain','Maharashtra':'Mumbai,Pune,Nagpur,Nashik,Thane,Aurangabad','Manipur':'Imphal,Thoubal','Meghalaya':'Shillong,Tura','Mizoram':'Aizawl,Lunglei','Nagaland':'Kohima,Dimapur','Odisha':'Bhubaneswar,Cuttack,Rourkela,Puri','Puducherry':'Puducherry,Karaikal','Punjab':'Ludhiana,Amritsar,Jalandhar,Patiala,Mohali','Rajasthan':'Jaipur,Jodhpur,Udaipur,Kota,Ajmer','Sikkim':'Gangtok,Namchi','Tamil Nadu':'Chennai,Coimbatore,Madurai,Tiruchirappalli,Salem','Telangana':'Hyderabad,Warangal,Karimnagar,Nizamabad,Khammam','Tripura':'Agartala,Udaipur','Uttar Pradesh':'Lucknow,Kanpur,Varanasi,Agra,Noida,Prayagraj,Ghaziabad','Uttarakhand':'Dehradun,Haridwar,Haldwani,Roorkee','West Bengal':'Kolkata,Howrah,Durgapur,Siliguri,Asansol'}).map(([k,v])=>[k,v.split(',')]));
-// function careersInit(){
-// const dept=$('f-dept'),title=$('f-title'),state=$('f-state'),city=$('f-city'),all=[dept,title,state,city];
-// const uniq=a=>[...new Set(a)];
-// const opt=(a,ph)=>`<option value="">${ph}</option>`+a.map(v=>`<option>${esc(v)}</option>`).join('');
-// dept.innerHTML=opt(uniq(JOBS.map(j=>j.dept)),'1. Select Department');
-// state.innerHTML=opt(Object.keys(CITIES),'3. Select State');
-// function cascade(i){
-// if(i<=0)title.innerHTML=opt(uniq(JOBS.filter(j=>j.dept===dept.value).map(j=>j.title)),'2. Select Position');
-// if(i<=1)state.value='';
-// if(i<=2)city.innerHTML=opt(CITIES[state.value]||[],'4. Select City');
-// all.forEach((s,k)=>s.disabled=k>0&&!all[k-1].value);list()}
-// function list(){const done=all.every(s=>s.value);$('fq').hidden=!done;
-// if(!done){$('jcnt').innerHTML='Filter Positions: complete all 4 steps ('+all.filter(s=>s.value).length+'/4 done) to view jobs';$('jg').innerHTML='';return}
-// const q=$('fq').value.toLowerCase();
-// const r=JOBS.filter(j=>j.dept===dept.value&&j.title===title.value&&j.state.toLowerCase()===state.value.toLowerCase()&&j.city.toLowerCase()===city.value.toLowerCase()&&(!q||(j.title+j.dept+j.city+j.state).toLowerCase().includes(q)));
-// $('jcnt').innerHTML=`Filtered Opportunities: <b>${r.length}</b> position${r.length==1?'':'s'} found`;
-// $('jg').innerHTML=r.map(j=>`<div class="jc"><div><span class="pill">${esc(j.dept)}</span><span class="pill g">${j.n} OPENINGS</span></div>
-// <h3 style="font-size:20px;margin-top:6px">${esc(j.title)}</h3><small>📍 ${esc(j.city)}, ${esc(j.state)}</small><small>🕒 ${esc(j.type)}</small>
-// <a class="btn b1" href="#/careers/job/${j.id}">Apply Now →</a></div>`).join('')||'<p>No openings for this location right now. Try another city or position.</p>'}
-// all.forEach((s,k)=>s.onchange=()=>cascade(k));$('fq').oninput=list;
-// $('frs').onclick=()=>{$('fq').value='';all.forEach(s=>s.value='');cascade(0)};
-// cascade(0);
-// }
 let msOutside=null;
 function careersInit(){
 const PH=['1. Select Department','2. Select Position','3. Select State','4. Select City'];
@@ -515,7 +692,211 @@ if(f.mail.value&&!/^\S+@\S+\.\S+$/.test(f.mail.value))return void(er.textContent
 if(!f.svc.value)return void(er.textContent='Select a service.');
 try{if(ENQ_ENDPOINT){const r=await fetch(ENQ_ENDPOINT,{method:'POST',body:new FormData(f),headers:{Accept:'application/json'}});if(!r.ok)throw 0}
 f.reset();er.style.color='var(--green)';er.textContent='Thank you! Our team will contact you shortly.'}catch(x){er.textContent='Submit nahi ho paya. Dobara try karein.'}}}
-const NAMES={home:'Home',property:'Property Management',growth:'Startup Growth',careers:'Career Job',support:'Help & Support',about:'About Us'};
+// const NAMES={home:'Home',property:'Property Management',growth:'Startup Growth',careers:'Career Job',support:'Help & Support',about:'About Us'};
+/* ===== Legal pages ===== */
+const L=a=>`<ul>${a.map(x=>`<li>${x}</li>`).join('')}</ul>`;
+const LEGAL={
+terms:{t:'Terms & Conditions',d:'Important information about using our website, applications and services.',
+intro:[
+`THIS WEBSITE https://hausnuo.com AND OTHER RELATED INTERNET BASED APPLICATIONS (COLLECTIVELY REFERRED TO AS "WEBSITE" OR "SERVICES") OWNED AND OPERATED BY NUOG HOUSING PAYMENT'S LIMITED, A COMPANY INCORPORATED UNDER THE LAWS OF REPUBLIC OF INDIA HAVING ITS REGISTERED OFFICE AT SRINIVAS NAGAR, KAPRA, DR. AS RAO NAGAR, MEDCHAL-MALKAJGIRI, SECUNDERABAD, HYDERABAD - 500062, TG, INDIA (HEREINAFTER REFERRED TO AS "WE", OR "US" OR "OUR").`,
+`THESE GENERAL TERMS OF USE (HEREINAFTER REFERRED TO AS THE "TERMS") SHALL CONSTITUTE A VALID AND BINDING LEGAL AGREEMENT BETWEEN US AND THE USER OF OUR WEBSITE/SERVICES (HEREINAFTER, WHERE THE CONTEXT SO REQUIRES, "YOU" OR "USER" ARE REFERRED TO INTERCHANGEABLY).`,
+`USERS OF THIS WEBSITE OR SERVICES OFFERED BY US ARE REQUESTED TO READ THESE TERMS BEFORE REGISTERING, ACCESSING, BROWSING, DOWNLOADING OR USING ANYTHING FROM THE WEBSITE BY ACCESSING OR WHILE USING THE WEBSITE OR THE SERVICES.`,
+`YOU UNDERSTAND AND AGREE THAT NUOG WILL TREAT YOUR USE OF THE WEBSITE OR SERVICES AS ACCEPTANCE OF THESE TERMS OF USE. USERS, PLEASE TAKE NOTE THAT ANY STATEMENTS MADE ON OUR WEBSITE SHALL NOT BE CONSTRUED AS A PROMISE FOR GRANT OF ANY SERVICES.`],
+s:[
+[1,'Introduction',`<p>The Terms are Governed by the Provisions of the Applicable Indian Laws, the Rules, Regulations, Guidelines, and Clarifications Framed Thereunder, Including but Not Limited to:</p>${L(['The Indian Contract Act, 1872;','The Information Technology Act, 2000;','The Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Information) Rules, 2011; and','The Information Technology (Intermediaries Guidelines) Rules, 2011.'])}
+<p>These Terms and Your Activity Under these Terms are an Electronic Record as Per the (Indian) Information Technology Act, 2000 and these Terms Being Electronically Generated by a Computer System Does Not Require any Physical or Digital Signatures.</p>
+<p>NuoG Reserves the Right to Modify these Terms and Other Policies Applicable in General and to Specific Areas of Our Services or to a Particular Service which shall also be Considered as Part of these Terms, at any time without giving you any Prior Notice and Such Changes Shall be Binding on You.</p>
+<p>You shall Revisit these Terms from time to time to Stay Abreast of any Changes that we may Introduce to these Terms. Your Use of Our Website or Services Pursuant to any Such Modification Shall be Treated as Your Acceptance to follow the Modified Terms as Applicable.</p>
+<p>By Using our Website, You Agree to these Terms. Further You Represent and Warrant to us that:</p>${L(['You are a Person who is Not Barred or Otherwise Legally Prohibited from Receiving or Using the Website or Services Under the laws of the country in which you are resident or from which you access or use the Services;','You are a resident of the Republic of India.','You shall not impersonate any person or entity or falsely state or otherwise misrepresent age, identity or affiliation with any individual or entity.'])}
+<p>Notwithstanding anything contained herein you agree that:</p>${L(['NuoG Reserves the right to deny your registration/access as a User and deny Services without assigning any reason whatsoever;','The information contained in this Website or Services does not constitute any advice or recommendation with respect to such financial instruments. You understand that the objective is to give you information for making informed decisions and to compare with similar Services. Any and all information provided is therefore for general information purposes only.','You have also understood we advise that independent professional advice is obtained before you purchase any product and Service.'])}
+<p>By using the Website or Services, you grant consent to NuoG to the use of your information as outlined by NuoG in its <a href="#/privacy">Privacy Policy</a>. You understand that this Website uses cookies; by using this Website, you agree to these Terms and consent to NuoG’s use of cookies in accordance with the terms of NuoG’s Privacy Policy.</p>
+<p>NuoG may translate these Terms into other languages for your convenience. Nevertheless, the English version governs your relationship with NuoG, and any inconsistencies among the different versions will be resolved as per the English version.</p>`],
+[2,'Using the Website/Services',`<p><b>Acceptance:</b> By using the Services you agree to unconditionally accept and agree to comply with and be bound by these Terms. Subject to the aforesaid NuoG grant you permission to use the Website or Services subject to the restrictions in these Terms. Your use of the Services is at your risk.</p>
+<p><b>User Account:</b> You may create a User Account (“Account” or “User Account”) and provide certain information about yourself to use some of the features of the Services that are offered through the Website or Services. You agree that you are solely responsible for maintaining the secrecy of your passwords, login and account information for using the Services. You are also responsible for all activities that occur in connection with your Account. You agree to notify NuoG immediately of any unauthorized use of your Account. NuoG reserves the right to close your Account at any time for any or no reason. Also, you shall not create multiple Accounts. You agree not to use the Services for any purpose that is unlawful, illegal or forbidden by these Terms, or any local laws that might apply to you. When you create a User Account, you will be additionally required to accept the specific terms and conditions for expressing your interest to for availing various services.</p>
+<p><b>Submission of Information:</b> While creating your User Account you will be asked to provide certain information, which is mandatory. Also, there will be other details, which you can provide at your discretion. In both cases, we may ask you to provide complete and accurate information about yourself to bolster your credibility. You confirm and warrant to NuoG that the details submitted by you are accurate and correct and NuoG can rely on it for providing the Services sought by you through the Services.</p>
+<p><b>Communications:</b> If you create a User Account, you agree to receive certain communications in connection with the Website or the Services. By using the Services and/or registering yourself at NuoG's Services you Authorize NuoG, NuoG's affiliates, NuoG's Associates, Partners to contact you via email or phone call or SMS and offer you their services for the product you have opted for, imparting product knowledge, offer promotional offers running on website &amp; offers offered by the associated third parties, for which reasons, as well as web aggregation. Irrespective of the fact if also you have registered yourself under DND or DNC or NCPR service, you still authorize NuoG to give you a call from us, NuoG’s affiliates, NuoG’s associates, partners for the purposes mentioned above. NuoG may also pass your information to third party financial services companies for the purpose of them, tell you about their services or products.</p>
+<p><b>Service Fee:</b> You agree that you shall pay a fee for the Services as per terms of the specific services provided by the Services. The fee once paid shall be non-refundable, unless agreed by NuoG in writing. The payment of fee or application made in Services does not assure you a grant of a loan or other Services mentioned on our Website; the same will be subject to the satisfaction of other formalities required for the specific Services.</p>
+<p><b>Availability of Website or any Services:</b> NuoG’s Website or Services may be modified, updated, interrupted, suspended or discontinued at any time without notice or liability.</p>`],
+[3,'Grant of Authority',`<p>NuoG may as a result of your interaction with the Services hold and process personal information obtained about you. When you access the Services and provide information the same will be deemed as your authorisation to NuoG (i) to use it for making lending decisions or decision to provide any Services (ii) to other service providers for offer various products and services which you may need (iii) for fraud prevention and debt collection (iv) to understand your financial needs (v) servicing NuoG relationship with you and to conduct NuoG’s business and to provide you with better customer services and products.</p>
+<p>You grant NuoG authority to pass such information to other agents as permitted by law so that they may do the same and they may pass information held by them about you to NuoG so that NuoG may do the same.</p>
+<p>NuoG will not disclose any such information outside of NuoG except as mentioned above other than for fraud prevention purposes and/or if required/obliged by law or Governmental or judicial bodies or agencies or to NuoG’s regulators under proper authority, or under a strict code of secrecy to sub-contractors or persons acting as NuoG’s agents or where NuoG have your consent or have previously informed you.</p>
+<p>By consenting to these Terms, You hereby grant NuoG authority, power and also authorize NuoG or NuoG’s authorized representatives to do all acts on your behalf as may be necessary for the purpose of providing the Services sought by you through the options available in NuoG’s Services.</p>`],
+[4,'Proprietary Rights',`<p>You do not have the right to use any of NuoG's trade names, trademarks, service marks, logos, domain names, and other distinctive brand features. You do not have the right to copy and use the software, text, images, graphics, video, and audio used on this Services (“Content”). You do not have the right to remove, obscure, or alter any proprietary rights notices (including trademark and copyright notices), which may be affixed to or contained within the Services. You will not copy or transmit any of the Services.</p>
+<p>NuoG neither represents nor warrants that your use of materials displayed on the Website/Services will not infringe rights of third parties.</p>`],
+[5,'Prohibited Conduct',`<p>By using NuoG’s Services you agree that you shall not:</p>${L([
+`use NuoG's Services and Services for spamming or any other illegal purposes;`,
+`infringe NuoG’s or any third party's intellectual property rights, rights of publicity or privacy;`,
+`post or transmit any message which is libelous, defamatory or which discloses private or personal matters concerning any person;`,
+`post or transmit any message, data, image or program which violates any law;`,
+`refuse to cooperate in an investigation or provide confirmation of your identity or any other information you provide to NuoG;`,
+`remove, circumvent, disable, damage or otherwise interfere with security related features of the NuoG's Services or features that enforce limitations on the use of NuoG's Services and Website;`,
+`upload any content that constitutes negligent advice or contains any negligent statement, an incitement to commit a crime or contains instructions for the commission of a crime or the promotion of criminal activity; or any content which is in contempt of any court, or in breach of any court order; or discriminates on the basis of age, sex, religion, race, gender; harassing, invasive of another's privacy, blasphemous; in breach of any contractual obligations or depicts violence or is pornographic, paedophilic, obscene, suggestive or sexually explicit; or consists of or contains any instructions, advice or other information which may be acted upon and could, if acted upon, cause illness, injury or death, or any other loss or damage; or constitutes spam; or is grossly harmful, offensive, deceptive, fraudulent, threatening, abusive, hateful, harassing, anti-social, menacing, hateful, discriminatory or inflammatory; or causes annoyance, inconvenience or needless anxiety to any person; or racially, ethnically objectionable, disparaging, relating or encouraging money laundering or gambling, or harm minors in any way or otherwise unlawful in any manner whatever;`,
+`upload any content that threatens the unity, integrity, defence, security or sovereignty of any country, or public order or causes incitement to the commission of any cognizable offence or prevents investigation of any offence or is insulting any nation;`,
+`upload any content that contains software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer resource;`,
+`reverse engineer, decompile, disassemble or otherwise attempt to discover the source code of NuoG's Services and Services or any part thereof or infringe any patent, trademark, copyright or other proprietary rights;`,
+`use NuoG's Services and Services in any manner that could damage, disable, overburden, or impair, including, without limitation, using NuoG's Services and Services in an automated manner;`,
+`modify, adapt, translate or create derivative works based upon NuoG's Services and Services or any part thereof;`,
+`intentionally interfere with or damage operation of NuoG's Services and Services or any other User’s use of NuoG’s Services and Website, by any means, including uploading or otherwise disseminating viruses, adware, spyware, worms, or other malicious code or file with contaminating or destructive features;`,
+`use any robot, spider, other automatic devices, or manual process to monitor or copy NuoG’s Services and Services without prior written permission of NuoG;`,
+`interfere or disrupt NuoG’s Services and Services or networks connected in addition to that;`,
+`take any action that imposes an unreasonably or disproportionately large load on NuoG’s infrastructure/network;`,
+`use any device, software or routine to bypass NuoG’s Services and Services robot exclusion headers, or interfere or attempt to interfere, with NuoG’s Services and Website;`,
+`forge headers or manipulate identifiers or other data to disguise the origin of any content transmitted through NuoG’s Services and Services or to manipulate your presence on NuoG’s Services and Website;`,
+`use the facilities and capabilities of NuoG’s Services and Services to conduct any activity or solicit the performance of any illegal activity or other activity which infringes the rights of others;`,
+`breach these Terms or any other policies of NuoG;`,
+`provide false, inaccurate or misleading information to NuoG’s Services and Website; and`,
+`use NuoG’s Services and Services to collect or obtain personal information, including without limitation, personal information about other Users of NuoG’s Services and Website.`])}
+<p>Although NuoG may from time to time monitor or review postings, transmissions, and the like on the Website, NuoG is under no obligation to do so and assumes no responsibility or liability arising from the content of any such locations nor for any error, defamation, libel, slander, omission, falsehood, obscenity, pornography, profanity, danger, or inaccuracy contained in any information within such locations on the Website.</p>
+<p>You are prohibited from posting or transmitting any unlawful, threatening, libelous, defamatory, obscene, scandalous, inflammatory, pornographic, or profane material or any material that could constitute or encourage conduct that would be considered a criminal offense, give rise to civil liability, or otherwise violate any law.</p>
+<p>NuoG retains the right to remove any such posting and will fully cooperate with any law enforcement authorities or court order requesting or directing NuoG to disclose the identity of anyone posting any such information or materials.</p>`],
+[6,'Display/Advertisements/Web Links',`<p>NuoG has not reviewed any sites that may be linked to the Services and is not responsible for the content of any off-site pages or any other sites linked to the Website. Your linking to any other off-site pages or other sites is at your risk.</p>
+<p>NuoG’s display on or through the Services of various services or product options offered by third parties does not in any way imply, suggest, or constitute any sponsorship, recommendation or approval or advise of NuoG of any such third parties or their products.</p>
+<p>You agree that NuoG is in no way responsible for the accuracy, timeliness or completeness of information it may obtain from these third parties. Your interaction with any third party accessed through the Services is at your risk, and NuoG will have no liability with respect to the acts, omissions, errors, representations, warranties, breaches or negligence of any such third parties or for any personal injuries, death, property damage, or other damages or expenses resulting from your interactions with the third parties.</p>
+<p>You agree that you may need to agree with terms and condition of such third parties by accessing their Services and the same will be at your sole risk and responsibility. Further, the obligations that may arise</p>`],
+[7,'Inaccuracies',`<p>While NuoG uses reasonable efforts to include accurate and up to date information at the Website, NuoG makes no warranties or representations as to the Websites accuracy. NuoG disclaims any and all liability for the accuracy, completeness, or correctness of such information.</p>`],
+[8,'Security',`<p>While NuoG uses reasonable efforts to safeguard the security of the Website, there can be no guaranty that such safeguards will successfully prevent unauthorized alterations in the content or functionality of the Site. NuoG assumes no liability or responsibility for any unauthorized changes in the content or functionality of the Website/Services.</p>`],
+[9,'Disclaimer of Warranty',`<p>The Services and all content and services provided on the Services are provided on an as-is and as-available basis. NuoG expressly disclaims all warranties of any kind, whether express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, title, non-infringement, and security and accuracy, as well as all warranties arising by usage of trade, course of dealing, or course of performance. NuoG makes no warranty, and expressly disclaims any obligation, that:</p>${L(['the content will be up-, complete, comprehensive, accurate or applicable to your circumstances;','the Services will meet your requirements or will be available on an uninterrupted, timely, secure, or error-free basis;','the results that may be obtained from the use of the Services or any services offered through the site will be accurate or reliable; or','the quality of any products, services, information, or other material obtained by you through the Services will meet your expectations.'])}`],
+[10,'Limitation of Liability',`<p>NuoG (including its officers, directors, employees, representatives, affiliates, and providers) will not be responsible or liable for:</p>${L(['any injury, death, loss, claim, act of god, accident, delay, or any direct, special, exemplary, punitive, indirect, incidental or consequential damages of any kind (including without limitation lost profits or lost savings), whether based in contract, tort, strict liability or otherwise, that arise out of or is in any way connected with (i) any failure or delay (including without limitation the use of or inability to use any component of the Website), or (ii) any use of the Services or content, or (iii) the performance or non-performance by NuoG or any provider, even if NuoG have been advised of the possibility of damages to such parties or any other party, or','any damages to or viruses that may infect your computer equipment or other property as the result of your access to the Services or your downloading of any content from the Services.'])}`],
+[11,'Use Information on this Services',`<p>Except as expressly permitted by these Terms, no portion of the information on this Website may be reproduced in any form, or by any means, without NuoG’s prior written permission.</p>`],
+[12,'Governing Law and Jurisdiction',`<p>The laws of the India, without regard to its conflict of laws rules, will govern these Terms, as well as your and NuoG’s observance of them.</p>
+<p>If you take any legal action relating to your use of the Services or these Terms, you agree to file such action only in the courts located in Mumbai, India.</p>`],
+[13,'Details of Grievance Officer',`<p>In accordance with Information Technology Act, 2000 and rules made there under, the name and contact details of the Grievance Officer of NuoG are as provided below:</p>
+<p><b>Name:</b> Yashtika Singh Chouhan<br><b>Address:</b> Srinivas Nagar, Kapra, Dr. AS Rao Nagar, Medchal-Malkajgiri, Secunderabad, Hyderabad – 500 062, TG, India<br><b>Phone No:</b> <a href="tel:02242101749">022-42101749</a><br><b>e-Mail id:</b> <a href="mailto:chouhan.yashtika@hausnuo.com">chouhan.yashtika@hausnuo.com</a></p>
+<p>If the matter is not resolved at the first instance by the Grievance Officer, then the same may then be settled by arbitration by a single Arbitrator appointed by NuoG. The arbitration shall be held, in Delhi, in accordance with the provisions of the Arbitration and Conciliation Act, 1996. The language of Arbitration shall be in English.</p>`],
+[14,'Breach of the Terms',`<p>Without prejudice to NuoG’s other rights under these Terms, if you breach these Terms in any way, or if NuoG suspect that you have breached these Terms in any way, NuoG may:</p>${L(['send you one or more formal warnings;','temporarily suspend your access to NuoG’s Services and Services;','permanently prohibit you from accessing NuoG’s Services and Services;','block computers using your IP address from accessing NuoG’s Services and Services;','contact any or all of your internet service providers and request that they block your access to NuoG’s Services and Services;','commence legal action against you, whether for breach of contract or recovery of amounts due or damages or otherwise; and','suspend or delete your account on NuoG’s Services and Services.'])}`],
+[15,'Feedback',`<p>Your feedback makes use of NuoG’s Services and Services better; please feel free to share it with NuoG on <a href="mailto:support@hausnuo.com">support@hausnuo.com</a>. Unless specifically admitted by NuoG or as required by law all feedback shall be non-confidential in nature.</p>
+<p>NuoG will assume no responsibility for reviewing unsolicited ideas and will not incur any liability as a result of any similarities between those ideas and materials that may appear in future programs of NuoG.</p>
+<p>Please do not reveal trade secrets or other confidential information in your messages to NuoG. Any and all rights to materials submitted to NuoG become the exclusive property of NuoG.</p>`],
+[16,'Miscellaneous',`<p>You hereby agree that NuoG may assign, transfer, sub-contract or otherwise deal with NuoG’s rights and obligations under these Terms. You may not, without NuoG’s prior written consent, assign, transfer, sub-contract or otherwise deal with any of your rights and obligations under these Terms.</p>
+<p>If NuoG fails to act on your breach or anyone else's breach on any occasion, NuoG is not waiving NuoG’s right to act with respect to future or similar breaches.</p>
+<p>If any of these Terms is found to unenforceable or invalid by a court, that Term will be enforced to the fullest extent permitted by applicable law and the other Terms will continue to remain valid and enforceable.</p>
+<p>These Terms, together with those agreements made a part of these Terms by reference, make up the entire agreement between NuoG and you relating to your use of the Services, and replace any prior understandings or agreements (whether oral or written) regarding your use of the Website/Services.</p>
+<p>In any such action or for any action NuoG may initiate, NuoG will be entitled to recover all legal expenses incurred in connection with the legal action, including but not limited to costs, both taxable and non-taxable, and reasonable attorney fees.</p>`],
+[17,'NACH/eNACH Cancellation',`<p>For details on cancelling your NACH/eNACH mandate, please see our <a href="#/nach-cancellation">NACH/eNACH Cancellation</a> page.</p>`]
+]},
+privacy:{t:'Privacy Policy',d:'Please read this policy carefully to understand our practices regarding your information.',
+pre:`<p>This website (<a href="https://hausnuo.com" target="_blank" rel="noopener">hausnuo.com</a>), the HAUS Money &amp; NUO-Pay Mobile Application and other related/associated internet based applications (collectively referred to as “Website” or “App”) is owned and operated by <b>NuoG Housing Payment's Limited</b>, (hereinafter referred to as “We”, or “Us” or “Our”), a company incorporated under Companies Act, 1956 and having its registered office at Srinivas Nagar, Kapra, Dr. AS Rao Nagar, Medchal-Malkajgiri, Secunderabad, Hyderabad - 500 062, TG, India.</p>
+<p>This Privacy Policy gives you (“You” or “Your” or “User” or “Customer”), the user of the Website details behind the collection of Your information and its usage as well as the manner in which We collect, use, store and share information about You. You are advised to read this privacy policy along with and in conjunction with the Terms of Use and other information in the Website/App.</p>
+<p>You are also advised to please take note that any statements made on the HAUS Money &amp; NUO-Pay Website/App shall not be construed as an offer or promise for grant of any financial services/products.</p>
+<p>This Privacy Policy has been prepared in compliance with:</p>
+<ol><li>Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011</li><li>Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021</li><li>Reserve Bank of India (Digital Lending) Directions, 2025;</li><li>Other applicable acts, regulations and rules which require the publishing of a privacy policy for handling of or dealing in personal information including sensitive personal data or information and all applicable laws, regulations, guidelines provided by applicable regulatory authorities including but not limited to the RBI.</li></ol>`,
+s:[
+[1,'Consent',`<p>You hereby explicitly consent to provide the information that may be required in relation to the Services (as defined below) being rendered by us. You acknowledge that We shall collect the information detailed under this Privacy Policy to facilitate lending &amp; non-lending services by partnering with various financial lenders, third parties, service providers, etc based on your requirement to avail such Services ("Services"). HAUS Money &amp; NUO-Pay will only be using the information for providing the Services to you.</p>
+<p>In order to avail any Services being provided by HAUS Money &amp; NUO-Pay by itself or in partnership with other third parties it is important that YOU READ, UNDERSTAND, ACKNOWLEDGE AND UNCONDITIONALLY AGREE TO BE BOUND BY THE TERMS AND CONDITIONS OF THIS PRIVACY POLICY. IF YOU DO NOT AGREE TO THIS POLICY OR ANY PART THEREOF, PLEASE DO NOT USE/ ACCESS/ DOWNLOAD/ INSTALL THE APPLICATION OR ANY PART THEREOF.</p>
+<p>For the users consenting and continue to access the Website and avail the Services we offer, this Privacy Policy explains our policies and practices regarding the collection, use, deletion and disclosure of Your information.</p>`],
+[2,'Information Collected and Used',`<p>This section describes the information we may collect about you and how we use that information and is divided into two sections - a) Data provided by you and b) Information we collect with your explicit consent in order to render our services.</p>
+<h3>Data provided by you</h3>${L(['Data provided by You by filling in forms on the Website.','Data provided by corresponding with Us (for example, by e-mail or chat or call).','Data and information, You provide when You register to use the Website, subscribe to any of our Services (such as applying for a loan), search for a Service, and when You report a problem with our App, our Services, or any of our sites.','Data including Your name, address, gender, date of birth, e-mail address, phone number, username, password and other registration information.','Identity Proof, Address Proof, PAN Card, proof of possession of Aadhaar Card (with Aadhaar number duly redacted or blocked out), financial information such as employer name, monthly salary, bank account no., bank statements, credit information, copies of identification documents.','Data generated by Your usage of our Website.'])}
+<h3>Information we collect about you and how we use that information</h3>${L([
+'<b>With Your consent :</b> Information /data from credit information companies and third party service providers to help HAUS Money &amp; NUO-Pay with customer verification, underwriting and diligence required for HAUS Money &amp; NUO-Pay and its partners.',
+'<b>Device type :</b> With Your permission, we may collect and monitor the type of device (including storage, hardware model, operating system and version, WiFi, mobile network) You use, information pertaining to your device including the list of accounts on your device for the purposes of credit profile enrichment. The information we collect and its usage depends on how You manage Your privacy controls on Your device.',
+'<b>Device Information :</b> When You install the App, we store the information we collect with unique identifiers tied to the device You are using. We collect information from the device when You download and install the Application and explicitly seek permissions from You to get the required information from the device. Additionally, we also collect metadata (via the domain server through which the User accesses the App, search queries, IP address, crashes, date &amp; time) for the purpose of improvising the App functionality Further we expressly state that we do not access any phone call logs data. In addition to the above, we also track and collect the data related to the performance of the Application and other diagnostic data for identifying and resolving any technical glitches that may be identified from such data and also for improving the overall functionality of the App. We collect information about Your device to provide automatic updates and additional security so that Your account is not used in other peoples devices. In addition, the information provides us valuable feedback on Your identity as a device holder as well as Your device behaviour, thereby allowing us to improve Our products interaction, quality of services and provide a personalised user experience to You.',
+'<b>Installed Application Data :</b> We collect and transmit a list of specific installed applications metadata information which includes the application name, package name, installed time, updated time, version name and version code of each installed application on Your device. This data may be collected even when the App is closed or not in use. We use this information for enriching Your credit profile with Your explicit consent.',
+'<b>SMS :</b> With your permission, we may send SMS to verify your registered mobile number and collect and monitor only financial transactional/promotional messages sent by 6 - digit alphanumeric senders for the purpose of credit risk assessment. No other SMS data is accessed.',
+'<b>Camera &amp; Microphone :</b> With your permission, We may request camera access to a) capture your selfie for the purpose of identity verification and b) scan and capture the required KYC documents in accordance with applicable laws. We may also request microphone permissions to enable a two-way communication between our authorised agents and you for the purpose of performing and completing your Video KYC for the lending Services. Your audio shall be recorded for regulatory purposes. These accesses are only required for the purpose of on-boarding/ KYC (know your customer) requirements.',
+'<b>Location :</b> With your permission, we may receive, collect and analyse your location information which may be accessed through a variety of methods including, inter alia, GPS, IP address, and cell tower location and, your precise location based on GPS data. In the event of IP detection failure, we will collect the last cached location as your current location. We may collect location information for validating your address and to increase the chances of your loan approval, even when the application is closed or not in use. These accesses are for the purpose of on-boarding/ KYC (know your customer) requirements.',
+'<b>Local storage :</b> Browser web storage, application data caches of our own application in order to improve the performance of the application and render our services to you faster.',
+'<b>Cookies and similar technologies :</b> Cookies are small data files that a Website stores on Your computer. We will use cookies on our Website similar to other lending websites / apps and online marketplace websites / apps. Use of this information helps Us identify You in order to make our Website more user friendly. Most browsers will permit You to decline cookies but if You choose to do this it might affect service on some parts of Our Website.',
+'<b>Record and/or monitor calls :</b> If You call in for a query, HAUS Money &amp; NUO-Pay might for the purposes of quality checks and ongoing staff training record Your call. Such recordings may also be used to help HAUS Money &amp; NUO-Pay combat fraud.',
+'<b>Third-party advertisements :</b> HAUS Money &amp; NUO-Pay may use third-party advertising companies to serve ads when You visit Our Website/App. These companies may use information about Your usage preferences (but not Your name, address, email address, or telephone number) about Your visits to this and other websites in order to provide advertisements about goods and services of interest to You. HAUS Money &amp; NUO-Pay is not responsible for product and services of such websites and is also not responsible for their privacy practices, which HAUS Money &amp; NUO-Pay does not own, manage or control.',
+'We ask visitors to our site to use their social media logins (Facebook, Twitter, GMail) to provide customer reviews and feedback on our site.'])}
+<p>It is expressly stated that we are not accessing mobile phone resources like file and media, contact list, call logs, telephony functions, etc.</p>`,'INFORMATION COLLECTED AND USED BY HAUS Money &amp; NUO-Pay'],
+[3,'Purpose of Information Collected',`<p>Apart from section 2 where we describe the information we collect and how we use the information we collect, we may also use the information we collect for the following purposes :</p>${L(['To provide products or services You have requested.','To provide information to Our partners to assist in making credit decisions about You.','To help investigate violations of Our Terms of Use or to defend against legal claims.','To disclose the information under special circumstances such as compliance with the applicable local law, court summons, court orders, requests/order from legal authorities or law enforcement agencies requiring such disclosure.','Search credit bureaus, generate credit reports and fraud prevention agencies.','To get in touch with You when necessary and contact You by email, SMS, letter, telephone or in any other way about Our products and services.','To identify, prevent, detect or tackle fraud, money laundering, terrorism and other crimes.','To form a view of Your credit worthiness, as per HAUS Money &amp; NUO-Pay policies and to identify, develop or improve products that may be of interest to You.','Provide information to independent external bodies such as governmental departments and agencies, universities and similar to carry out research.','Perform other administrative and operational actions including the testing of systems.','Trace Your whereabouts for the purpose of on-boarding / KYC (know your customer) requirements.','Recover any payments You owe to HAUS Money &amp; NUO-Pay or partners.','To show You advertisements.','Contact You as a survey respondent.','To maintain records under applicable law or a may apply to pursuant to agreements executed by HAUS Money &amp; NUO-Pay.','Carry out, monitor and analyse our business, Carry out market research, business, and statistical analysis and also direct our efforts for product improvement.','Carry out process review and audits under regulatory framework.','Details required for administration or services and product improvement.','Record and/or monitor calls if HAUS Money &amp; NUO-Pay feel necessary for quality checks and staff training. Such recordings may also be used to help HAUS Money &amp; NUO-Pay combat fraud.','Location information – for validating your address and to increase the chances of your loan approval. These accesses are for the purpose of on-boarding/ KYC (know your customer) requirements.','Information about Apps and Accounts – for credit profile enrichment.'])}`,'PURPOSE OF INFORMATION COLLECTED BY HAUS Money &amp; NUO-Pay'],
+[4,'Data Retention and Deletion',`<p><b>Retention of information collected:</b> The information collected from You will be retained during the (i) validity of Your Account and for the purpose of submission of such information, (ii) As consented by You while creating Your User Account (iii) As required by any regulatory norms including but not limited to the norms prescribed under Prevention of Money Laundering Act, 2002, as per Directions/Circulars/Notifications of RBI, and Reserve Bank of India (Digital Lending) Directions, 2025 prescribed by the RBI, as amended from time to time/any statutory modification thereto, or re-enactment thereof.</p>
+<p>We at HAUS Money &amp; NUO-Pay, promise to protect Your personal data from unauthorised access, misuse, and disclosure using the right security measures based on the type of data and how we are processing the same. We retain information about You to provide a seamless experience, to contact You in case of support required and about Your account, to detect, mitigate, prevent, and investigate fraudulent or illegal activities during the course of the Services. We retain Your data for as long as necessary based on statutory requirements and to provide You with Our services. We may also retain and use Your basic personal information inter alia as name, contact number, transactional details and address details as necessary to comply with our legal obligations, resolve disputes, send You notifications about dues or past dues that You owe to HAUS Money &amp; NUO-Pay and enforce Our agreements which shall always be in accordance with applicable laws.</p>
+<p>HAUS Money &amp; NUO-Pay's Data retention and archival policy applies to all business applications that store, process, or maintain customer and transactional information. Key principles of the policy include data classification based on sensitivity, specified retention periods, and secure archival procedures. The policy also includes procedures for data return and deletion upon termination of services, ensuring secure and irreversible removal in alignment with HAUS Money &amp; NUO-Pay's Standard Operating Procedure for Data Purge. Access to archived data is restricted, and disposal methods shall comply with applicable laws.</p>
+<p>Data retention periods are based purely on legal, regulatory, and business requirements, with specific durations listed in the policy. System/Application Audit Trails and Audit Logs shall be maintained for at least 8 years or as prescribed by the Reserve Bank of India.</p>`],
+[5,'Procedure for Data Destruction',`<p>User desirous of having his/her name and other details removed from the records of HAUS Money &amp; NUO-Pay, on receiving the User's request in the HAUS Money &amp; NUO-Pay app, HAUS Money &amp; NUO-Pay shall, subject to the terms mentioned in section 4 and extant acts, rules, regulations, supervisory body/ies guidelines, directions, circulars, notification, as amended from time to time/any statutory modification thereto, or re-enactment thereof, modify, remove and/delete such information. Once the requested action has been taken, HAUS Money &amp; NUO-Pay will inform You via email or call, as per the user's preference. However, You may not be able to use our services after deletion.</p>
+<p>You can also login to Our mobile application or website and provide such requests in order to modify/delete data.</p>
+<p>All such requests of deletion of personal data shall be processed through the internal process of HAUS Money &amp; NUO-Pay's Standard Operating Procedure for Data Purge ( 30 - 90 days subject to internal compliance checks and validation as per data deletion process of HAUS Money &amp; NUO-Pay)</p>`,'PROCEDURE FOR DATA DESTRUCTION AND REMOVAL OF USER DETAILS FROM THE RECORD'],
+[6,'Specific Consent',`<p>You consent and grant Us authority to share Your information with third parties to a.) provide the product or service You have requested; b.) to enable them to contact You or to certain service partners in order to respond to Your queries / comments or to resolve service issues and to serve You better and c.) to collect information about You as mentioned in section 2 of this Privacy Policy and use the same for those purposes mentioned in sections 2 &amp; 3 of this Privacy Policy.</p>
+<p>By using the Website/Services You authorise Us, Our affiliates &amp; Our associate partners to contact You via email or phone call or sms and offer You their services/ product, imparting product knowledge, offer promotional offers running on their websites &amp; offers offered by the associated third parties. Irrespective of the fact if You have also registered Yourself under DND or DNC or NCPR service, You still authorise Us to give You a call from HAUS Money &amp; NUO-Pay &amp; its associates/partners for the above-mentioned purposes.</p>
+<p>By providing information, You agree, or promise that the owner of such information has expressly agreed to allow or licence, as the case may be, Us to use the information in the manner set out in this Privacy Policy, without the payment of any fees, to the extent permitted by law, also use, licence, reproduce, distribute disclose, and aggregate, non-personally identifiable information that is derived through Your use of the App and You hereby provide consent for the same.</p>
+<p>You can revoke consent already granted to collect personal data at any point in time on Your device by using the privacy controls available to You. Please note however that this might impact our ability to render Our services to You.</p>`],
+[7,'Sharing of Information',`<p>HAUS Money &amp; NUO-Pay shall not will not rent, sell or share User information and will not disclose any of the User’s personally identifiable information to third parties (apart from the third parties whose details are mentioned in the links provided herein. Click <a href="javascript:void(0)" data-go="lg-15">here</a> and <a href="javascript:void(0)" data-go="lg-15">here</a> for a full list), except when the disclosure is:</p>${L(['pursuant to obtaining the Users permission','in connection with disclosure to financial institutions and banks','in connection with the Services being rendered through the App','help investigate, prevent or take action regarding unlawful and illegal activities','special circumstances such as compliance with court orders.','to enforce Your contractual obligations to us.'])}`],
+[8,'Standards for Handling Data Breaches',`<p>HAUS Money &amp; NUO-Pay intends to protect your information and to maintain its accuracy as confirmed by you. We implement reasonable physical, administrative and technical safeguards to help us protect your information from unauthorised access, use and disclosure. For example, we encrypt all information when we transmit over the internet. We also require that our registered third-party service providers protect such information from unauthorised access, use and disclosure.</p>
+<p>HAUS Money &amp; NUO-Pay has stringent security measures in place to protect the loss, misuse and alteration of information under control. We endeavour to safeguard and ensure the security of the information provided by you. We use Secure Sockets Layers (SSL) based encryption, for the transmission of the information, which is currently the required level of encryption in India as per applicable law.</p>
+<p>We aim to protect from unauthorised access, alteration, disclosure or destruction of information we hold, including :</p>${L(['We use encryption to keep Your data private while in transit;','We offer security feature like an OTP verification to help You protect Your account;','We regularly review our information collection, storage, and processing practices, including physical security measures, to prevent unauthorised access to Our systems;','We restrict access to personal information to our employees, contractors, and agents who need that information in order to process it. Anyone with this access is subject to strict contractual confidentiality obligations and may be disciplined or terminated if they fail to meet these obligations;','Compliance &amp; Cooperation with Regulations and applicable laws;','We regularly review this Privacy Policy and make sure that we process Your information in ways that comply with it.'])}
+<p>However, we do not warrant that such User information may not be misused in the event our safeguards and protocols are breached by a malicious third-party. Your use of the App is at your sole risk and discretion. You shall be the custodian of your password and comply with the applicable terms mentioned in the Website/Application in this regard., We are not liable to actions of other users with whom you may choose to share your information. The collection, usage, and sharing of User information are in compliance with the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011 and other applicable laws.</p>
+<p>While HAUS Money &amp; NUO-Pay invests in best in class Data Safety and Security Standards, in the improbable event of a data breach; HAUS Money &amp; NUO-Pay will activate its Incident Management protocol to mitigate and safeguard our user’s data. Furthermore, HAUS Money &amp; NUO-Pay shall inform and update its users as prescribed by the prevalent guidelines at the time.</p>`],
+[9,'Procedure for Correcting Inaccuracies',`<p>In the event that any Personal Information provided by You is inaccurate, incomplete or outdated then You shall have the right to provide Us with the accurate, complete and up to date data and have Us rectify such data at Our end immediately. We urge You to ensure that You always provide Us with accurate and correct information/data to ensure Your use of Our Services is uninterrupted. In case of modification of Personal Information, Users will be required to furnish supporting documents relating to change in Personal Information for the purpose of verification by HAUS Money &amp; NUO-Pay.</p>`,'PROCEDURE FOR CORRECTING INACCURACIES IN YOUR INFORMATION'],
+[10,'Changes in Privacy Policy',`<p>Our Privacy Policy might change from time to time, and HAUS Money &amp; NUO-Pay will provide notice of it on your email address linked to your Account or can be seen by you in our Website.</p>`],
+[11,'Incorporation of Privacy Policy',`<p>This Privacy Policy is incorporated to the Terms of use (Terms) and other specific terms of this Website/Services/Account.</p>`,'INCORPORATION OF PRIVACY POLICY TO THE TERMS OF USE'],
+[12,'Grievance Redressal',`<p>In the event that Your complaint is not resolved within 30 days of its submission, You have the right to lodge a complaint on the Complaint Management System (CMS) portal under the Reserve Bank-Integrated Ombudsman Scheme (RB-IOS). The full escalation matrix for grievance redressal will be clearly communicated on Our Website.</p>`],
+[13,'Reporting to CICs',`<p>In accordance with the regulations set forth by the Reserve Bank of India (RBI), We are committed to promoting responsible lending and financial transparency.</p>
+<p>To this end, all credit facilities availed through Our Websites/App, irrespective of their nature, amount, or tenor (duration), will be reported to all four licensed Credit Information Companies (CICs) in India: TransUnion CIBIL Limited, Experian Credit Information Company of India Private Limited, CRIF High Mark Credit Information Services Private Limited and Equifax.</p>
+<p>This reporting includes, but is not limited to, the timely repayment of dues, as well as any defaults or delays in payment. Your loan performance data becomes part of Your credit history, which can impact Your ability to avail of future credit facilities from any lender.</p>`,'REPORTING TO CREDIT INFORMATION COMPANIES (CICS)'],
+[14,'Website Disclosures',`${L([
+'All digital lending products and its Digital Lending Applications - <a href="https://hausnuo.com/" target="_blank" rel="noopener">https://hausnuo.com/</a>',
+'Lending Service Providers (LSPs) and details of the Digital Lendings Applications of LSPs - <a href="https://hausnuo.com/partnership/" target="_blank" rel="noopener">https://hausnuo.com/partnership/</a>',
+'Customer care particulars and internal grievance redressal mechanism - <a href="https://hausnuo.com/contact-us/" target="_blank" rel="noopener">https://hausnuo.com/contact-us/</a> or <a href="https://hausnuo.com/ombudsman/" target="_blank" rel="noopener">https://hausnuo.com/ombudsman/</a>',
+'Link to RBI\'s Complaint Management System (CMS) - <a href="https://cms.rbi.org.in/cms/indexpage.html#eng" target="_blank" rel="noopener">https://cms.rbi.org.in/cms/indexpage.html#eng</a>',
+'RBI\'s Sachet Portal for consumer protection - <a href="https://sachet.rbi.org.in/" target="_blank" rel="noopener">https://sachet.rbi.org.in/</a>'])}`],
+[15,'List of Third Parties',`<p><b>Third party service providers:</b></p>${L(['Equifax Credit Information Services Private Limited','TransUnion CIBIL Limited','Software Solutions Private Limited','Digitap.AI Enterprise Solutions Private Limited','Razorpay Software Private Limited','Baldor Technologies Private Limited','Delhivery Limited','Truecaller India Private Limited','NuoG Softech Limited'])}`]
+]},
+disclaimer:{t:'Disclaimer',d:'Important limitations of liability and usage warnings regarding our website and services.',nonav:1,
+pre:`<div class="notice"><svg viewBox="0 0 24 24"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg><div><strong>Important Notice</strong><span>This website is the online portal for NuoG Housing Payments Limited and is to be used for personal information purposes only.</span></div></div>
+<p>All the information displayed, transmitted or carried by the website including, but not limited to guides, news articles, external links, opinions, text, photographs, images, illustrations, trademarks, service marks and the like are provided on an "as is" basis without warranties of any kind and stand protected by the copyright and other intellectual property laws.</p>
+<p>Any of the content published on the website shall not be reproduced, distributed, transmitted, modified, reused or published in whole or in part by the recipient hereof or any other person for any purpose without the prior written approval of the company.</p>
+<p>While the content of the website may be updated periodically, we do not guarantee that it reflects the latest amendments/ information at any time.</p>`,
+s:[
+[1,'Completeness and Accuracy',`<p>All text, data, graphs and other pieces of information are presented with the best possible attempts to maintaining integrity, consistency and reliability of the same. However, none of the employees, directors, consultants, agents, representatives stand guarantors to any kind about the completeness, accuracy, reliability, suitability or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose.</p>
+<p>Any reliance you place on such information is therefore strictly at your own risk. In the event that an inaccuracy or discrepancy is noticed by anyone who accesses the website, we would like you to inform us so that it can be corrected.</p>`],
+[2,'Limitation of Liability',`<p>None of the company representative stands liable for any direct or indirect loss of profit or consequential damages that are alleged to have resulted from the use and/or inability to access or use the website features or misinterpretation or misrepresentation of information of any kind. The company does not become liable for any technical failure or malfunctioning of the software or the performance of any of our services.</p>
+<p>We are also not responsible for non-receipt of registration details or e-mails. Users shall bear all responsibility of keeping the password secure and we are not responsible for the loss or misuse of the same.</p>`],
+[3,'External Links & Third-Party Sites',`<p>This website provides some link to other websites which are not under our direct control. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them and they are presented without any prior screening or review. While attempts are made at delivering only the relevant information to our users, no representative of the company holds any kind of liability as to the use of such content made available through those sites.</p>`],
+[4,'Website Availability',`<p>We strive at keeping the website up and running smoothly along with all its features and services. However, technical issues beyond our control may arise when the website becomes temporarily unavailable or some of the features may not work as they are expected to.</p>
+<p>The company does not take responsibility for such events and will not be liable for any financial or non-tangible losses arising due to the same. We do not warrant that the use of services, software or any other features available on the website will be uninterrupted, secure or error free or that any such defects in the services will be corrected.</p>`]
+]},
+'nach-cancellation':{t:'NACH/eNACH Cancellation',d:'For NuoG Money & NUO-Pay Loans',ctr:1,nonav:1,
+pre:`<p>National Payments Corporation of India (NPCI) introduced centralized National Automated Clearing House (NACH) debit payment system, which is regulated by the Reserve Bank of India under the Payments and Settlement Act 2007.</p>
+<p>NuoG Housing Payments Limited offers all its MSME customers’ digital payment mandate registration option through Electronic NACH (eNACH), this helps customers to make their emi payments hassle free.</p>`,
+s:[
+[1,'eNACH Mandate Registration Process',`<p>To register eNACH mandate, customers are requested to contact concerned relationship officers of NuoG Housing Payments Limited Branch / send email request to <a href="mailto:enach.support@hausnuo.com">“enach.support@hausnuo.com”</a> with the following details:</p>
+<ol><li>Your Application Number/Loan Account Number</li><li>Registered Mobile Number</li><li>Debit Bank Account Number &amp; IFSC code</li><li>Mandate Approval option - Via Debit OR Net Banking</li></ol>`,
+'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>eNACH Mandate Registration Process',1],
+[2,'eNACH Mandate Cancellation Process',`<p>As per directions issued by NPCI vide circular NPCI/2025-26/NACH/Circular No. 025 dated 08/11/2025 &amp; NPCI/2025-26/NACH/Circular No. 028 dated 08/11/2025, NuoG Provides the NACH Cancellation facility for its customers as per the below process:</p>
+<ul><li>For cancellation of registered eNACH, the customer can contact their relationship officers of NuoG Branch for the same or send e-Mail to <a href="mailto:enach.support@hausnuo.com">“enach.support@hausnuo.com”</a> with the following details:
+<ol><li>Your Application Number/Loan Account Number</li><li>Registered Mobile Number</li><li>Reason for NACH Cancellation Request</li></ol></li>
+<li>NuoG has the discretion to consider the eNACH Mandate Cancellation request based on customers loan repayment terms and conditions.</li>
+<li>Confirmation on the final status of Mandate Cancellation will be provided to customer via SMS.</li></ul>`,
+'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7v6M12 17h.01"/></svg>eNACH Mandate Cancellation Process',1],
+[3,'Customer Grievance Mechanism',`<p>For any query on eNACH, please write to <a href="mailto:enach.support@hausnuo.com">“enach.support@hausnuo.com”</a> or call us on <a href="tel:+919755766018">9755 766 018</a> (Monday to Friday - 10 AM to 06 PM) or visit your nearest NuoG Branch.</p>
+<p><i>*Please note above process is applicable only for NuoG Housing Payments Limited Customers.</i></p>`,
+'<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 11v5M12 8h.01"/></svg>Customer Grievance Mechanism',1]
+]},
+'terminated-vendors':{t:'Terminated Outsourcing Vendors',d:'Details of terminated outsourcing vendors as on July 31, 2026',
+table:{head:['Vendor','Address','Reasons for Termination'],rows:[
+['Vision Services (4598577754251033P) - DSA','Pune','Process Violations'],
+['RAPID SOLUTIONS – Collection Agency','Telangana','Performance & Discipline issue'],
+['VEGAM SOLUTIONS – Collection Agency','Telangana','Performance & Discipline issue'],
+['CP ADVISOR FINANCIAL SERVICE – DSA','Vadodara','Process Violation']
+]}},
+};
+function legalPage(k){const p=LEGAL[k],multi=p.s&&p.s.length>1&&!p.nonav,intro=p.intro||[];
+if(p.table)return `<section class="lh ctr"><div class="w"><h1 tabindex="-1">${p.t}</h1><p>${p.d}</p></div></section>
+<section class="lw tbl"><div class="w"><div class="tcard"><div class="tscroll"><table>
+<thead><tr>${p.table.head.map(h=>`<th>${h}</th>`).join('')}</tr></thead>
+<tbody>${p.table.rows.map(r=>`<tr><td>${esc(r[0])}</td><td>${esc(r[1])}</td><td class="rs">${esc(r[2])}</td></tr>`).join('')}</tbody>
+</table></div></div></div></section>`;
+return `<section class="lh${p.ctr?' ctr':''}"><div class="w">
+<span class="pillx"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg>Official Documentation</span>
+<h1 tabindex="-1">${p.t}</h1><p>${p.d}</p><hr></div></section>
+<section class="lw"><div class="w"><div class="lgrid${multi?'':' one'}">
+${multi?`<aside class="lnav" aria-label="Quick navigation"><h4>Quick Navigation</h4><ol>${p.s.map(x=>`<li><button type="button" data-go="lg-${x[0]}"><b>${String(x[0]).padStart(2,'0')}</b>${x[1]}</button></li>`).join('')}</ol></aside>`:''}
+<article class="lg${multi?'':' plain'}">
+${p.pre?`<div class="pre">${p.pre}</div>`:''}
+${intro.map((t,i)=>i===intro.length-1&&intro.length>3?`<div class="alert">${t}</div>`:`<p class="intro${i===0?' b1x':''}">${t}</p>`).join('')}
+${p.s.map(x=>`<h2 id="lg-${x[0]}"${x[4]?' class="ico"':''}>${multi?x[0]+'. ':''}${x[3]||x[1]}</h2>${x[2]}`).join('')}
+</article></div></div></section>`}
+
+/* nav highlight on scroll */
+function legalInit(){
+const btns=[...document.querySelectorAll('.lnav button')];if(!btns.length||!('IntersectionObserver' in window))return;
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){btns.forEach(b=>b.classList.toggle('on',b.dataset.go===e.target.id))}}),{rootMargin:'-90px 0px -70% 0px'});
+document.querySelectorAll('.lg h2').forEach(h=>io.observe(h))}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(!b)return;const t=$(b.dataset.go);if(t)t.scrollIntoView({behavior:'smooth',block:'start'})});
+const NAMES={home:'Home',property:'Property Management',growth:'Startup Growth',careers:'Career Job',support:'Help & Support',about:'About Us',
+ terms:'Terms & Conditions',privacy:'Privacy Policy',disclaimer:'Disclaimer','terminated-vendors':'Terminated Vendors','nach-cancellation':'NACH/eNACH Cancellation'};
 const nv=$('nv'),mb=$('mb');
 function route(){
 const parts=(location.hash.replace(/^#\/?/,'')||'home').split('/');let h=parts[0];if(!NAMES[h])h='home';
@@ -523,6 +904,7 @@ let title=h==='home'?'':NAMES[h]+' — ';
 if(h==='careers'&&parts[1]==='job'){app.innerHTML=jobPage(parts[2]);title='Job details — '}
 else if(h==='careers'&&parts[1]==='apply'){app.innerHTML=applyPage(parts[2]);applyInit();title='Apply — '}
 else if(h==='support'){app.innerHTML=supportPage();supportInit()}
+else if(LEGAL[h]){app.innerHTML=legalPage(h);legalInit()}
 else{app.innerHTML=h==='home'?home():inner(h);initSlider();if(h==='careers')careersInit()}
 document.querySelectorAll('nav a[data-r]').forEach(a=>a.classList.toggle('act',a.dataset.r===h));
 document.title=title+'Nuog Housing Payments Limited';
