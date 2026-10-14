@@ -298,7 +298,7 @@ footer.nf a:hover{color:#0a8fd0}
 <a class="brand" href="#/" aria-label="Nuog Housing Payments home"><img src="https://www.hausnuo.com/loanlogo.png" alt="" onerror="this.style.display='none'"><span>Nuog Housing<small>Payments Limited</small></span></a>
 <button class="menu" id="mb" aria-label="Open menu" aria-expanded="false">☰</button>
 <nav id="nv"><ul>
-<li><a data-r="home" href="https://nikrock01.github.io/xyz/nuog-properties-v2.html">Home</a></li><li><a data-r="property" href="https://nikrock01.github.io/xyz/nuog-properties-v2.html">Property Management</a></li>
+<li><a data-r="home" href="#/">Home</a></li><li><a data-r="property" href="#/property">Property Management</a></li>
 <li><a class="finlink" target="_blank" rel="noopener">Financial ↗</a></li><li><a data-r="growth" href="#/growth">Startup Growth</a></li>
 <li><a data-r="careers" href="#/careers">Career Job</a></li><li><a data-r="support" href="#/support">Help &amp; Support</a></li><li><a data-r="about" href="#/about">About</a></li>
 </ul></nav></div></header>
@@ -381,7 +381,7 @@ footer.nf a:hover{color:#0a8fd0}
 
 <script>
 /* ===== Settings ===== */
-const FIN_URL='https://nikrock01.github.io/xyz/Nuog_Housing_Payments_Limited.html#/';
+const FIN_URL='https://demo.brightcoreinfotech.com/hausnuo/Nuog_Loans_Page.html';
 /* Yahan apna backend/form link daalein jahan application (files ke saath) HR ko jaaye.
    Example: Formspree 'https://formspree.io/f/xxxx' ya apna server API. Khali = sirf test (data kahin nahi jayega). */
 const HR_ENDPOINT='';
@@ -393,7 +393,7 @@ const TILES=[
 {r:'careers',ic:'💼',t:'Career Job',d:'Join our team. Browse open roles and apply in minutes.'}];
 const SLIDES=[
 {c:'s1',ic:'💰',t:'Loans that move at your speed',d:'Instant, Personal and Doctor Loans. Apply online in minutes.',b:'Apply for a loan',h:FIN_URL,ext:1},
-{c:'s2',ic:'🏢',t:'Your property, looked after',d:'Rent collection, tenant care and maintenance from one team.',b:'Explore property care',h:'https://nikrock01.github.io/xyz/nuog-properties-v2.html'},
+{c:'s2',ic:'🏢',t:'Your property, looked after',d:'Rent collection, tenant care and maintenance from one team.',b:'Explore property care',h:'#/property'},
 {c:'s3',ic:'🚀',t:'Ready to start your growth?',d:'Funding guidance and partners to launch or scale your business.',b:'Plan your growth',h:'#/growth'},
 {c:'s4',ic:'💼',t:'We are hiring',d:'Join a passionate team and build a modern financial experience.',b:'See open roles',h:'#/careers'}];
 
@@ -680,7 +680,9 @@ return `<div class='ph'><div class='w'><a class='back' href='#/'>← Back to hom
 <div class='cc g2'><div style='font-size:24px'>📍</div><h3>Operationally Headquarter Office</h3><small style='color:#0a8fd0;font-weight:700'>(BANGALORE, KARNATAKA)</small><p><b style='color:var(--ink)'>Nuog Housing Payment's Limited</b><br>2nd Floor, Main Road, Rajgopala Circle, Jayanagara, 4th Block, Jayanagar, Bengaluru - 42, KA, India</p><p>M: +91 9755 766 018<br>E: haustouch@hausnuo.com</p></div></div>
 <div class='cc ctr' style='margin-top:18px'><div style='font-size:24px'>🕒</div><h3>HAUS NUO-Pay - Officially Working Timings</h3><div class='cg' style='max-width:520px;margin:12px auto 0'><div class='hrs' style='background:#f7f9fa;border-color:var(--line)'><b style='color:var(--ink)'>Registered &amp; Head Office</b><br><span style='color:#0a8fd0;font-weight:700'>Mon - Sat: 10:30 AM to 08:00 PM</span><br>(Except Sunday &amp; National Holidays)</div><div class='hrs' style='background:#f7f9fa;border-color:var(--line)'><b style='color:var(--ink)'>Branch Office</b><br><span style='color:#0a8fd0;font-weight:700'>Mon - Sat: 10:00 AM to 06:30 PM</span><br>(Except Sunday &amp; National Holidays)</div></div></div>
 <h3 style='text-align:center;margin:36px 0 6px;font-size:20px'>Our <span class='bl'>Branches</span></h3>
-<div class='brg'>${BR.map(b=>`<details><summary>📍 ${esc(b)}</summary><p>${BR_ADDR[b]?esc(BR_ADDR[b]):'Call <a href=\'tel:+919755766018\' style=\'color:#0a8fd0\'>+91 9755 766 018</a> for branch address and timings.'}</p></details>`).join('')}</div><div style='height:40px'></div></div></section>`}
+<div class='brg'>
+${BR.map(b=>`<details><summary>📍 ${esc(b.toUpperCase())}</summary>
+<p>${BR_ADDR[b]?esc(BR_ADDR[b]):'Call <a href=\'tel:+919755766018\' style=\'color:#0a8fd0\'>+91 9755 766 018</a> for branch address and timings.'}</p></details>`).join('')}</div><div style='height:40px'></div></div></section>`}
 function supportInit(){
 const ENQ_ENDPOINT=''; /* enquiry form ka backend link yahan daalein */
 document.querySelectorAll('.tb').forEach(b=>b.onclick=()=>{document.querySelectorAll('.tb').forEach(x=>x.classList.toggle('on',x===b));$('t-enq').hidden=b.dataset.tab!=='enq';$('t-help').hidden=b.dataset.tab!=='help'});
